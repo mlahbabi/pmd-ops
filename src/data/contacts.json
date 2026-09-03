@@ -1,6 +1,6 @@
 {
- "version": "V1.0 — 03/09/2026",
- "updatedAt": "2026-09-03T22:00:00+01:00",
+ "version": "V1.1 — 04/09/2026",
+ "updatedAt": "2026-09-04T00:00:00+01:00",
  "groupes": [
   {
    "nom": "MRCO",
@@ -26,10 +26,9 @@
     {
      "nom": "Farid Lourida",
      "role": "Responsable logistique, transferts",
-     "tel": "",
+     "tel": "+212656966260",
      "email": "",
-     "aConfirmer": true,
-     "note": "Numéro à ajouter"
+     "aConfirmer": false
     }
    ]
   },
@@ -196,11 +195,10 @@
    "nom": "Photographe",
    "contacts": [
     {
-     "nom": "Photographe",
-     "role": "⚠️ à confirmer — aucun prestataire identifié",
-     "tel": "",
-     "email": "",
-     "aConfirmer": true
+     "nom": "Fabrice Gino",
+     "role": "Photographe (Diaffa 09/09, à caler avec Mehdi)",
+     "tel": "+212777278792",
+     "email": ""
     }
    ]
   }

@@ -1,6 +1,6 @@
 {
- "version": "V1.0 — 03/09/2026",
- "updatedAt": "2026-09-03T22:00:00+01:00",
+ "version": "V1.1 — 04/09/2026",
+ "updatedAt": "2026-09-04T00:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -104,7 +104,7 @@
   },
   {
    "id": "pd12",
-   "sujet": "Photographe : qui, quand (Diaffa avec verre de vin demandé par Mehdi)",
+   "sujet": "Photographe Fabrice Gino : caler le créneau (Diaffa 09/09, verre de vin demandé par Mehdi)",
    "responsable": "Mehdi",
    "echeance": "2026-09-05",
    "level": "normal"
