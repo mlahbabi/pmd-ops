@@ -1,0 +1,171 @@
+{
+ "version": "V1.0 — 03/09/2026",
+ "updatedAt": "2026-09-03T22:00:00+01:00",
+ "items": [
+  {
+   "id": "pd01",
+   "sujet": "Kopp : dîne à la Rôtisserie le 10 ou part le 10 ? Vol retour non communiqué",
+   "responsable": "Mehdi → Clémence",
+   "echeance": "2026-09-05",
+   "level": "alerte",
+   "persons": [
+    "kopp"
+   ]
+  },
+  {
+   "id": "pd02",
+   "sujet": "Diaffa : confirmer par écrit à Imane la config finale (rooftop vin & bière → dîner → extras MRCO), plus d'open bar 30 min/1h",
+   "responsable": "Mehdi",
+   "echeance": "2026-09-04",
+   "level": "alerte"
+  },
+  {
+   "id": "pd03",
+   "sujet": "3 invités externes Diaffa : mode d'arrivée / dépose rue Jbel Lakhdar ?",
+   "responsable": "Clémence",
+   "echeance": "2026-09-05",
+   "level": "normal",
+   "persons": [
+    "benjelloun-touimi",
+    "el-habti",
+    "fikrat"
+   ]
+  },
+  {
+   "id": "pd04",
+   "sujet": "Nom de l'invité qui occupe la chambre du 09→10",
+   "responsable": "Clémence",
+   "echeance": "2026-09-05",
+   "level": "normal",
+   "persons": [
+    "invite-diner-09-09"
+   ]
+  },
+  {
+   "id": "pd05",
+   "sujet": "Boisselier 10/09 : choix du menu déjeuner en salle + salle Gingembre ou chambre en 2e partie",
+   "responsable": "Clémence",
+   "echeance": "2026-09-07",
+   "level": "normal",
+   "persons": [
+    "boisselier"
+   ]
+  },
+  {
+   "id": "pd06",
+   "sujet": "Radisson : buffets Lila (dîner J1 + déjeuner J2) sélection à recevoir",
+   "responsable": "Fatima Zahra",
+   "echeance": "2026-09-05",
+   "level": "normal"
+  },
+  {
+   "id": "pd07",
+   "sujet": "Radisson : modalité late dinner 3 pax ~00:15 le 08/09",
+   "responsable": "Fatima Zahra",
+   "echeance": "2026-09-07",
+   "level": "normal",
+   "persons": [
+    "bernardini",
+    "ibraima",
+    "malouche"
+   ]
+  },
+  {
+   "id": "pd08",
+   "sujet": "Radisson : n° des chambres adjacentes Pierron / Batnini",
+   "responsable": "Fatima Zahra",
+   "echeance": "2026-09-07",
+   "level": "normal",
+   "persons": [
+    "pierron",
+    "batnini"
+   ]
+  },
+  {
+   "id": "pd09",
+   "sujet": "Radisson : formalisation contingent 199 nuitées (14 chambres 11→12) + plénière 10 & 11 (mise à disposition)",
+   "responsable": "Mehdi / Rachid",
+   "echeance": "2026-09-05",
+   "level": "alerte"
+  },
+  {
+   "id": "pd10",
+   "sujet": "Micro HF Diaffa : Badr apporte 2 HF → informer Imane que Diaffa n'a rien à louer",
+   "responsable": "Mehdi",
+   "echeance": "2026-09-04",
+   "level": "normal"
+  },
+  {
+   "id": "pd11",
+   "sujet": "Dîner orga lundi 07/09 (Clémence, Hajer + Tonka, Mavungu ?) : lieu près de l'hôtel",
+   "responsable": "MRCO",
+   "echeance": "2026-09-06",
+   "level": "normal"
+  },
+  {
+   "id": "pd12",
+   "sujet": "Photographe : qui, quand (Diaffa avec verre de vin demandé par Mehdi)",
+   "responsable": "Mehdi",
+   "echeance": "2026-09-05",
+   "level": "normal"
+  },
+  {
+   "id": "pd13",
+   "sujet": "EVO : effectif définitif 41 pax / 7 équipes (commande passée à 43) + point RDV exact Grand Bazar",
+   "responsable": "Mehdi → Driss",
+   "echeance": "2026-09-05",
+   "level": "normal"
+  },
+  {
+   "id": "pd14",
+   "sujet": "Beldi : 50 confirmés vs ~52 dans le dispatch — aligner",
+   "responsable": "Mehdi",
+   "echeance": "2026-09-05",
+   "level": "normal"
+  },
+  {
+   "id": "pd15",
+   "sujet": "Doublons de place (sans impact impression) : Diaffa T8 place 8 (Chaghil Brasseur / N'Guessan) ; Rôtisserie T2 place 9 (Sall Plantagenet / Sayam)",
+   "responsable": "Clémence",
+   "echeance": "sur place",
+   "level": "normal",
+   "persons": [
+    "chaghil-brasseur",
+    "n-guessan",
+    "sall-plantagenet",
+    "sayam"
+   ]
+  },
+  {
+   "id": "pd16",
+   "sujet": "Villeminot marqué « F » dans le fichier client → vérifier civilité sur son menu Diaffa (cartes vierges en réserve)",
+   "responsable": "MRCO",
+   "echeance": "2026-09-09",
+   "level": "normal",
+   "persons": [
+    "villeminot"
+   ]
+  },
+  {
+   "id": "pd17",
+   "sujet": "Reconfirmation J-3 transport complète",
+   "responsable": "Farid / Mehdi",
+   "echeance": "2026-09-05",
+   "level": "alerte"
+  },
+  {
+   "id": "pd18",
+   "sujet": "Affectation équipe MRCO par moment (Plus → Équipe)",
+   "responsable": "Mehdi + équipe",
+   "echeance": "2026-09-04",
+   "level": "alerte"
+  },
+  {
+   "id": "pd19",
+   "sujet": "Signalétique : confirmation impression lancée (V2 du 03/09, fichiers _V2) + date de livraison",
+   "responsable": "Mehdi",
+   "echeance": "2026-09-05",
+   "level": "normal"
+  }
+ ]
+}

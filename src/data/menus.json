@@ -1,0 +1,65 @@
+{
+ "version": "V1.0 — 03/09/2026",
+ "updatedAt": "2026-09-03T22:00:00+01:00",
+ "items": [
+  {
+   "id": "m0809-diner",
+   "date": "2026-09-08",
+   "sequence": "Dîner J1",
+   "lieu": "Radisson — Restaurant Lila",
+   "menu": "Grand buffet saveurs marocaines & internationales (sélection à recevoir ⚠️)",
+   "boissons": "Softs + forfait vin marocain (½)",
+   "aConfirmer": true
+  },
+  {
+   "id": "m0909-dej",
+   "date": "2026-09-09",
+   "sequence": "Déjeuner J2",
+   "lieu": "Radisson — Restaurant Lila",
+   "menu": "Buffet marocain & international (sélection à recevoir ⚠️)",
+   "boissons": "Softs",
+   "aConfirmer": true
+  },
+  {
+   "id": "m0909-diner",
+   "date": "2026-09-09",
+   "sequence": "Dîner J2",
+   "lieu": "Dar Diaffa",
+   "menu": "Sélection de fines salades marocaines & assortiment de briouates / Épaule d'agneau dorée au four (plat alternatif pour M. Righi) / Pastilla au lait à la fleur d'oranger",
+   "boissons": "Forfait Premium : vins marocains & français, eaux, thé à la menthe. Rooftop vin & bière avant."
+  },
+  {
+   "id": "m1009-dej",
+   "date": "2026-09-10",
+   "sequence": "Déjeuner J3",
+   "lieu": "Le Grand Bazar",
+   "menu": "Légumes grillés / Tajine de poulet / Mhalabia",
+   "boissons": "Softs"
+  },
+  {
+   "id": "m1009-vip",
+   "date": "2026-09-10",
+   "sequence": "Déjeuner VIP",
+   "lieu": "Radisson — salle Gingembre",
+   "menu": "À choisir (M. Boisselier) ⚠️",
+   "boissons": "Softs",
+   "aConfirmer": true
+  },
+  {
+   "id": "m1009-diner",
+   "date": "2026-09-10",
+   "sequence": "Dîner J3",
+   "lieu": "Rôtisserie de la Paix",
+   "menu": "Carpaccio de saumon aux agrumes / Entrecôte grillée sauce béarnaise et frites maison / Pavlova aux fruits rouges",
+   "boissons": "Vins & eaux inclus ; 2 bars hors forfait, paiement individuel"
+  },
+  {
+   "id": "m1109-dej",
+   "date": "2026-09-11",
+   "sequence": "Déjeuner J4",
+   "lieu": "Beldi Country Club",
+   "menu": "Pastilla aux légumes / Couscous royal / Assiette dégustation de desserts",
+   "boissons": "Softs"
+  }
+ ]
+}

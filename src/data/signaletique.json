@@ -1,0 +1,120 @@
+{
+ "version": "V1.0 — 03/09/2026",
+ "updatedAt": "2026-09-03T22:00:00+01:00",
+ "note": "Fichiers imprimeur V2 du 03/09 (zip « V3 - 030926 B », dossiers internes _V2). Ne rien imprimer de la V1.",
+ "items": [
+  {
+   "id": "sig-rollup-welcome",
+   "label": "Roll-up Welcome 850×2000",
+   "qte": 1,
+   "lieu": "Radisson — entrée hôtel",
+   "date": "2026-09-08",
+   "note": "Installation 08/09 17:00"
+  },
+  {
+   "id": "sig-rollup-reunion",
+   "label": "Roll-up Réunion 850×2000",
+   "qte": 1,
+   "lieu": "Radisson — devant plénière",
+   "date": "2026-09-08"
+  },
+  {
+   "id": "sig-rollup-generique",
+   "label": "Roll-up Générique 850×2000",
+   "qte": 1,
+   "lieu": "Radisson — selon besoin",
+   "date": "2026-09-08"
+  },
+  {
+   "id": "sig-rollup-diaffa",
+   "label": "Roll-up Plan de table Diaffa",
+   "qte": 1,
+   "lieu": "Dar Diaffa — entrée",
+   "date": "2026-09-09",
+   "note": "Setup 18:00"
+  },
+  {
+   "id": "sig-rollup-rotisserie",
+   "label": "Roll-up Plan de table Rôtisserie",
+   "qte": 1,
+   "lieu": "Rôtisserie — entrée",
+   "date": "2026-09-10",
+   "note": "Setup 18:30"
+  },
+  {
+   "id": "sig-prismes",
+   "label": "Prismes n° de table (patron 375×200)",
+   "qte": 10,
+   "lieu": "Diaffa ×8 le 09/09, Rôtisserie ×6 le 10/09 (+ réserve)",
+   "date": "2026-09-09"
+  },
+  {
+   "id": "sig-menus-diaffa",
+   "label": "Menus-marque-place Diaffa",
+   "qte": "65 + 5 vierges",
+   "lieu": "Dar Diaffa",
+   "date": "2026-09-09",
+   "note": "Vérifier civilité Villeminot (carte vierge en réserve)"
+  },
+  {
+   "id": "sig-menus-rotisserie",
+   "label": "Menus-marque-place Rôtisserie",
+   "qte": "59 + 5 vierges",
+   "lieu": "Rôtisserie de la Paix",
+   "date": "2026-09-10"
+  },
+  {
+   "id": "sig-sousverres",
+   "label": "Sous-verres Ø95",
+   "qte": 500,
+   "lieu": "Diaffa + Rôtisserie",
+   "date": "2026-09-09"
+  },
+  {
+   "id": "sig-pancartes",
+   "label": "Pancartes aéroport A3 « Partners’ Meeting »",
+   "qte": 6,
+   "lieu": "Aéroport RAK — chauffeurs",
+   "date": "2026-09-07",
+   "note": "À remettre à Simohamed avant le 07/09"
+  },
+  {
+   "id": "sig-son-diaffa",
+   "label": "Colonnes son + 2 micros HF (Badr)",
+   "qte": 1,
+   "lieu": "Dar Diaffa",
+   "date": "2026-09-09",
+   "note": "Informer Imane que Diaffa n'a rien à louer"
+  },
+  {
+   "id": "sig-dj-rotisserie",
+   "label": "DJ + son + micro HF (Badr)",
+   "qte": 1,
+   "lieu": "Rôtisserie de la Paix",
+   "date": "2026-09-10"
+  },
+  {
+   "id": "sig-bureau",
+   "label": "Bureau d'accueil / enregistrement",
+   "qte": 1,
+   "lieu": "Radisson — entrée plénière",
+   "date": "2026-09-09",
+   "note": "Dès 08:30"
+  },
+  {
+   "id": "sig-logos",
+   "label": "Logos PMD (PNG fond clair / fond foncé) transmis à l'hôtel",
+   "qte": 2,
+   "lieu": "Radisson — signalétique interne hôtel",
+   "date": "2026-09-08"
+  },
+  {
+   "id": "sig-impression",
+   "label": "Confirmation impression V2 lancée + date de livraison",
+   "qte": 1,
+   "lieu": "Imprimeur",
+   "date": "2026-09-05",
+   "aConfirmer": true
+  }
+ ]
+}

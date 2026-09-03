@@ -1,0 +1,2041 @@
+{
+ "version": "V1.0 — 03/09/2026",
+ "updatedAt": "2026-09-03T22:00:00+01:00",
+ "sequences": [
+  {
+   "id": "w0309-1750",
+   "date": "2026-09-03",
+   "start": "17:50",
+   "end": null,
+   "title": "Arrivée AF1876 (CDG) — 1 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "1",
+   "type": "transport",
+   "level": "normal",
+   "details": "Abdou Khadre MBOUP. Véhicule : 1 Vito. Effectué ✅",
+   "checklist": [
+    {
+     "id": "w0309-1750-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0309-1750-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0309-1750-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "mboup"
+   ],
+   "owner": "",
+   "waveId": "w0309-1750"
+  },
+  {
+   "id": "s0509-reconf",
+   "date": "2026-09-05",
+   "start": "09:00",
+   "end": "18:00",
+   "title": "Reconfirmation J-3 de toutes les vagues transport avec Simohamed",
+   "lieu": "Téléphone",
+   "effectif": "",
+   "type": "orga",
+   "level": "critique",
+   "details": "Derniers plans de vol reçus du client le 03/09. Reconfirmer chaque vague du dispatch V4 (horaires de prise en charge, véhicules, pancarte).",
+   "checklist": [
+    {
+     "id": "s0509-reconf-c1",
+     "label": "Vagues du 07/09 reconfirmées"
+    },
+    {
+     "id": "s0509-reconf-c2",
+     "label": "Vagues du 08/09 reconfirmées (7)"
+    },
+    {
+     "id": "s0509-reconf-c3",
+     "label": "Vagues du 09/09 reconfirmées (3) + Vito réserve dîner"
+    },
+    {
+     "id": "s0509-reconf-c4",
+     "label": "Vagues du 10/09 reconfirmées (départs + Médina)"
+    },
+    {
+     "id": "s0509-reconf-c5",
+     "label": "Vagues du 11/09 reconfirmées (pointe absolue)"
+    },
+    {
+     "id": "s0509-reconf-c6",
+     "label": "Vagues des 12 et 13/09 reconfirmées"
+    },
+    {
+     "id": "s0509-reconf-c7",
+     "label": "Kopp : vol retour ?"
+    },
+    {
+     "id": "s0509-reconf-c8",
+     "label": "3 invités Diaffa : mode d'arrivée ?"
+    },
+    {
+     "id": "s0509-reconf-c9",
+     "label": "Nom de l'invité chambre 09→10 ?"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s0609-mouad",
+   "date": "2026-09-06",
+   "start": "12:00",
+   "end": null,
+   "title": "Arrivée de Mouad à Marrakech",
+   "lieu": "Marrakech",
+   "effectif": "",
+   "type": "orga",
+   "level": "normal",
+   "details": "Repérage prestataires, rencontre équipe.",
+   "checklist": [
+    {
+     "id": "s0609-mouad-c1",
+     "label": "Repérage Diaffa"
+    },
+    {
+     "id": "s0609-mouad-c2",
+     "label": "Repérage Rôtisserie"
+    },
+    {
+     "id": "s0609-mouad-c3",
+     "label": "Point équipe MRCO"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w0709-1750",
+   "date": "2026-09-07",
+   "start": "17:50",
+   "end": null,
+   "title": "Arrivée AF1876 (CDG) — 3 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "3",
+   "type": "transport",
+   "level": "important",
+   "details": "Hajer BATNINI, Clémence PIERRON, Tshiamala TONKA. Véhicule : 1 Vito. Attend le vol de 18:10 — départ groupé ~18:50",
+   "checklist": [
+    {
+     "id": "w0709-1750-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0709-1750-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0709-1750-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "batnini",
+    "pierron",
+    "tonka"
+   ],
+   "owner": "",
+   "waveId": "w0709-1750"
+  },
+  {
+   "id": "w0709-1810",
+   "date": "2026-09-07",
+   "start": "18:10",
+   "end": null,
+   "title": "Arrivée AT413M (Kinshasa via Casa) — 1 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "1",
+   "type": "transport",
+   "level": "important",
+   "details": "Gervais MAVUNGU. Véhicule : Même Vito. Départ groupé ~18:50 avec la vague de 17:50",
+   "checklist": [
+    {
+     "id": "w0709-1810-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0709-1810-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0709-1810-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "mavungu"
+   ],
+   "owner": "",
+   "waveId": "w0709-1810"
+  },
+  {
+   "id": "s0709-checkin",
+   "date": "2026-09-07",
+   "start": "19:00",
+   "end": null,
+   "title": "Check-in orga : Pierron, Batnini, Tonka, Mavungu",
+   "lieu": "Radisson Blu",
+   "effectif": "4",
+   "type": "orga",
+   "level": "important",
+   "details": "Chambres Pierron & Batnini côte à côte (validé hôtel ; n° de chambres à communiquer ⚠️). 5 chambres cette nuit.",
+   "checklist": [
+    {
+     "id": "s0709-checkin-c1",
+     "label": "Chambres adjacentes vérifiées à la réception"
+    },
+    {
+     "id": "s0709-checkin-c2",
+     "label": "Accueil Clémence & Hajer fait"
+    }
+   ],
+   "persons": [
+    "pierron",
+    "batnini",
+    "tonka",
+    "mavungu"
+   ],
+   "owner": ""
+  },
+  {
+   "id": "s0709-diner",
+   "date": "2026-09-07",
+   "start": "20:30",
+   "end": null,
+   "title": "Dîner orga Clémence / Hajer près de l'hôtel",
+   "lieu": "⚠️ Lieu à choisir",
+   "effectif": "2 à 4",
+   "type": "orga",
+   "level": "important",
+   "details": "Promis à Clémence le 03/09 (« nous nous en occupons »). Tonka et Mavungu à convier ?",
+   "checklist": [
+    {
+     "id": "s0709-diner-c1",
+     "label": "Restaurant réservé"
+    },
+    {
+     "id": "s0709-diner-c2",
+     "label": "Clémence informée du lieu et de l'heure"
+    }
+   ],
+   "persons": [
+    "pierron",
+    "batnini"
+   ],
+   "owner": "",
+   "aConfirmer": true
+  },
+  {
+   "id": "w0809-0935",
+   "date": "2026-09-08",
+   "start": "09:35",
+   "end": null,
+   "title": "Arrivée AT409 (Casa) — 2 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "2",
+   "type": "transport",
+   "level": "normal",
+   "details": "Tafsir Ibnou NDOYE, Antoine Birame THIAW. Véhicule : 1 Vito. Départ direct (n'attend plus le 09:40)",
+   "checklist": [
+    {
+     "id": "w0809-0935-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0809-0935-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0809-0935-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "ndoye",
+    "thiaw"
+   ],
+   "owner": "",
+   "waveId": "w0809-0935"
+  },
+  {
+   "id": "s0809-checkin",
+   "date": "2026-09-08",
+   "start": "12:30",
+   "end": null,
+   "title": "Check-in / installation — arrivées autonomes",
+   "lieu": "Radisson Blu",
+   "effectif": "53 chambres",
+   "type": "orga",
+   "level": "normal",
+   "details": "Chambres Supérieures single, BB. 4 sur-classements suite (dont Boisselier, arrive le 09). Hors dispatch (aucun transfert) : Jacquart (voiture depuis Casa), Queron (voiture perso), N'Goran (voiture avec associé marocain), + 13 arrivées autonomes.",
+   "checklist": [
+    {
+     "id": "s0809-checkin-c1",
+     "label": "Rooming V6 remise à la réception"
+    },
+    {
+     "id": "s0809-checkin-c2",
+     "label": "Late check-in 23:15 annoncé à la réception"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w0809-1305",
+   "date": "2026-09-08",
+   "start": "13:05",
+   "end": null,
+   "title": "Arrivée AT411 (Casa) — 2 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "2",
+   "type": "transport",
+   "level": "normal",
+   "details": "Kodjo AKPATIGBE, March BISHOP. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w0809-1305-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0809-1305-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0809-1305-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "akpatigbe",
+    "bishop"
+   ],
+   "owner": "",
+   "waveId": "w0809-1305"
+  },
+  {
+   "id": "w0809-1350",
+   "date": "2026-09-08",
+   "start": "13:50",
+   "end": null,
+   "title": "Arrivée TB7522 (Orly — TUI) — 2 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "2",
+   "type": "transport",
+   "level": "normal",
+   "details": "Olivier BOURTOURAULT, Julien VILLEMINOT. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w0809-1350-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0809-1350-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0809-1350-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "bourtourault",
+    "villeminot"
+   ],
+   "owner": "",
+   "waveId": "w0809-1350"
+  },
+  {
+   "id": "w0809-1515",
+   "date": "2026-09-08",
+   "start": "15:15",
+   "end": null,
+   "title": "Arrivée AT749 (Orly) — 1 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "1",
+   "type": "transport",
+   "level": "normal",
+   "details": "Nata CHAGHIL BRASSEUR. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w0809-1515-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0809-1515-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0809-1515-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "chaghil-brasseur"
+   ],
+   "owner": "",
+   "waveId": "w0809-1515"
+  },
+  {
+   "id": "s0809-setup",
+   "date": "2026-09-08",
+   "start": "17:00",
+   "end": "19:00",
+   "title": "Installation signalétique + tests techniques en plénière",
+   "lieu": "Radisson Blu — plénière",
+   "effectif": "3-4 pers.",
+   "type": "setup",
+   "level": "important",
+   "details": "Avec Clémence & Hajer. Accès plénière confirmé dès 17:00. Son (2 micros fixes + 2 HF), vidéoprojecteur, écran, paperboards.",
+   "checklist": [
+    {
+     "id": "s0809-setup-c1",
+     "label": "Roll-up Welcome à l'entrée de l'hôtel"
+    },
+    {
+     "id": "s0809-setup-c2",
+     "label": "Roll-up Réunion devant la plénière"
+    },
+    {
+     "id": "s0809-setup-c3",
+     "label": "Roll-up Générique"
+    },
+    {
+     "id": "s0809-setup-c4",
+     "label": "Test son : 2 micros fixes + 2 HF"
+    },
+    {
+     "id": "s0809-setup-c5",
+     "label": "Test vidéoprojecteur + écran"
+    },
+    {
+     "id": "s0809-setup-c6",
+     "label": "Bureau d'accueil positionné pour le 09/09"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w0809-1750",
+   "date": "2026-09-08",
+   "start": "17:50",
+   "end": null,
+   "title": "Arrivée AF1876 (CDG) ×17 + TO3018 (Orly) ×2 — 19 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "19",
+   "type": "transport",
+   "level": "critique",
+   "details": "Frédérick BLEDOU, Ambroise DEPOUILLY, Felicia DJIBO, Michel ELMALEH, Joe-Pépin FOUNDOUX, Alain GUINOT, Roméo KOUDOU, Yves MADRE, Dominique MEIZOU, Yann-Eric N'GUESSAN, Yves NGUEMA, Badara NIANG, Bob David NZOIMBENGENE, Jonathan RIGHI, Rama SALL PLANTAGENET, Vylie SAYAM, Sandrine SOPPO PRISO, Nicolas BALESME, Dimitri LUCAS. Véhicule : 1 × 17 pl + 1 Vito. Vague principale. Balesme et Lucas arrivent par TO3018 (Orly).",
+   "checklist": [
+    {
+     "id": "w0809-1750-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0809-1750-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0809-1750-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "bledou",
+    "depouilly",
+    "djibo",
+    "elmaleh",
+    "foundoux",
+    "guinot",
+    "koudou",
+    "madre",
+    "meizou",
+    "n-guessan",
+    "nguema",
+    "niang",
+    "nzoimbengene",
+    "righi",
+    "sall-plantagenet",
+    "sayam",
+    "soppo-priso",
+    "balesme",
+    "lucas"
+   ],
+   "owner": "",
+   "waveId": "w0809-1750"
+  },
+  {
+   "id": "w0809-1810",
+   "date": "2026-09-08",
+   "start": "18:10",
+   "end": null,
+   "title": "Arrivée AT413 (Casa) — 8 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "8",
+   "type": "transport",
+   "level": "important",
+   "details": "Afef BEDHIAFI, Karim KOUNDI, Ramzi MAATOUG, Nejla MEJRI, Aymen MTIMET, Tarek SAHLI, Lovet WATAT, Anis ZOUARI. Véhicule : 1 × 17 pl. Ou rotation du même 17 pl, récupération ~18:50",
+   "checklist": [
+    {
+     "id": "w0809-1810-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0809-1810-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0809-1810-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "bedhiafi",
+    "koundi",
+    "maatoug",
+    "mejri",
+    "mtimet",
+    "sahli",
+    "watat",
+    "zouari"
+   ],
+   "owner": "",
+   "waveId": "w0809-1810"
+  },
+  {
+   "id": "s0809-diner",
+   "date": "2026-09-08",
+   "start": "20:00",
+   "end": "22:30",
+   "title": "Dîner J1 — Restaurant Lila",
+   "lieu": "Radisson Blu — Lila",
+   "effectif": "53",
+   "type": "restauration",
+   "level": "normal",
+   "details": "Grand buffet marocain & international. Softs + forfait vin marocain (½). Service souple pour arrivées tardives. Régimes : voir vue Régimes.",
+   "checklist": [
+    {
+     "id": "s0809-diner-c1",
+     "label": "Régimes transmis au restaurant"
+    },
+    {
+     "id": "s0809-diner-c2",
+     "label": "Late dinner 3 pax ~00:15 organisé (Bernardini, Ibraima, Malouche)"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w0809-2315",
+   "date": "2026-09-08",
+   "start": "23:15",
+   "end": null,
+   "title": "Arrivée AF1776 (CDG) — 3 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "3",
+   "type": "transport",
+   "level": "important",
+   "details": "Jean BERNARDINI, Sylvain Olivier IBRAIMA, Mohamed Ali MALOUCHE. Véhicule : 1 Vito. Late check-in + late dinner ~00:15 (plateau en chambre ou service tardif — modalité à confirmer hôtel)",
+   "checklist": [
+    {
+     "id": "w0809-2315-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0809-2315-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0809-2315-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "bernardini",
+    "ibraima",
+    "malouche"
+   ],
+   "owner": "",
+   "waveId": "w0809-2315"
+  },
+  {
+   "id": "s0909-accueil",
+   "date": "2026-09-09",
+   "start": "08:30",
+   "end": "09:00",
+   "title": "Café d'accueil + bureau d'accueil / enregistrement MRCO",
+   "lieu": "Radisson Blu — devant plénière",
+   "effectif": "62",
+   "type": "setup",
+   "level": "important",
+   "details": "Bureau d'accueil MRCO dès 08:30 à l'entrée de la plénière.",
+   "checklist": [
+    {
+     "id": "s0909-accueil-c1",
+     "label": "Bureau d'accueil en place"
+    },
+    {
+     "id": "s0909-accueil-c2",
+     "label": "Café d'accueil servi"
+    },
+    {
+     "id": "s0909-accueil-c3",
+     "label": "Liste d'émargement prête"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s0909-pleniere",
+   "date": "2026-09-09",
+   "start": "09:00",
+   "end": "12:30",
+   "title": "Plénière + ateliers (ouverture + intervention MP Pays)",
+   "lieu": "Radisson Blu — plénière",
+   "effectif": "62",
+   "type": "salle",
+   "level": "normal",
+   "details": "Cabaret / demi-cercles 6 pers. Sono 2 micros fixes + 2 HF, VP + écran, paperboards. Pause café du matin.",
+   "checklist": [
+    {
+     "id": "s0909-pleniere-c1",
+     "label": "Pause café matin servie"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s0909-souscom",
+   "date": "2026-09-09",
+   "start": "09:00",
+   "end": "18:00",
+   "title": "3 sous-commissions",
+   "lieu": "Radisson Blu — 3 salles",
+   "effectif": "",
+   "type": "salle",
+   "level": "normal",
+   "details": "Bloc-notes, stylos, eau, paperboard dans chaque salle.",
+   "checklist": [],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w0909-0940",
+   "date": "2026-09-09",
+   "start": "09:40",
+   "end": null,
+   "title": "Arrivée AF1276 (CDG) — 2 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "2",
+   "type": "transport",
+   "level": "important",
+   "details": "Bertrand BOISSELIER, Amaury DE BEAUVOIR. Véhicule : 1 Vito. VIP ++++ : M. Boisselier (président du CA France)",
+   "checklist": [
+    {
+     "id": "w0909-0940-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0909-0940-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0909-0940-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "boisselier",
+    "de-beauvoir"
+   ],
+   "owner": "",
+   "waveId": "w0909-0940"
+  },
+  {
+   "id": "s0909-dej",
+   "date": "2026-09-09",
+   "start": "12:45",
+   "end": "14:15",
+   "title": "Déjeuner buffet — Restaurant Lila",
+   "lieu": "Radisson Blu — Lila",
+   "effectif": "62",
+   "type": "restauration",
+   "level": "normal",
+   "details": "Buffet marocain & international, terrasse + intérieur, softs.",
+   "checklist": [],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w0909-1420",
+   "date": "2026-09-09",
+   "start": "14:20",
+   "end": null,
+   "title": "Arrivée TO9800 (Paris) — 1 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "1",
+   "type": "transport",
+   "level": "normal",
+   "details": "Frédéric FRERY. Véhicule : 1 Vito. Intervenant",
+   "checklist": [
+    {
+     "id": "w0909-1420-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0909-1420-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0909-1420-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "frery"
+   ],
+   "owner": "",
+   "waveId": "w0909-1420"
+  },
+  {
+   "id": "s0909-pm",
+   "date": "2026-09-09",
+   "start": "14:30",
+   "end": "18:00",
+   "title": "Ateliers Design thinking — plénière + sous-commissions",
+   "lieu": "Radisson Blu",
+   "effectif": "62",
+   "type": "salle",
+   "level": "normal",
+   "details": "Pause café après-midi (pauses café uniquement ce jour).",
+   "checklist": [
+    {
+     "id": "s0909-pm-c1",
+     "label": "Pause café après-midi servie"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w0909-1750",
+   "date": "2026-09-09",
+   "start": "17:50",
+   "end": null,
+   "title": "Arrivée AF1876 (CDG) — 1 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "1",
+   "type": "transport",
+   "level": "normal",
+   "details": "Frédéric GOURD. Véhicule : 1 Vito. Nouvelle course (arrivée décalée). À l'hôtel ~18:45, avant le départ dîner de 20:00.",
+   "checklist": [
+    {
+     "id": "w0909-1750-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0909-1750-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0909-1750-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "gourd"
+   ],
+   "owner": "",
+   "waveId": "w0909-1750"
+  },
+  {
+   "id": "s0909-libre",
+   "date": "2026-09-09",
+   "start": "18:00",
+   "end": "19:30",
+   "title": "Temps libre / changement de tenue",
+   "lieu": "Radisson Blu",
+   "effectif": "",
+   "type": "orga",
+   "level": "normal",
+   "details": "Tenue habillée pour le dîner.",
+   "checklist": [],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s0909-setup",
+   "date": "2026-09-09",
+   "start": "18:00",
+   "end": "20:00",
+   "title": "Setup MRCO à Dar Diaffa (2h avant)",
+   "lieu": "Dar Diaffa (Médina)",
+   "effectif": "",
+   "type": "setup",
+   "level": "critique",
+   "details": "Roll-up plan de table à l'entrée + PM MRCO, prismes n° de table ×8 en hauteur, menus-marque-place à chaque place (65), colonnes son + 2 micros HF (Badr Khyat). Vérifier le plat alternatif de M. Righi (sans agneau) et la civilité du menu Villeminot.",
+   "checklist": [
+    {
+     "id": "s0909-setup-c1",
+     "label": "Roll-up plan de table à l'entrée"
+    },
+    {
+     "id": "s0909-setup-c2",
+     "label": "Prismes ×8 posés"
+    },
+    {
+     "id": "s0909-setup-c3",
+     "label": "Menus-marque-place ×65 en place (T1→T8)"
+    },
+    {
+     "id": "s0909-setup-c4",
+     "label": "Colonnes son + 2 HF Badr testés"
+    },
+    {
+     "id": "s0909-setup-c5",
+     "label": "Plat alternatif Righi confirmé cuisine"
+    },
+    {
+     "id": "s0909-setup-c6",
+     "label": "Rooftop vin & bière prêt (20:30)"
+    },
+    {
+     "id": "s0909-setup-c7",
+     "label": "PM MRCO à l'entrée à 20:30"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s0909-dupont",
+   "date": "2026-09-09",
+   "start": "18:30",
+   "end": null,
+   "title": "Arrivée de David Dupont-Noel par la route depuis Casa",
+   "lieu": "Radisson Blu",
+   "effectif": "1",
+   "type": "vip",
+   "level": "important",
+   "details": "Départ Casa ~17:30. Accueil hôtel par MRCO, intégré au transfert dîner de 20:00.",
+   "checklist": [
+    {
+     "id": "s0909-dupont-c1",
+     "label": "Accueilli à l'hôtel"
+    },
+    {
+     "id": "s0909-dupont-c2",
+     "label": "Intégré au transfert 20:00"
+    }
+   ],
+   "persons": [
+    "dupont-noel"
+   ],
+   "owner": ""
+  },
+  {
+   "id": "p0909-2000",
+   "date": "2026-09-09",
+   "start": "20:00",
+   "end": null,
+   "title": "Transfert Radisson → Dar Diaffa — 62 pax",
+   "lieu": "Radisson Blu → Dar Diaffa (Médina)",
+   "effectif": "62",
+   "type": "transport",
+   "level": "critique",
+   "details": "Véhicule : 4 × 17 pl (+ 1 Vito réserve). Dîner — dépose rue Jbel Lakhdar. 62 pax + 3 invités externes (mode d'arrivée à confirmer). 1 Vito en réserve.",
+   "checklist": [
+    {
+     "id": "p0909-2000-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "p0909-2000-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "p0909-2000-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [],
+   "owner": "",
+   "waveId": "p0909-2000"
+  },
+  {
+   "id": "s0909-rooftop",
+   "date": "2026-09-09",
+   "start": "20:30",
+   "end": "20:45",
+   "title": "Rooftop : vin & bière (double vue Koutoubia)",
+   "lieu": "Dar Diaffa — rooftop",
+   "effectif": "65",
+   "type": "restauration",
+   "level": "important",
+   "details": "Config confirmée par téléphone avec Imane le 03/09 — à confirmer par écrit ⚠️. Puis passage à table.",
+   "checklist": [
+    {
+     "id": "s0909-rooftop-c1",
+     "label": "Confirmation écrite Imane reçue"
+    }
+   ],
+   "persons": [],
+   "owner": "",
+   "aConfirmer": true
+  },
+  {
+   "id": "s0909-diner",
+   "date": "2026-09-09",
+   "start": "20:45",
+   "end": "23:00",
+   "title": "Dîner Dar Diaffa — 65 convives, 8 tables",
+   "lieu": "Dar Diaffa (Médina)",
+   "effectif": "65",
+   "type": "vip",
+   "level": "important",
+   "details": "8 tables (9·8·7·8·9·8·8·8). Menu : salades marocaines & briouates / épaule d'agneau au four (plat alternatif Righi) / pastilla au lait fleur d'oranger. Forfait Premium (vins marocains & français, eaux, thé). Musique live + spectacle. 4 prises de parole ~15 min : 1) Rédouane Bellefqih (Managing Partner Maroc), puis 2-3-4) les 3 invités externes. Service continu pendant les discours, musiciens en pause, micro HF Badr. Un PM MRCO = interlocuteur de Clémence pour chaque prise de parole. 4 convives quittent vers 21:30. Pas d'after ; rooftop possible, extras MRCO. Photographe ⚠️ à confirmer.",
+   "checklist": [
+    {
+     "id": "s0909-diner-c1",
+     "label": "Prise de parole 1 — Bellefqih"
+    },
+    {
+     "id": "s0909-diner-c2",
+     "label": "Prise de parole 2 — Benjelloun Touimi"
+    },
+    {
+     "id": "s0909-diner-c3",
+     "label": "Prise de parole 3 — El Habti"
+    },
+    {
+     "id": "s0909-diner-c4",
+     "label": "Prise de parole 4 — Fikrat"
+    },
+    {
+     "id": "s0909-diner-c5",
+     "label": "Départ des 4 convives ~21:30 géré"
+    }
+   ],
+   "persons": [
+    "bellefqih",
+    "benjelloun-touimi",
+    "el-habti",
+    "fikrat",
+    "righi"
+   ],
+   "owner": ""
+  },
+  {
+   "id": "p0909-2300",
+   "date": "2026-09-09",
+   "start": "23:00",
+   "end": null,
+   "title": "Transfert Dar Diaffa → Radisson — 62 pax",
+   "lieu": "Dar Diaffa (Médina) → Radisson Blu",
+   "effectif": "62",
+   "type": "transport",
+   "level": "normal",
+   "details": "Véhicule : 4 × 17 pl. Retour groupé après le dîner.",
+   "checklist": [
+    {
+     "id": "p0909-2300-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "p0909-2300-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "p0909-2300-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [],
+   "owner": "",
+   "waveId": "p0909-2300"
+  },
+  {
+   "id": "w1009-0710",
+   "date": "2026-09-10",
+   "start": "07:10",
+   "end": null,
+   "title": "Départ U24664 — décollage 09:35 — 1 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Julien VILLEMINOT. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1009-0710-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1009-0710-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1009-0710-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "villeminot"
+   ],
+   "owner": "",
+   "waveId": "w1009-0710"
+  },
+  {
+   "id": "s1009-conf",
+   "date": "2026-09-10",
+   "start": "09:00",
+   "end": "12:00",
+   "title": "Conférence + ateliers (formation IA)",
+   "lieu": "Radisson Blu — plénière + 3 sous-commissions",
+   "effectif": "62",
+   "type": "salle",
+   "level": "normal",
+   "details": "9h–10h15 conférence, pause 10h15–10h30, 10h30–12h30 formation IA. Eaux en salle uniquement (pas de pause café).",
+   "checklist": [],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w1009-1115",
+   "date": "2026-09-10",
+   "start": "11:15",
+   "end": null,
+   "title": "Départ TO3015 — décollage 13:40 — 1 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Frédéric FRERY. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1009-1115-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1009-1115-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1009-1115-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "frery"
+   ],
+   "owner": "",
+   "waveId": "w1009-1115"
+  },
+  {
+   "id": "s1009-boisselier",
+   "date": "2026-09-10",
+   "start": "12:00",
+   "end": "13:30",
+   "title": "Réunion privée M. Boisselier — salle Gingembre",
+   "lieu": "Radisson Blu — salle Gingembre",
+   "effectif": "1",
+   "type": "vip",
+   "level": "important",
+   "details": "Confidentialité requise. Déjeuner servi en salle (menu à choisir par Clémence ; il peut préférer sa chambre pour la 2e partie).",
+   "checklist": [
+    {
+     "id": "s1009-boisselier-c1",
+     "label": "Salle Gingembre prête et sécurisée"
+    },
+    {
+     "id": "s1009-boisselier-c2",
+     "label": "Déjeuner servi en salle"
+    }
+   ],
+   "persons": [
+    "boisselier"
+   ],
+   "owner": ""
+  },
+  {
+   "id": "p1009-1215",
+   "date": "2026-09-10",
+   "start": "12:15",
+   "end": null,
+   "title": "Transfert Radisson → Médina (Grand Bazar) — 59 pax",
+   "lieu": "Radisson Blu → Le Grand Bazar (Médina)",
+   "effectif": "59",
+   "type": "transport",
+   "level": "critique",
+   "details": "Véhicule : 4 × 17 pl. Déjeuner + Marrakech Express. Aller groupé.",
+   "checklist": [
+    {
+     "id": "p1009-1215-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "p1009-1215-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "p1009-1215-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [],
+   "owner": "",
+   "waveId": "p1009-1215"
+  },
+  {
+   "id": "s1009-dej",
+   "date": "2026-09-10",
+   "start": "12:45",
+   "end": "14:15",
+   "title": "Déjeuner Le Grand Bazar",
+   "lieu": "Le Grand Bazar (Médina)",
+   "effectif": "59",
+   "type": "restauration",
+   "level": "normal",
+   "details": "Légumes grillés / tajine de poulet / mhalabia — softs.",
+   "checklist": [
+    {
+     "id": "s1009-dej-c1",
+     "label": "Régimes transmis (Fabien)"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s1009-brief",
+   "date": "2026-09-10",
+   "start": "14:20",
+   "end": "14:30",
+   "title": "Brief + constitution des équipes Marrakech Express",
+   "lieu": "Le Grand Bazar (Médina)",
+   "effectif": "41",
+   "type": "activite",
+   "level": "important",
+   "details": "EVO : Driss, Andréa, Rhita (facilitateurs terrain). 41 pax, 7 équipes (6·6·6·6·6·6·5). Voir onglet Marrakech Express.",
+   "checklist": [
+    {
+     "id": "s1009-brief-c1",
+     "label": "Facilitateurs EVO en place"
+    },
+    {
+     "id": "s1009-brief-c2",
+     "label": "Équipes constituées"
+    },
+    {
+     "id": "s1009-brief-c3",
+     "label": "Liste des 18 du retour 14:30 remise au chauffeur"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s1009-atelier",
+   "date": "2026-09-10",
+   "start": "14:30",
+   "end": "18:00",
+   "title": "Atelier petit comité — 10 pax",
+   "lieu": "Radisson Blu — petite salle",
+   "effectif": "10",
+   "type": "salle",
+   "level": "normal",
+   "details": "Set-up hôtel, eaux. Concerne les personnes de retour à 14:30.",
+   "checklist": [],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "p1009-1430",
+   "date": "2026-09-10",
+   "start": "14:30",
+   "end": null,
+   "title": "Transfert Médina → Radisson — retour anticipé — 18 pax",
+   "lieu": "Le Grand Bazar (Médina) → Radisson Blu",
+   "effectif": "18",
+   "type": "transport",
+   "level": "critique",
+   "details": "Véhicule : 1 × 17 pl + 1 Vito. Liste nominative de 18 figée par le client le 03/09, remise sur site par MRCO.",
+   "checklist": [
+    {
+     "id": "p1009-1430-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "p1009-1430-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "p1009-1430-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "batnini",
+    "belemqadem",
+    "bourtourault",
+    "chaghil-brasseur",
+    "de-beauvoir",
+    "depouilly",
+    "dupont-noel",
+    "elmaleh",
+    "gourd",
+    "jacquart",
+    "kopp",
+    "lucas",
+    "malouche",
+    "niang",
+    "queron",
+    "righi",
+    "sayam",
+    "tonka"
+   ],
+   "owner": "",
+   "waveId": "p1009-1430"
+  },
+  {
+   "id": "s1009-express",
+   "date": "2026-09-10",
+   "start": "14:50",
+   "end": "16:45",
+   "title": "Lancement Marrakech Express — chasse au trésor médina",
+   "lieu": "Médina",
+   "effectif": "41",
+   "type": "activite",
+   "level": "important",
+   "details": "~2h de jeu. Suivi MRCO avec EVO.",
+   "checklist": [
+    {
+     "id": "s1009-express-c1",
+     "label": "Top départ donné"
+    },
+    {
+     "id": "s1009-express-c2",
+     "label": "Point à mi-parcours avec Driss"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w1009-1630",
+   "date": "2026-09-10",
+   "start": "16:30",
+   "end": null,
+   "title": "Départ AF1877 — décollage 18:55 — 1 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Tshiamala TONKA. Véhicule : 1 Vito. Rentre par la navette Médina de 14:30",
+   "checklist": [
+    {
+     "id": "w1009-1630-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1009-1630-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1009-1630-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "tonka"
+   ],
+   "owner": "",
+   "waveId": "w1009-1630"
+  },
+  {
+   "id": "s1009-essalam",
+   "date": "2026-09-10",
+   "start": "16:45",
+   "end": "17:10",
+   "title": "Arrivée au Riad Dar Essalam — thé + scores / trophée",
+   "lieu": "Riad Dar Essalam (Médina)",
+   "effectif": "41",
+   "type": "activite",
+   "level": "normal",
+   "details": "Thé à la menthe + annonce des scores. Fin ~17:10, retour 17:30.",
+   "checklist": [
+    {
+     "id": "s1009-essalam-c1",
+     "label": "Trophée remis"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "p1009-1730",
+   "date": "2026-09-10",
+   "start": "17:30",
+   "end": null,
+   "title": "Transfert Médina → Radisson — fin Marrakech Express — ~41 pax",
+   "lieu": "Riad Dar Essalam (Médina) → Radisson Blu",
+   "effectif": "~41",
+   "type": "transport",
+   "level": "normal",
+   "details": "Véhicule : 3 × 17 pl. Retour groupé fin d'activité (~41 pax).",
+   "checklist": [
+    {
+     "id": "p1009-1730-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "p1009-1730-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "p1009-1730-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "akpatigbe",
+    "alaoui",
+    "balesme",
+    "bedhiafi",
+    "bellefqih",
+    "bencheqroun",
+    "bernardini",
+    "bishop",
+    "bledou",
+    "chaste",
+    "djibo",
+    "faouzi",
+    "foundoux",
+    "guinot",
+    "hassouni",
+    "ibraima",
+    "jebira",
+    "koudou",
+    "koundi",
+    "leyrit",
+    "maatoug",
+    "madre",
+    "mavungu",
+    "mboup",
+    "meizou",
+    "mejri",
+    "mtimet",
+    "n-goran",
+    "n-guessan",
+    "nadem",
+    "ndoye",
+    "nguema",
+    "nzoimbengene",
+    "pierron",
+    "sahli",
+    "sall-plantagenet",
+    "soppo-priso",
+    "tayaa",
+    "thiaw",
+    "watat",
+    "zouari"
+   ],
+   "owner": "",
+   "waveId": "p1009-1730"
+  },
+  {
+   "id": "s1009-libre",
+   "date": "2026-09-10",
+   "start": "18:00",
+   "end": "20:00",
+   "title": "Temps libre / changement de tenue (soirée blanche)",
+   "lieu": "Radisson Blu",
+   "effectif": "",
+   "type": "orga",
+   "level": "normal",
+   "details": "Dress code : soirée blanche. 17:45–19:00 préparation des pitchs.",
+   "checklist": [],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s1009-setup",
+   "date": "2026-09-10",
+   "start": "18:30",
+   "end": "20:30",
+   "title": "Setup MRCO à la Rôtisserie de la Paix (2h avant)",
+   "lieu": "Rôtisserie de la Paix (Guéliz)",
+   "effectif": "",
+   "type": "setup",
+   "level": "critique",
+   "details": "Roll-up plan de table + PM MRCO à l'entrée, prismes ×6, menus-marque-place (59), DJ + son + micro HF Badr Khyat.",
+   "checklist": [
+    {
+     "id": "s1009-setup-c1",
+     "label": "Roll-up plan de table à l'entrée"
+    },
+    {
+     "id": "s1009-setup-c2",
+     "label": "Prismes ×6 posés"
+    },
+    {
+     "id": "s1009-setup-c3",
+     "label": "Menus-marque-place ×59 en place (T1→T6)"
+    },
+    {
+     "id": "s1009-setup-c4",
+     "label": "DJ + son + HF Badr testés"
+    },
+    {
+     "id": "s1009-setup-c5",
+     "label": "PM MRCO à l'entrée à 20:15"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s1009-diner",
+   "date": "2026-09-10",
+   "start": "20:30",
+   "end": "00:00",
+   "title": "Dîner festif de clôture — Rôtisserie de la Paix",
+   "lieu": "Rôtisserie de la Paix (Guéliz) — à pied",
+   "effectif": "59",
+   "type": "restauration",
+   "level": "important",
+   "details": "6 tables (10·10·10·10·9·10). Menu : carpaccio de saumon aux agrumes / entrecôte grillée béarnaise, frites maison / pavlova fruits rouges. Vins & eaux inclus. DJ Badr Khyat. 2 points de bar hors forfait, paiement individuel par carte (participants prévenus par Deloitte) : vin & bière près des tables, bar spiritueux. Retour à pied. Absents : Tonka, Frery, Villeminot, les 3 invités externes.",
+   "checklist": [
+    {
+     "id": "s1009-diner-c1",
+     "label": "Départ à pied depuis l'hôtel 20:15"
+    },
+    {
+     "id": "s1009-diner-c2",
+     "label": "DJ lancé"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w1109-0345",
+   "date": "2026-09-11",
+   "start": "03:45",
+   "end": null,
+   "title": "Départ AF1777 — décollage 06:10 — 2 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "2",
+   "type": "transport",
+   "level": "critique",
+   "details": "Felicia DJIBO, Michel ELMALEH. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1109-0345-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-0345-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-0345-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "djibo",
+    "elmaleh"
+   ],
+   "owner": "",
+   "waveId": "w1109-0345"
+  },
+  {
+   "id": "w1109-0750",
+   "date": "2026-09-11",
+   "start": "07:50",
+   "end": null,
+   "title": "Départ AT408 10:15 / AT402 10:40 — 2 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "2",
+   "type": "transport",
+   "level": "critique",
+   "details": "Anis ZOUARI, Lovet WATAT. Véhicule : 1 Vito combiné.",
+   "checklist": [
+    {
+     "id": "w1109-0750-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-0750-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-0750-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "zouari",
+    "watat"
+   ],
+   "owner": "",
+   "waveId": "w1109-0750"
+  },
+  {
+   "id": "s1109-checkout",
+   "date": "2026-09-11",
+   "start": "08:00",
+   "end": "09:30",
+   "title": "Check-out + bagagerie dédiée — 58 pax",
+   "lieu": "Radisson Blu — bagagerie",
+   "effectif": "58",
+   "type": "setup",
+   "level": "important",
+   "details": "Petit-déjeuner inclus. Bagagerie dédiée, chargement dans les bus dès 11:15.",
+   "checklist": [
+    {
+     "id": "s1109-checkout-c1",
+     "label": "Bagagerie ouverte"
+    },
+    {
+     "id": "s1109-checkout-c2",
+     "label": "Étiquetage bagages partants du jour"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "s1109-ag",
+   "date": "2026-09-11",
+   "start": "09:30",
+   "end": "12:00",
+   "title": "AG + closing — plénière (pitchs + intervention MP métier)",
+   "lieu": "Radisson Blu — plénière",
+   "effectif": "58",
+   "type": "salle",
+   "level": "important",
+   "details": "Eaux en salle. Clôture visée 11:30–12:00 pour laisser un vrai temps de déjeuner aux 16 du vol de 16:00.",
+   "checklist": [],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "w1109-1010",
+   "date": "2026-09-11",
+   "start": "10:10",
+   "end": null,
+   "title": "Départ TO3013 — décollage 12:35 — 1 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Dimitri LUCAS. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1109-1010-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-1010-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-1010-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "lucas"
+   ],
+   "owner": "",
+   "waveId": "w1109-1010"
+  },
+  {
+   "id": "s1109-bagages",
+   "date": "2026-09-11",
+   "start": "11:15",
+   "end": "11:45",
+   "title": "Chargement des bagages dans les bus",
+   "lieu": "Radisson Blu — dépose bus",
+   "effectif": "~52",
+   "type": "setup",
+   "level": "critique",
+   "details": "TOUS les partants du jour voyagent avec bagages dès ce transfert ; les véhicules restent au Beldi.",
+   "checklist": [
+    {
+     "id": "s1109-bagages-c1",
+     "label": "4 × 17 pl à la dépose 11:15"
+    },
+    {
+     "id": "s1109-bagages-c2",
+     "label": "Bagages chargés (compter)"
+    }
+   ],
+   "persons": [],
+   "owner": ""
+  },
+  {
+   "id": "p1109-1145",
+   "date": "2026-09-11",
+   "start": "11:45",
+   "end": null,
+   "title": "Transfert Radisson → Beldi Country Club — AVEC BAGAGES — ~52 pax",
+   "lieu": "Radisson Blu → Beldi Country Club",
+   "effectif": "~52",
+   "type": "transport",
+   "level": "critique",
+   "details": "Véhicule : 4 × 17 pl. Chargement dès 11:15 (bagagerie hôtel). Les véhicules restent au Beldi jusqu'aux navettes aéroport.",
+   "checklist": [
+    {
+     "id": "p1109-1145-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "p1109-1145-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "p1109-1145-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [],
+   "owner": "",
+   "waveId": "p1109-1145"
+  },
+  {
+   "id": "s1109-beldi",
+   "date": "2026-09-11",
+   "start": "12:00",
+   "end": "13:30",
+   "title": "Déjeuner Beldi Country Club",
+   "lieu": "Beldi Country Club",
+   "effectif": "50 confirmés (dispatch ~52 ⚠️)",
+   "type": "restauration",
+   "level": "critique",
+   "details": "Service dès 12:15–12:30 : pastilla aux légumes / couscous royal / assiette dégustation de desserts — softs. Servir en priorité les 16 de la navette 13:35. Sans agneau ×1 (Righi). Espace calme + wifi pour ceux qui restent jusqu'à 16:25 ; consommations après déjeuner prises en charge (CB agence). Bagages dans les minibus sur le parking.",
+   "checklist": [
+    {
+     "id": "s1109-beldi-c1",
+     "label": "16 de la navette 13:35 servis en priorité"
+    },
+    {
+     "id": "s1109-beldi-c2",
+     "label": "Righi : plat sans agneau"
+    },
+    {
+     "id": "s1109-beldi-c3",
+     "label": "Bagages sous surveillance sur le parking"
+    }
+   ],
+   "persons": [],
+   "owner": "",
+   "aConfirmer": true
+  },
+  {
+   "id": "w1109-1335",
+   "date": "2026-09-11",
+   "start": "13:35",
+   "end": null,
+   "title": "Départ AF1077 ×15 + AF718 ×1 — décollage 16:00 — 16 pax",
+   "lieu": "Beldi Country Club → Aéroport RAK",
+   "effectif": "16",
+   "type": "transport",
+   "level": "critique",
+   "details": "Jean BERNARDINI, Frédérick BLEDOU, Bertrand BOISSELIER, Amaury DE BEAUVOIR, Frédéric GOURD, Alain GUINOT, Damien JACQUART, Mohamed Ali MALOUCHE, Dominique MEIZOU, Yann-Eric N'GUESSAN, Tafsir Ibnou NDOYE, Yves NGUEMA, Bob David NZOIMBENGENE, Vylie SAYAM, Sandrine SOPPO PRISO, Antoine Birame THIAW. Véhicule : 1 × 17 pl + 1 Vito bagages. Embarquement 13:30, dépose 14:00 — H-2 strict, aucun retard possible. Thiaw sur AF718.",
+   "checklist": [
+    {
+     "id": "w1109-1335-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-1335-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-1335-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "bernardini",
+    "bledou",
+    "boisselier",
+    "de-beauvoir",
+    "gourd",
+    "guinot",
+    "jacquart",
+    "malouche",
+    "meizou",
+    "n-guessan",
+    "ndoye",
+    "nguema",
+    "nzoimbengene",
+    "sayam",
+    "soppo-priso",
+    "thiaw"
+   ],
+   "owner": "",
+   "waveId": "w1109-1335"
+  },
+  {
+   "id": "w1109-1400",
+   "date": "2026-09-11",
+   "start": "14:00",
+   "end": null,
+   "title": "Départ AT740 — décollage 16:25 — 1 pax",
+   "lieu": "Beldi Country Club → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Nata CHAGHIL BRASSEUR. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1109-1400-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-1400-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-1400-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "chaghil-brasseur"
+   ],
+   "owner": "",
+   "waveId": "w1109-1400"
+  },
+  {
+   "id": "w1109-1500",
+   "date": "2026-09-11",
+   "start": "15:00",
+   "end": null,
+   "title": "Départ TO3017 17:50 / AT412 18:20 — 2 pax",
+   "lieu": "Beldi Country Club → Aéroport RAK",
+   "effectif": "2",
+   "type": "transport",
+   "level": "critique",
+   "details": "David DUPONT-NOEL, Kodjo AKPATIGBE. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1109-1500-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-1500-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-1500-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "dupont-noel",
+    "akpatigbe"
+   ],
+   "owner": "",
+   "waveId": "w1109-1500"
+  },
+  {
+   "id": "w1109-1555",
+   "date": "2026-09-11",
+   "start": "15:55",
+   "end": null,
+   "title": "Départ AT640 — décollage 18:30 — 1 pax",
+   "lieu": "Beldi Country Club → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Olivier BOURTOURAULT. Véhicule : 1 Vito dédié. Nouveau vol",
+   "checklist": [
+    {
+     "id": "w1109-1555-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-1555-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-1555-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "bourtourault"
+   ],
+   "owner": "",
+   "waveId": "w1109-1555"
+  },
+  {
+   "id": "w1109-1625",
+   "date": "2026-09-11",
+   "start": "16:25",
+   "end": null,
+   "title": "Départ AF1877 — décollage 18:55 — 7 pax",
+   "lieu": "Beldi Country Club → Aéroport RAK",
+   "effectif": "7",
+   "type": "transport",
+   "level": "critique",
+   "details": "Hajer BATNINI, Ambroise DEPOUILLY, Joe-Pépin FOUNDOUX, Sylvain Olivier IBRAIMA, Roméo KOUDOU, Clémence PIERRON, Jonathan RIGHI. Véhicule : 1 × 17 pl.",
+   "checklist": [
+    {
+     "id": "w1109-1625-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-1625-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-1625-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "batnini",
+    "depouilly",
+    "foundoux",
+    "ibraima",
+    "koudou",
+    "pierron",
+    "righi"
+   ],
+   "owner": "",
+   "waveId": "w1109-1625"
+  },
+  {
+   "id": "s1109-nuit",
+   "date": "2026-09-11",
+   "start": "18:00",
+   "end": null,
+   "title": "Nuit 11→12 : 14 chambres",
+   "lieu": "Radisson Blu",
+   "effectif": "14",
+   "type": "orga",
+   "level": "normal",
+   "details": "Balesme, Bedhiafi, Bishop, Koundi, Maatoug, Madre, Mavungu, Mboup, Mejri, Mtimet, Niang, Queron, Sahli, Sall Plantagenet.",
+   "checklist": [],
+   "persons": [
+    "balesme",
+    "bedhiafi",
+    "bishop",
+    "koundi",
+    "maatoug",
+    "madre",
+    "mavungu",
+    "mboup",
+    "mejri",
+    "mtimet",
+    "niang",
+    "queron",
+    "sahli",
+    "sall-plantagenet"
+   ],
+   "owner": ""
+  },
+  {
+   "id": "w1209-0345",
+   "date": "2026-09-12",
+   "start": "03:45",
+   "end": null,
+   "title": "Départ AF1777 — décollage 06:10 — 1 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Yves MADRE. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1209-0345-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1209-0345-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1209-0345-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "madre"
+   ],
+   "owner": "",
+   "waveId": "w1209-0345"
+  },
+  {
+   "id": "w1209-0645",
+   "date": "2026-09-12",
+   "start": "06:45",
+   "end": null,
+   "title": "Départ TO3011 — décollage 09:15 — 1 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Nicolas BALESME. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1209-0645-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1209-0645-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1209-0645-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "balesme"
+   ],
+   "owner": "",
+   "waveId": "w1209-0645"
+  },
+  {
+   "id": "w1209-0815",
+   "date": "2026-09-12",
+   "start": "08:15",
+   "end": null,
+   "title": "Départ AT402 ×6 (10:40) + AF1277 ×3 — 9 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "9",
+   "type": "transport",
+   "level": "critique",
+   "details": "Afef BEDHIAFI, Karim KOUNDI, Ramzi MAATOUG, Abdou Khadre MBOUP, Nejla MEJRI, Aymen MTIMET, Badara NIANG, Tarek SAHLI, Rama SALL PLANTAGENET. Véhicule : 1 × 17 pl. Mboup, Niang, Sall Plantagenet sur AF1277 (CDG)",
+   "checklist": [
+    {
+     "id": "w1209-0815-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1209-0815-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1209-0815-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "bedhiafi",
+    "koundi",
+    "maatoug",
+    "mboup",
+    "mejri",
+    "mtimet",
+    "niang",
+    "sahli",
+    "sall-plantagenet"
+   ],
+   "owner": "",
+   "waveId": "w1209-0815"
+  },
+  {
+   "id": "w1209-1625",
+   "date": "2026-09-12",
+   "start": "16:25",
+   "end": null,
+   "title": "Départ AT412 — décollage 18:50 — 1 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "March BISHOP. Véhicule : 1 Vito.",
+   "checklist": [
+    {
+     "id": "w1209-1625-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1209-1625-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1209-1625-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "bishop"
+   ],
+   "owner": "",
+   "waveId": "w1209-1625"
+  },
+  {
+   "id": "s1209-nuit",
+   "date": "2026-09-12",
+   "start": "18:00",
+   "end": null,
+   "title": "Nuit 12→13 : 2 chambres",
+   "lieu": "Radisson Blu",
+   "effectif": "2",
+   "type": "orga",
+   "level": "normal",
+   "details": "Mavungu, Queron. ⚠️ La fiche fonction V5 indique 1 chambre — à aligner avec l'hôtel.",
+   "checklist": [],
+   "persons": [
+    "mavungu",
+    "queron"
+   ],
+   "owner": "",
+   "aConfirmer": true
+  },
+  {
+   "id": "w1309-1555",
+   "date": "2026-09-13",
+   "start": "15:55",
+   "end": null,
+   "title": "Départ AT412R 18:20 / AF1877 18:55 — 2 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "2",
+   "type": "transport",
+   "level": "critique",
+   "details": "Gervais MAVUNGU, Thierry QUERON. Véhicule : 1 Vito combiné.",
+   "checklist": [
+    {
+     "id": "w1309-1555-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1309-1555-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1309-1555-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "mavungu",
+    "queron"
+   ],
+   "owner": "",
+   "waveId": "w1309-1555"
+  }
+ ]
+}

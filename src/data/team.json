@@ -1,0 +1,89 @@
+{
+ "version": "V1.0 — 03/09/2026",
+ "updatedAt": "2026-09-03T22:00:00+01:00",
+ "membres": [
+  "Mehdi",
+  "Mouad",
+  "Eva",
+  "Farid"
+ ],
+ "affectations": [],
+ "moments": [
+  {
+   "sequenceId": "w0709-1750",
+   "label": "Accueil aéroport 07/09 (17:50 + 18:10)"
+  },
+  {
+   "sequenceId": "w0809-1750",
+   "label": "Accueil aéroport 08/09 — vagues (09:35 → 23:15)"
+  },
+  {
+   "sequenceId": "s0909-accueil",
+   "label": "Bureau d'accueil 09/09 08:30"
+  },
+  {
+   "sequenceId": "s0909-setup",
+   "label": "Setup Diaffa 18:00"
+  },
+  {
+   "sequenceId": "p0909-2000",
+   "label": "Transfert Diaffa 20:00 + PM roll-up entrée + PM prises de parole"
+  },
+  {
+   "sequenceId": "p0909-2300",
+   "label": "Retour Diaffa 23:00"
+  },
+  {
+   "sequenceId": "w1009-0710",
+   "label": "Départs 10/09 matin"
+  },
+  {
+   "sequenceId": "p1009-1215",
+   "label": "Transfert Grand Bazar 12:15"
+  },
+  {
+   "sequenceId": "p1009-1430",
+   "label": "Navette 14:30 (liste des 18)"
+  },
+  {
+   "sequenceId": "s1009-express",
+   "label": "Marrakech Express (suivi)"
+  },
+  {
+   "sequenceId": "p1009-1730",
+   "label": "Retour 17:30"
+  },
+  {
+   "sequenceId": "s1009-setup",
+   "label": "Setup Rôtisserie 18:30 + PM entrée"
+  },
+  {
+   "sequenceId": "w1109-0345",
+   "label": "Départs nuit 11/09 03:45"
+  },
+  {
+   "sequenceId": "s1109-checkout",
+   "label": "Bagagerie 11/09 08:00"
+  },
+  {
+   "sequenceId": "s1109-bagages",
+   "label": "Chargement 11:15"
+  },
+  {
+   "sequenceId": "p1109-1145",
+   "label": "Transfert Beldi 11:45"
+  },
+  {
+   "sequenceId": "w1109-1335",
+   "label": "Navette 13:35 (16 pax, H-2)"
+  },
+  {
+   "sequenceId": "w1109-1400",
+   "label": "Navettes 14:00 / 15:00 / 15:55 / 16:25"
+  },
+  {
+   "sequenceId": "w1209-0345",
+   "label": "Départs 12/09 & 13/09"
+  }
+ ]
+}

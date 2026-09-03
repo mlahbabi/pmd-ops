@@ -1,0 +1,201 @@
+{
+ "version": "V1.0 — 03/09/2026",
+ "updatedAt": "2026-09-03T22:00:00+01:00",
+ "items": [
+  {
+   "id": "radisson",
+   "nom": "Radisson Blu Marrakech Carré Eden",
+   "adresse": "166-176 avenue Mohamed V, Guéliz, Marrakech",
+   "tel": "+212525077000",
+   "contacts": [
+    "Fatima Zahra Elbahri — M&E",
+    "Rachid Oubassou — Direction",
+    "Yassir Badaa / Lamia Elghazi — Réservations"
+   ],
+   "acces": "Dépose bus devant l'hôtel (parking + voiturier pour les rotations les 09, 10 et 11/09).",
+   "quoi": [
+    "Hébergement : chambres Supérieures single BB, 199 nuitées, 4 sur-classements suite (dont Boisselier)",
+    "Plénière (cabaret 6 pers., sono 2 fixes + 2 HF, VP + écran) + 3 salles de sous-commission",
+    "Salle Gingembre : réunion privée Boisselier 10/09 12:00–13:30",
+    "Petite salle : atelier 10 pax 10/09 14:30–18:00",
+    "Restaurant Lila : dîner J1 (53) et déjeuner J2 (62)",
+    "Bagagerie dédiée le 11/09 dès 08:00, chargement bus 11:15"
+   ],
+   "setup": [
+    "08/09 17:00–19:00 : signalétique + tests techniques plénière",
+    "09/09 08:30 : bureau d'accueil / enregistrement à l'entrée de la plénière",
+    "Roll-ups Welcome (entrée hôtel), Réunion (plénière), Générique"
+   ],
+   "jours": [
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13"
+   ]
+  },
+  {
+   "id": "diaffa",
+   "nom": "Dar Diaffa",
+   "adresse": "1 rue Jbel Lakhdar, Médina, Marrakech",
+   "tel": "+212524386898",
+   "tel2": "+212665633090",
+   "email": "restaurantdiaffa@gmail.com",
+   "contacts": [
+    "Imane Rmili — propriétaire (Groupe Rmili)"
+   ],
+   "acces": "Dépose des 4 minibus rue Jbel Lakhdar, puis à pied.",
+   "quoi": [
+    "Dîner J2 mercredi 09/09 — 65 convives, 8 tables",
+    "Rooftop vin & bière 20:30 (double vue Koutoubia) puis passage à table",
+    "4 prises de parole ~15 min (Bellefqih + 3 invités), micro HF Badr",
+    "Musique live + spectacle"
+   ],
+   "setup": [
+    "18:00 : roll-up plan de table à l'entrée + PM MRCO",
+    "Prismes n° de table ×8 en hauteur",
+    "Menus-marque-place ×65",
+    "Colonnes son + 2 micros HF (Badr Khyat) — Diaffa n'a rien à louer"
+   ],
+   "plan": "diaffa",
+   "jours": [
+    "2026-09-09"
+   ]
+  },
+  {
+   "id": "grand-bazar",
+   "nom": "Le Grand Bazar",
+   "adresse": "Médina, Marrakech — point de RDV exact ⚠️ à confirmer",
+   "email": "com.legrandbazardemarrakech@gmail.com",
+   "contacts": [
+    "Fabien"
+   ],
+   "acces": "Aller groupé 12:15 depuis le Radisson (4 × 17 pl).",
+   "quoi": [
+    "Déjeuner J3 jeudi 10/09 — 59 pax",
+    "Brief + constitution des équipes Marrakech Express 14:20",
+    "Navette retour anticipé 14:30 (18 pax)"
+   ],
+   "setup": [
+    "Liste nominative des 18 du retour 14:30 à remettre sur site"
+   ],
+   "jours": [
+    "2026-09-10"
+   ],
+   "aConfirmer": true
+  },
+  {
+   "id": "dar-essalam",
+   "nom": "Riad Dar Essalam",
+   "adresse": "Médina, Marrakech — adresse exacte ⚠️ à confirmer (EVO)",
+   "contacts": [
+    "Driss Alaoui — EVO"
+   ],
+   "acces": "Fin du parcours Marrakech Express (~16:45). Retour 17:30 en 3 × 17 pl.",
+   "quoi": [
+    "Thé à la menthe + annonce des scores / trophée",
+    "Fin ~17:10"
+   ],
+   "setup": [],
+   "jours": [
+    "2026-09-10"
+   ],
+   "aConfirmer": true
+  },
+  {
+   "id": "rotisserie",
+   "nom": "La Rôtisserie de la Paix",
+   "adresse": "68 rue Yougoslavie, Guéliz, Marrakech",
+   "tel": "+212653847421",
+   "email": "reservations@rotisseriedelapaix.com",
+   "contacts": [
+    "Fatima Zahra — commercial",
+    "Khalil — opérationnel",
+    "Imane Rmili — propriétaire"
+   ],
+   "acces": "À pied depuis le Radisson — aucun véhicule.",
+   "quoi": [
+    "Dîner J3 jeudi 10/09 — 59 convives, 6 tables de 10",
+    "DJ Badr Khyat",
+    "2 points de bar hors forfait (paiement individuel) : vin & bière près des tables, bar spiritueux"
+   ],
+   "setup": [
+    "18:30 : roll-up plan de table + PM MRCO à l'entrée",
+    "Prismes ×6",
+    "Menus-marque-place ×59",
+    "DJ + son + micro HF Badr"
+   ],
+   "plan": "rotisserie",
+   "jours": [
+    "2026-09-10"
+   ]
+  },
+  {
+   "id": "beldi",
+   "nom": "Beldi Country Club",
+   "adresse": "Km 6 route du Barrage, Cherifia, Marrakech",
+   "tel": "+212524383950",
+   "email": "contact@beldicountryclub.com",
+   "contacts": [
+    "Oumaima",
+    "Loubna — loubna@beldicountryclub.com"
+   ],
+   "acces": "Transfert 11:45 depuis le Radisson AVEC BAGAGES (4 × 17 pl). Beldi → RAK ~25 min.",
+   "quoi": [
+    "Déjeuner J4 vendredi 11/09 — 50 confirmés (dispatch ~52 ⚠️)",
+    "Service dès 12:15–12:30, priorité aux 16 de la navette 13:35",
+    "Espace calme + wifi jusqu'à 16:25",
+    "5 navettes vers l'aéroport : 13:35, 14:00, 15:00, 15:55, 16:25"
+   ],
+   "setup": [
+    "Bagages restent dans les minibus sur le parking"
+   ],
+   "jours": [
+    "2026-09-11"
+   ]
+  },
+  {
+   "id": "rak",
+   "nom": "Aéroport Marrakech Ménara (RAK)",
+   "adresse": "Marrakech Ménara",
+   "acces": "Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
+   "quoi": [
+    "Arrivées : accueil zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'atterrissage, sortie passagers +30 à 40 min",
+    "Départs : dépose au minimum 2h00 avant décollage (H-2)"
+   ],
+   "setup": [
+    "Pancartes aéroport A3 ×6"
+   ],
+   "jours": [
+    "2026-09-03",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13"
+   ]
+  }
+ ],
+ "diners": [
+  {
+   "id": "diaffa",
+   "nom": "Dîner Dar Diaffa",
+   "date": "2026-09-09",
+   "tables": 8,
+   "champTable": "diaffa_table",
+   "champPlace": "diaffa_place"
+  },
+  {
+   "id": "rotisserie",
+   "nom": "Dîner Rôtisserie de la Paix",
+   "date": "2026-09-10",
+   "tables": 6,
+   "champTable": "rotisserie_table",
+   "champPlace": "rotisserie_place"
+  }
+ ]
+}

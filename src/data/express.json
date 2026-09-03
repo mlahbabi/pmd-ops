@@ -1,0 +1,111 @@
+{
+ "version": "V1.0 — 03/09/2026",
+ "updatedAt": "2026-09-03T22:00:00+01:00",
+ "nom": "Marrakech Express",
+ "date": "2026-09-10",
+ "prestataire": "EVO / Evolution 2 — Driss, Andréa, Rhita (facilitateurs terrain)",
+ "depart": "Le Grand Bazar (Médina) — brief 14:20, lancement 14:50",
+ "arrivee": "Riad Dar Essalam — ~16:45, thé + scores, fin ~17:10, retour 17:30",
+ "equipes": [
+  {
+   "n": 1,
+   "membres": [
+    "koudou",
+    "madre",
+    "pierron",
+    "sahli",
+    "sall-plantagenet",
+    "tayaa"
+   ]
+  },
+  {
+   "n": 2,
+   "membres": [
+    "bencheqroun",
+    "foundoux",
+    "mejri",
+    "n-goran",
+    "soppo-priso",
+    "thiaw"
+   ]
+  },
+  {
+   "n": 3,
+   "membres": [
+    "akpatigbe",
+    "chaste",
+    "djibo",
+    "maatoug",
+    "watat",
+    "zouari"
+   ]
+  },
+  {
+   "n": 4,
+   "membres": [
+    "alaoui",
+    "ibraima",
+    "leyrit",
+    "meizou",
+    "mtimet",
+    "nzoimbengene"
+   ]
+  },
+  {
+   "n": 5,
+   "membres": [
+    "balesme",
+    "bedhiafi",
+    "bernardini",
+    "faouzi",
+    "guinot",
+    "n-guessan"
+   ]
+  },
+  {
+   "n": 6,
+   "membres": [
+    "bellefqih",
+    "bishop",
+    "jebira",
+    "mavungu",
+    "mboup",
+    "nadem"
+   ]
+  },
+  {
+   "n": 7,
+   "membres": [
+    "bledou",
+    "hassouni",
+    "koundi",
+    "ndoye",
+    "nguema"
+   ]
+  }
+ ],
+ "retour1430": [
+  "batnini",
+  "belemqadem",
+  "bourtourault",
+  "chaghil-brasseur",
+  "de-beauvoir",
+  "depouilly",
+  "dupont-noel",
+  "elmaleh",
+  "gourd",
+  "jacquart",
+  "kopp",
+  "lucas",
+  "malouche",
+  "niang",
+  "queron",
+  "righi",
+  "sayam",
+  "tonka"
+ ],
+ "notes": [
+  "41 pax, 7 équipes (6·6·6·6·6·6·5). Commande EVO passée à 43 → aligner à 41 ⚠️.",
+  "Navette retour anticipé 14:30 : 18 pax (liste figée le 03/09) — 1 × 17 pl + 1 Vito."
+ ]
+}
