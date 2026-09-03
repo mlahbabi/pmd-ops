@@ -66,9 +66,11 @@ GitHub → repo `mlahbabi/pmd-ops` → Settings → Secrets and variables → Ac
 
 Elles sont injectées au build par `.github/workflows/deploy.yml`. Rien n'est commité dans le code.
 
-## Activer l'état partagé en temps réel (Supabase)
+## État partagé en temps réel (Supabase)
 
-Tant que Supabase n'est pas configuré, l'app tourne en **mode local** : les coches et notes restent sur chaque téléphone (bandeau en haut). Pour partager entre les 4 téléphones :
+**Configuré le 03/09/2026** : projet Supabase `pmd-ops` (organisation MRCO, région Francfort, réf. `acbxjftkudkkxfjuhfuy`), tables créées avec `supabase/schema.sql`, clé publique dans les secrets GitHub. Les 4 téléphones partagent les mêmes coches et le même fil terrain. Tableau de bord : https://supabase.com/dashboard/project/acbxjftkudkkxfjuhfuy (compte GitHub `mlahbabi`).
+
+Si l'app affiche le bandeau **« mode local »**, c'est que les variables Supabase manquent au build. Pour (re)configurer :
 
 1. Créer un projet gratuit sur https://supabase.com (région Europe).
 2. SQL Editor → coller `supabase/schema.sql` → Run.
