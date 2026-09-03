@@ -24,9 +24,9 @@ export default function Now() {
   const pinned = future.filter(x => x.st.pinned)
   const upcoming = [...pinned, ...future.filter(x => !x.st.pinned)].slice(0, Math.max(3, pinned.length))
   const critToday = daySeqs.filter(s => s.level === 'critique')
-  const pendingDue = pending.filter(p => !store.checks[`pending:${p.id}`]?.done && (p.echeance <= today || p.echeance === 'sur place'))
+  const pendingDue = pending.filter(p => !store.checks[`pending:${p.id}`]?.done && (p.echeance.includes('-') ? p.echeance <= today : today >= '2026-09-09'))
   const nextDay = DAYS.find(d => d > today)
-  const nextSeqs = !daySeqs.length && nextDay ? sequences.filter(s => s.date === nextDay).slice(0, 3) : []
+  const nextSeqs = !future.length && !enCours.length && nextDay ? sequences.filter(s => s.date === nextDay).slice(0, 3) : []
 
   // Vibration à T-15 (une fois par séquence)
   const vibrated = useRef(new Set<string>())
@@ -88,7 +88,7 @@ export default function Now() {
       </Section>
 
       <Section title="Alertes du jour">
-        {critToday.length || pendingDue.length ? (
+        {critToday.length ? (
           <div className="card divide-y divide-line">
             {critToday.map(s => {
               const x = statuses.find(y => y.s.id === s.id)!
