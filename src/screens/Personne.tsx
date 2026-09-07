@@ -3,10 +3,11 @@ import { personById, fullName, civ, waveById, diners, isPlaced, express, pending
 import type { Leg } from '../lib/types'
 import { Badge, CheckRow, Empty, Section, VipBadge, Warn } from '../components/ui'
 import { useApp } from '../context'
+import { fr24Url } from '../lib/flights'
 
 function LegView({ leg, kind }: { leg?: Leg; kind: 'Aller' | 'Retour' }) {
   if (!leg) return <div className="text-sm text-warm">{kind} : non communiqué <Warn /></div>
-  if (leg.mode === 'vol') return <div className="text-sm"><b>{kind}</b> · {leg.date} {leg.heure} · <b>{leg.vol}</b> · {kind === 'Aller' ? `depuis ${leg.de}` : `vers ${leg.vers}`} · {leg.cie}</div>
+  if (leg.mode === 'vol') return <div className="text-sm"><b>{kind}</b> · {leg.date} {leg.heure} · <b>{leg.vol}</b> · {kind === 'Aller' ? `depuis ${leg.de}` : `vers ${leg.vers}`} · {leg.cie}{leg.vol && <a href={fr24Url(leg.vol)} target="_blank" rel="noreferrer" className="ml-2 text-lavender underline text-xs">✈️ suivre</a>}</div>
   if (leg.mode === 'non communiqué') return <div className="text-sm"><b>{kind}</b> · {leg.date || ''} non communiqué <Warn /></div>
   return <div className="text-sm"><b>{kind}</b> · {leg.date || ''} · {leg.mode}</div>
 }

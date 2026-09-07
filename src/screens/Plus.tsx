@@ -5,6 +5,7 @@ import { contactsFile, signaletique, signaletiqueFile, team, sequenceById, pendi
 import { ddmm, fmtIso } from '../lib/time'
 import { IS_DEV_CODE, revokeAccess } from '../lib/auth'
 import { clearLocalState, refresh } from '../lib/store'
+import { AIRLABS_LS, hasLiveKey, setAirlabsKey } from '../lib/flights'
 import { Badge, CheckRow, Empty, PageTitle, PersonChip, Section, TelButtons, VipBadge, Warn } from '../components/ui'
 
 const Back = () => { const nav = useNavigate(); return <button type="button" onClick={() => nav('/plus')} className="text-sm text-lavender mb-2">← Plus</button> }
@@ -172,6 +173,8 @@ export function Reglages() {
   const { user, setUser, store } = useApp()
   const nav = useNavigate()
   const [busy, setBusy] = useState(false)
+  const [live, setLive] = useState(hasLiveKey())
+  const [keyInput, setKeyInput] = useState(() => { try { return localStorage.getItem(AIRLABS_LS) || '' } catch { return '' } })
   async function viderCache() {
     setBusy(true)
     try {
@@ -194,6 +197,16 @@ export function Reglages() {
           <div>Mode : <b>{store.mode === 'supabase' ? 'Supabase (partagé en temps réel)' : 'local (cet appareil uniquement)'}</b> · {store.online ? 'en ligne' : 'hors ligne'}{store.queued ? ` · ${store.queued} en attente` : ''}</div>
           {store.mode === 'supabase' && <button type="button" className="btn" onClick={() => void refresh()} disabled={store.syncing}>{store.syncing ? 'Synchro…' : '🔄 Resynchroniser'}</button>}
           {store.mode === 'local' && <div className="text-xs text-warm">Pour partager les coches entre les 4 téléphones : créer le projet Supabase, exécuter supabase/schema.sql, renseigner les secrets GitHub (voir README).</div>}
+        </div>
+      </Section>
+      <Section title="Suivi des vols">
+        <div className="card p-3 space-y-2 text-sm">
+          <div>Liens Flightradar24 sur chaque vague et chaque fiche (aucune donnée chargée). Statut automatique : <b>{live ? 'activé sur cet appareil' : 'désactivé'}</b>.</div>
+          <form className="flex gap-2" onSubmit={e => { e.preventDefault(); setAirlabsKey(keyInput); setLive(hasLiveKey()) }}>
+            <input className="input min-h-10 text-sm flex-1" placeholder="Clé AirLabs (facultatif)" value={keyInput} onChange={e => setKeyInput(e.target.value)} />
+            <button className="btn min-h-10 px-3 text-sm">Enregistrer</button>
+          </form>
+          <div className="text-xs text-warm">Clé gratuite sur airlabs.co, stockée uniquement sur ce téléphone. Sans clé, les liens Flightradar24 suffisent.</div>
         </div>
       </Section>
       <Section title="Version">
