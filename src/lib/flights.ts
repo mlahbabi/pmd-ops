@@ -14,19 +14,22 @@ export const fr24Url = (code: string) => `https://www.flightradar24.com/data/fli
 export const flightAwareUrl = (code: string) => `https://www.flightaware.com/live/flight/${code.toUpperCase()}`
 
 export type FlightStatus = { code: string; status: string; depSched?: string; depActual?: string; arrSched?: string; arrEstimated?: string; delay?: number; fetchedAt: number }
-// Clé : variable de build VITE_AIRLABS_KEY, ou saisie sur l'appareil dans Plus → Réglages (stockée localement).
+// Clé, par ordre de priorité : saisie sur l'appareil (Plus → Réglages), configuration partagée Supabase (table config,
+// clé « airlabs_key » → automatique sur tous les téléphones), variable de build VITE_AIRLABS_KEY.
+import { getState } from './store'
 export const AIRLABS_LS = 'pmd:airlabs'
 const envKey = (import.meta.env.VITE_AIRLABS_KEY as string | undefined) || ''
-const readKey = () => { try { return (localStorage.getItem(AIRLABS_LS) || envKey).trim() } catch { return envKey } }
+const readKey = () => { try { return (localStorage.getItem(AIRLABS_LS) || getState().config.airlabs_key || envKey).trim() } catch { return envKey } }
 let KEY = readKey()
 export const setAirlabsKey = (k: string) => { try { if (k.trim()) localStorage.setItem(AIRLABS_LS, k.trim()); else localStorage.removeItem(AIRLABS_LS) } catch { /* ignore */ } KEY = readKey(); cache.clear() }
-export const hasLiveKey = () => !!KEY
+export const hasLiveKey = () => { KEY = readKey(); return !!KEY }
 export const LIVE_ENABLED = !!KEY
 const cache = new Map<string, FlightStatus | null>()
 const TTL = 10 * 60_000
 const hm = (s?: string | null) => (s ? s.slice(11, 16) : undefined)
 
-async function fetchStatus(code: string): Promise<FlightStatus | null> {
+export async function fetchStatus(code: string): Promise<FlightStatus | null> {
+  KEY = readKey()
   const hit = cache.get(code)
   if (hit !== undefined && hit && Date.now() - hit.fetchedAt < TTL) return hit
   try {

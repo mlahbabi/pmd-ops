@@ -5,7 +5,7 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 export type Check = { item_id: string; done: boolean; done_by: string; done_at: string }
 export type NoteLevel = 'info' | 'alerte' | 'incident'
 export type Note = { id: string; created_at: string; author: string; text: string; item_id: string | null; level: NoteLevel }
-export type StoreState = { checks: Record<string, Check>; notes: Note[]; mode: 'supabase' | 'local'; online: boolean; syncing: boolean; queued: number; error: string | null }
+export type StoreState = { checks: Record<string, Check>; notes: Note[]; mode: 'supabase' | 'local'; online: boolean; syncing: boolean; queued: number; error: string | null; config: Record<string, string> }
 type Op = { kind: 'check'; check: Check } | { kind: 'note'; note: Note }
 
 const URL = import.meta.env.VITE_SUPABASE_URL as string | undefined
@@ -24,6 +24,7 @@ let state: StoreState = {
   syncing: false,
   queued: queue.length,
   error: null,
+  config: load<Record<string, string>>('pmd:config', {}),
 }
 const listeners = new Set<() => void>()
 const emit = () => listeners.forEach(l => l())
@@ -65,6 +66,9 @@ export async function refresh() {
     if (e2) throw e2
     const notes = mergeNotes(state.notes, ns as Note[])
     set({ checks, notes, error: null }); save(LS.checks, checks); save(LS.notes, notes)
+    // Configuration partagée (ex. clé de suivi des vols) : table config(key, value), facultative
+    const { data: cfg } = await sb.from('config').select('key,value')
+    if (cfg) { const config: Record<string, string> = {}; (cfg as { key: string; value: string }[]).forEach(c => { config[c.key] = c.value }); set({ config }); save('pmd:config', config) }
   } catch (e) {
     set({ error: 'Synchro Supabase impossible — données locales affichées' })
   } finally { set({ syncing: false }) }

@@ -4,8 +4,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ckId, useApp } from '../context'
-import { sequencesOfDay } from '../lib/data'
-import { fmtMins, mParts, seqStatus } from '../lib/time'
+import { sequencesOfDay, waves } from '../lib/data'
+import { fmtMins, mParts, seqStatus, toDate } from '../lib/time'
+import { fetchStatus, flightCodes, hasLiveKey, statusLabel } from '../lib/flights'
 
 const TTL = 20_000
 type Toast = { id: string; title: string; body: string; tone: 'red' | 'orange' | 'yellow' | 'lav'; to?: string; at: number }
@@ -43,6 +44,32 @@ export default function Toasts() {
       push({ id: key, tone: st.badge === 'MAINTENANT' || st.badge === 'T-60' ? 'red' : st.badge === 'T-15' ? 'orange' : 'yellow', title: `${s.start} · ${label}`, body: `${s.title}${s.lieu ? ' — ' + s.lieu : ''}`, to: '/programme' })
     })
   }, [now, store.checks, simulated]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Vols du jour : statut automatique (si clé configurée), toutes les 10 min dans la fenêtre [-3h ; +1h] autour de l'atterrissage / du décollage.
+  const flightBucket = useRef(new Map<string, string>())
+  useEffect(() => {
+    if (!hasLiveKey()) return
+    const today = mParts(now).date
+    const due = waves.filter(w => w.date === today && w.type !== 'programme').filter(w => { const d = toDate(w.date, w.heure).getTime() - now.getTime(); return d > -60 * 60000 && d < 3 * 3600_000 })
+    let stop = false
+    const run = async () => {
+      for (const w of due) {
+        for (const code of flightCodes(w.vol)) {
+          const st = await fetchStatus(code)
+          if (stop || !st) continue
+          const delayed = st.status === 'cancelled' || (st.delay || 0) >= 10
+          if (!delayed) continue
+          const bucket = st.status === 'cancelled' ? 'annule' : String(Math.round((st.delay || 0) / 15))
+          if (flightBucket.current.get(code) === bucket) continue
+          flightBucket.current.set(code, bucket)
+          const eta = st.arrEstimated || st.depActual
+          push({ id: `vol:${code}:${bucket}`, tone: 'red', title: `✈️ ${code} · ${statusLabel(st)}${st.delay ? ` +${st.delay} min` : ''}`, body: `${w.type === 'arrivee' ? 'Arrivée' : 'Départ'} prévu ${w.heure}${eta ? ` → estimé ${eta}` : ''} — ${w.vol}`, to: `/transport?d=${w.date}#${w.id}` })
+        }
+      }
+    }
+    void run(); const t = setInterval(() => void run(), 10 * 60_000)
+    return () => { stop = true; clearInterval(t) }
+  }, [mParts(now).date, Math.floor(now.getTime() / (10 * 60_000))]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // Notes des autres (alerte / incident)
   useEffect(() => {
