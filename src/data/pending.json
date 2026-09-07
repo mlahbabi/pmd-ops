@@ -1,6 +1,6 @@
 {
- "version": "V2.5 — 07/09/2026",
- "updatedAt": "2026-09-07T12:00:00+01:00",
+ "version": "V2.6 — 07/09/2026",
+ "updatedAt": "2026-09-07T14:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -33,7 +33,7 @@
   },
   {
    "id": "pd20",
-   "sujet": "Dispatch V5 à transmettre à Simohamed : AUJOURD'HUI Mavungu AT639 16:40 + Tonka IB1853 17:05 (Vito en place à 16:40, départ groupé ~17:45), pas de Vito à 17:50 ; Elmaleh sans transfert le 08/09 (retour 11/09 07:50) ; Malouche en voiture ; Bedhiafi annulée ; Tonka départ 11/09",
+   "sujet": "Dispatch V5 à transmettre à Simohamed : AUJOURD'HUI Mavungu AT639 16:40 (Vito en place à 16:40, départ direct) + Tonka AT403 23:25 depuis Casa (Vito, late check-in), pas de Vito à 17:50 ; Elmaleh sans transfert le 08/09 (retour 11/09 07:50) ; Malouche en voiture ; Bedhiafi annulée ; Tonka départ 11/09",
    "responsable": "Mehdi / Farid",
    "echeance": "2026-09-07",
    "level": "alerte",

@@ -1,6 +1,6 @@
 {
- "version": "V2.5 — 07/09/2026",
- "updatedAt": "2026-09-07T12:00:00+01:00",
+ "version": "V2.6 — 07/09/2026",
+ "updatedAt": "2026-09-07T14:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -2606,7 +2606,7 @@
    "equipe_tb": 7,
    "rotisserie_place": 4,
    "id": "tonka",
-   "note_app": "Changement urgent (06/09) : arrive le 07/09 par IB1853 depuis Madrid à 17:05 ; reste une nuit de plus, repart le 11/09 par AF1877 18:55. Placé le 07/09 : Rôtisserie T5/P4, équipe 7 du Marrakech Express (le fichier le laisse aussi dans la navette 14h30 ⚠️).",
+   "note_app": "Nouveau changement (07/09 après-midi) : arrive le 07/09 à 23:25 par AT403 depuis Casablanca (plus IB1853 17:05) — late check-in. Reste une nuit de plus, repart le 11/09 par AF1877 18:55. Placé : Rôtisserie T5/P4, équipe 7 du Marrakech Express (le fichier le laisse aussi dans la navette 14h30 ⚠️).",
    "a_confirmer": [
     "Fichier client du 08/09 contradictoire : équipe 7 du Marrakech Express ET navette retour 14h30 — à trancher"
    ],
@@ -2616,10 +2616,10 @@
    "pays": "RD Congo via Paris",
    "arr": {
     "date": "07/09",
-    "heure": "17:05",
-    "vol": "IB1853",
-    "de": "Madrid",
-    "cie": "Iberia",
+    "heure": "23:25",
+    "vol": "AT403",
+    "de": "Casablanca",
+    "cie": "Royal Air Maroc",
     "mode": "vol"
    },
    "dep": {
@@ -2631,7 +2631,7 @@
     "mode": "vol"
    },
    "transferts": [
-    "w0709-1705",
+    "w0709-2325",
     "w1109-1625"
    ]
   },

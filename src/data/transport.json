@@ -1,6 +1,6 @@
 {
- "version": "V2.5 — 07/09/2026",
- "updatedAt": "2026-09-07T12:00:00+01:00",
+ "version": "V2.6 — 07/09/2026",
+ "updatedAt": "2026-09-07T14:00:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -35,27 +35,12 @@
    "date": "2026-09-07",
    "heure": "16:40",
    "type": "arrivee",
-   "vol": "AT639 (via Casa)",
+   "vol": "AT639 (Paris)",
    "pax": [
     "mavungu"
    ],
    "vehicule": "1 Vito — Farid",
-   "note": "NOUVEAU (07/09) : vols depuis Kinshasa annulés, Mavungu n'est plus sur AT413M 18:10. Farid + chauffeur en place à 16:40, puis attente de IB1853 17:05 — départ groupé ~17:45. À transmettre à Simohamed.",
-   "origine": "Aéroport RAK",
-   "destination": "Radisson Blu",
-   "level": "critique"
-  },
-  {
-   "id": "w0709-1705",
-   "date": "2026-09-07",
-   "heure": "17:05",
-   "type": "arrivee",
-   "vol": "IB1853 (Madrid — Iberia)",
-   "pax": [
-    "tonka"
-   ],
-   "vehicule": "Même Vito — Farid",
-   "note": "NOUVEAU (06/09) : Tonka n'est plus sur AF1876. Départ groupé avec Mavungu ~17:45 vers le Radisson.",
+   "note": "NOUVEAU (07/09) : vols depuis Kinshasa annulés, Mavungu n'est plus sur AT413M 18:10. Farid + chauffeur en place à 16:40, départ direct vers le Radisson dès sortie (~17:20). À transmettre à Simohamed.",
    "origine": "Aéroport RAK",
    "destination": "Radisson Blu",
    "level": "critique"
@@ -75,6 +60,21 @@
    "origine": "Aéroport RAK",
    "destination": "Radisson Blu",
    "level": "important"
+  },
+  {
+   "id": "w0709-2325",
+   "date": "2026-09-07",
+   "heure": "23:25",
+   "type": "arrivee",
+   "vol": "AT403 (Casa)",
+   "pax": [
+    "tonka"
+   ],
+   "vehicule": "1 Vito — Farid",
+   "note": "NOUVEAU (07/09 après-midi) : Tonka n'est plus sur IB1853 17:05, il arrive de Casablanca à 23:25. Late check-in au Radisson (~00:15). À transmettre à Simohamed.",
+   "origine": "Aéroport RAK",
+   "destination": "Radisson Blu",
+   "level": "critique"
   },
   {
    "id": "w0809-0935",
@@ -679,8 +679,8 @@
   {
    "date": "2026-09-07",
    "pax": "4",
-   "mouvements": "1 course combinée Vito (16:40 AT639 + 17:05 IB1853, Farid) + Clémence & Hajer 17:50 avec le véhicule de Mehdi (Mehdi + Mouad)",
-   "flotte": "1 Vito + véhicule Mehdi"
+   "mouvements": "2 courses Vito (16:40 AT639 Mavungu ; 23:25 AT403 Tonka — Farid) + Clémence & Hajer 17:50 avec le véhicule de Mehdi (Mehdi + Mouad)",
+   "flotte": "1 Vito (2 courses) + véhicule Mehdi"
   },
   {
    "date": "2026-09-08",
