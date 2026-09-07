@@ -1,6 +1,6 @@
 {
- "version": "V2.1 — 07/09/2026",
- "updatedAt": "2026-09-07T09:00:00+01:00",
+ "version": "V2.2 — 07/09/2026",
+ "updatedAt": "2026-09-07T09:30:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -1659,9 +1659,9 @@
    "pays": "RD Congo",
    "arr": {
     "date": "07/09",
-    "heure": "18:10",
-    "vol": "AT413M",
-    "de": "Kinshasa",
+    "heure": "16:40",
+    "vol": "AT639",
+    "de": "via Casablanca (vols Kinshasa annulés)",
     "cie": "Royal Air Maroc",
     "mode": "vol"
    },
@@ -1673,8 +1673,9 @@
     "cie": "Royal Air Maroc",
     "mode": "vol"
    },
+   "note_app": "Changement du 07/09 (Mehdi) : arrive aujourd'hui à 16:40 par AT639 au lieu de AT413M 18:10, en raison d'une annulation des vols depuis Kinshasa. Départ 13/09 AT412R inchangé.",
    "transferts": [
-    "w0709-1810",
+    "w0709-1640",
     "w1309-1555"
    ]
   },

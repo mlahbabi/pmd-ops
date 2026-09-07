@@ -1,6 +1,6 @@
 {
- "version": "V2.1 — 07/09/2026",
- "updatedAt": "2026-09-07T09:00:00+01:00",
+ "version": "V2.2 — 07/09/2026",
+ "updatedAt": "2026-09-07T09:30:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -111,26 +111,31 @@
    "effectif": "",
    "type": "orga",
    "level": "critique",
-   "details": "Tonka arrive AUJOURD'HUI à 17:05 par IB1853 (Madrid) et non plus par AF1876 17:50. Elmaleh le 08/09 à 13:40 (TO9800) et départ 11/09 AF1277 10:40. Malouche en voiture (plus sur AF1776). Bedhiafi annulée (AT413 18:10 le 08/09, AT402 le 12/09). Tonka repart le 11/09 par AF1877 (navette Beldi 16:25) et non le 10/09.",
+   "details": "AUJOURD'HUI : Mavungu arrive à 16:40 par AT639 (vols Kinshasa annulés, plus sur AT413M 18:10) et Tonka à 17:05 par IB1853 (Madrid, plus sur AF1876). Le Vito est en place à 16:40, attend 17:05 puis 17:50, départ groupé ~18:30. Elmaleh le 08/09 à 13:40 (TO9800) et départ 11/09 AF1277 10:40. Malouche en voiture (plus sur AF1776). Bedhiafi annulée (AT413 18:10 le 08/09, AT402 le 12/09). Tonka repart le 11/09 par AF1877 (navette Beldi 16:25) et non le 10/09.",
    "checklist": [
     {
      "id": "s0709-dispatch-c1",
-     "label": "Simohamed informé : Tonka 17:05 IB1853 aujourd'hui"
+     "label": "Simohamed informé : Mavungu 16:40 AT639 aujourd'hui (chauffeur en place à 16:40)"
     },
     {
      "id": "s0709-dispatch-c2",
-     "label": "Simohamed informé : Elmaleh 08/09 13:40 + 11/09 07:50"
+     "label": "Simohamed informé : Tonka 17:05 IB1853 aujourd'hui"
     },
     {
      "id": "s0709-dispatch-c3",
-     "label": "Simohamed informé : Malouche et Bedhiafi retirés"
+     "label": "Simohamed informé : Elmaleh 08/09 13:40 + 11/09 07:50"
     },
     {
      "id": "s0709-dispatch-c4",
+     "label": "Simohamed informé : Malouche et Bedhiafi retirés"
+    },
+    {
+     "id": "s0709-dispatch-c5",
      "label": "Simohamed informé : Tonka départ 11/09 16:25 Beldi, course du 10/09 16:30 annulée"
     }
    ],
    "persons": [
+    "mavungu",
     "tonka",
     "elmaleh",
     "malouche"
@@ -169,6 +174,37 @@
    "owner": ""
   },
   {
+   "id": "w0709-1640",
+   "date": "2026-09-07",
+   "start": "16:40",
+   "end": null,
+   "title": "Arrivée AT639 (via Casa) — 1 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Gervais MAVUNGU. Véhicule : 1 Vito. NOUVEAU (07/09) : vols depuis Kinshasa annulés, Mavungu n'est plus sur AT413M 18:10. Le chauffeur est en place à 16:40, puis attend IB1853 17:05 et AF1876 17:50 — départ groupé ~18:30. À transmettre à Simohamed.",
+   "checklist": [
+    {
+     "id": "w0709-1640-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w0709-1640-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w0709-1640-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "mavungu"
+   ],
+   "owner": "",
+   "waveId": "w0709-1640"
+  },
+  {
    "id": "w0709-1705",
    "date": "2026-09-07",
    "start": "17:05",
@@ -178,7 +214,7 @@
    "effectif": "1",
    "type": "transport",
    "level": "critique",
-   "details": "Tshiamala TONKA. Véhicule : 1 Vito. NOUVEAU (06/09) : Tonka n'est plus sur AF1876. Le Vito attend ensuite AF1876 17:50 puis AT413M 18:10 — départ groupé ~18:50. À transmettre à Simohamed.",
+   "details": "Tshiamala TONKA. Véhicule : Même Vito. NOUVEAU (06/09) : Tonka n'est plus sur AF1876. Le Vito attend ensuite AF1876 17:50 — départ groupé ~18:30.",
    "checklist": [
     {
      "id": "w0709-1705-c1",
@@ -209,7 +245,7 @@
    "effectif": "2",
    "type": "transport",
    "level": "important",
-   "details": "Hajer BATNINI, Clémence PIERRON. Véhicule : Même Vito. Attend le vol de 18:10 — départ groupé ~18:50",
+   "details": "Hajer BATNINI, Clémence PIERRON. Véhicule : Même Vito. Dernière vague du jour — départ groupé ~18:30 avec Mavungu et Tonka (plus d'attente du 18:10)",
    "checklist": [
     {
      "id": "w0709-1750-c1",
@@ -230,37 +266,6 @@
    ],
    "owner": "",
    "waveId": "w0709-1750"
-  },
-  {
-   "id": "w0709-1810",
-   "date": "2026-09-07",
-   "start": "18:10",
-   "end": null,
-   "title": "Arrivée AT413M (Kinshasa via Casa) — 1 pax",
-   "lieu": "Aéroport RAK → Radisson",
-   "effectif": "1",
-   "type": "transport",
-   "level": "important",
-   "details": "Gervais MAVUNGU. Véhicule : Même Vito. Départ groupé ~18:50 avec les vagues de 17:05 et 17:50",
-   "checklist": [
-    {
-     "id": "w0709-1810-c1",
-     "label": "Chauffeur en place"
-    },
-    {
-     "id": "w0709-1810-c2",
-     "label": "Passagers complets"
-    },
-    {
-     "id": "w0709-1810-c3",
-     "label": "Parti"
-    }
-   ],
-   "persons": [
-    "mavungu"
-   ],
-   "owner": "",
-   "waveId": "w0709-1810"
   },
   {
    "id": "s0709-checkin",

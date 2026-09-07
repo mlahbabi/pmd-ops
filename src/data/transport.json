@@ -1,6 +1,6 @@
 {
- "version": "V2.1 — 07/09/2026",
- "updatedAt": "2026-09-07T09:00:00+01:00",
+ "version": "V2.2 — 07/09/2026",
+ "updatedAt": "2026-09-07T09:30:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -31,6 +31,21 @@
    "level": "normal"
   },
   {
+   "id": "w0709-1640",
+   "date": "2026-09-07",
+   "heure": "16:40",
+   "type": "arrivee",
+   "vol": "AT639 (via Casa)",
+   "pax": [
+    "mavungu"
+   ],
+   "vehicule": "1 Vito",
+   "note": "NOUVEAU (07/09) : vols depuis Kinshasa annulés, Mavungu n'est plus sur AT413M 18:10. Le chauffeur est en place à 16:40, puis attend IB1853 17:05 et AF1876 17:50 — départ groupé ~18:30. À transmettre à Simohamed.",
+   "origine": "Aéroport RAK",
+   "destination": "Radisson Blu",
+   "level": "critique"
+  },
+  {
    "id": "w0709-1705",
    "date": "2026-09-07",
    "heure": "17:05",
@@ -39,8 +54,8 @@
    "pax": [
     "tonka"
    ],
-   "vehicule": "1 Vito",
-   "note": "NOUVEAU (06/09) : Tonka n'est plus sur AF1876. Le Vito attend ensuite AF1876 17:50 puis AT413M 18:10 — départ groupé ~18:50. À transmettre à Simohamed.",
+   "vehicule": "Même Vito",
+   "note": "NOUVEAU (06/09) : Tonka n'est plus sur AF1876. Le Vito attend ensuite AF1876 17:50 — départ groupé ~18:30.",
    "origine": "Aéroport RAK",
    "destination": "Radisson Blu",
    "level": "critique"
@@ -56,22 +71,7 @@
     "pierron"
    ],
    "vehicule": "Même Vito",
-   "note": "Attend le vol de 18:10 — départ groupé ~18:50",
-   "origine": "Aéroport RAK",
-   "destination": "Radisson Blu",
-   "level": "important"
-  },
-  {
-   "id": "w0709-1810",
-   "date": "2026-09-07",
-   "heure": "18:10",
-   "type": "arrivee",
-   "vol": "AT413M (Kinshasa via Casa)",
-   "pax": [
-    "mavungu"
-   ],
-   "vehicule": "Même Vito",
-   "note": "Départ groupé ~18:50 avec les vagues de 17:05 et 17:50",
+   "note": "Dernière vague du jour — départ groupé ~18:30 avec Mavungu et Tonka (plus d'attente du 18:10)",
    "origine": "Aéroport RAK",
    "destination": "Radisson Blu",
    "level": "important"
@@ -678,7 +678,7 @@
   {
    "date": "2026-09-07",
    "pax": "4",
-   "mouvements": "1 course combinée (17:05 IB1853 + 17:50 + 18:10)",
+   "mouvements": "1 course combinée (16:40 AT639 + 17:05 IB1853 + 17:50 AF1876)",
    "flotte": "1 Vito"
   },
   {
