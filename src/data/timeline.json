@@ -1,6 +1,6 @@
 {
- "version": "V2.7 — 07/09/2026",
- "updatedAt": "2026-09-07T14:30:00+01:00",
+ "version": "V2.8 — 07/09/2026",
+ "updatedAt": "2026-09-07T20:30:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -379,7 +379,7 @@
    "effectif": "53 chambres",
    "type": "orga",
    "level": "normal",
-   "details": "Chambres Supérieures single, BB. 4 sur-classements suite (dont Boisselier, arrive le 09). Hors dispatch (aucun transfert) : Jacquart (voiture depuis Casa), Queron (voiture perso), N'Goran et Malouche (voiture avec associé marocain), Kopp (autonome via Casa), + 13 arrivées autonomes.",
+   "details": "Chambres Supérieures single, BB. 4 sur-classements suite (dont Boisselier, arrive le 09). Arrivées sans transfert MRCO demain (12) : Jacquart (voiture depuis Casa avec un associé), Queron (voiture perso), N'Goran et Malouche (voiture avec un associé marocain), Alaoui et Jebira (autonomes via Casa), Bencheqroun, Chaste, Hassouni, Leyrit, Nadem, Tayaa (voiture personnelle depuis Casablanca).",
    "checklist": [
     {
      "id": "s0809-checkin-c1",
@@ -390,7 +390,20 @@
      "label": "Late check-in 23:15 annoncé à la réception (2 pax)"
     }
    ],
-   "persons": [],
+   "persons": [
+    "jacquart",
+    "queron",
+    "n-goran",
+    "malouche",
+    "alaoui",
+    "jebira",
+    "bencheqroun",
+    "chaste",
+    "hassouni",
+    "leyrit",
+    "nadem",
+    "tayaa"
+   ],
    "owner": ""
   },
   {
