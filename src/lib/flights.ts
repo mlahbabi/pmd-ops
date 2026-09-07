@@ -13,7 +13,14 @@ export function flightCodes(label: string | null | undefined): string[] {
 export const fr24Url = (code: string) => `https://www.flightradar24.com/data/flights/${code.toLowerCase()}`
 export const flightAwareUrl = (code: string) => `https://www.flightaware.com/live/flight/${code.toUpperCase()}`
 
-export type FlightStatus = { code: string; status: string; depSched?: string; depActual?: string; arrSched?: string; arrEstimated?: string; delay?: number; fetchedAt: number }
+export type FlightStatus = { code: string; status: string; depSched?: string; depEstimated?: string; depActual?: string; arrSched?: string; arrEstimated?: string; delay?: number; fetchedAt: number }
+/** Heure utile pour l'équipe : arrivée → estimée/réelle d'atterrissage ; départ → décollage estimé/réel. */
+export const etaOf = (s: FlightStatus, type: 'arrivee' | 'depart') => (type === 'arrivee' ? s.arrEstimated || s.arrSched : s.depActual || s.depEstimated || s.depSched)
+/** Écart en minutes entre « HH:MM » réel et « HH:MM » prévu (positif = retard). */
+export function deltaMin(eta: string, sched: string) {
+  const m = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5))
+  let d = m(eta) - m(sched); if (d > 720) d -= 1440; if (d < -720) d += 1440; return d
+}
 // Clé, par ordre de priorité : saisie sur l'appareil (Plus → Réglages), configuration partagée Supabase (table config,
 // clé « airlabs_key » → automatique sur tous les téléphones), variable de build VITE_AIRLABS_KEY.
 import { getState } from './store'
@@ -39,7 +46,7 @@ export async function fetchStatus(code: string): Promise<FlightStatus | null> {
     const j = await r.json()
     const d = j?.response
     if (!d) { cache.set(code, null); return null }
-    const st: FlightStatus = { code, status: d.status || '', depSched: hm(d.dep_time), depActual: hm(d.dep_actual), arrSched: hm(d.arr_time), arrEstimated: hm(d.arr_estimated || d.arr_actual), delay: typeof d.delayed === 'number' ? d.delayed : undefined, fetchedAt: Date.now() }
+    const st: FlightStatus = { code, status: d.status || '', depSched: hm(d.dep_time), depEstimated: hm(d.dep_estimated), depActual: hm(d.dep_actual), arrSched: hm(d.arr_time), arrEstimated: hm(d.arr_actual || d.arr_estimated), delay: typeof d.delayed === 'number' ? d.delayed : undefined, fetchedAt: Date.now() }
     cache.set(code, st); return st
   } catch { return cache.get(code) ?? null }
 }

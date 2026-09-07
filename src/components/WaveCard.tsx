@@ -5,6 +5,8 @@ import { personById, fullName, transport } from '../lib/data'
 import type { Wave } from '../lib/types'
 import { Badge, CheckRow, LevelBadge, VipBadge } from './ui'
 import FlightPanel from './FlightPanel'
+import EtaBadge from './EtaBadge'
+import { flightCodes } from '../lib/flights'
 
 export default function WaveCard({ wave, defaultOpen = false }: { wave: Wave; defaultOpen?: boolean }) {
   const { store } = useApp()
@@ -26,6 +28,7 @@ export default function WaveCard({ wave, defaultOpen = false }: { wave: Wave; de
           <div className="font-semibold leading-snug">{wave.vol}</div>
           <div className="text-xs text-warm mt-0.5">{wave.origine} → {wave.destination || '—'} · <b className="text-ivory">{count} pax</b> · {wave.vehicule}</div>
           <div className="flex flex-wrap gap-1.5 mt-1">
+            {wave.type !== 'programme' && flightCodes(wave.vol).map(c => <EtaBadge key={c} code={c} date={wave.date} heure={wave.heure} type={wave.type === 'depart' ? 'depart' : 'arrivee'} />)}
             <LevelBadge level={wave.level} />
             <Badge tone={stepsDone === 3 ? 'ok' : 'muted'}>étapes {stepsDone}/3</Badge>
             {wave.pax.length > 0 && <Badge tone={paxDone === wave.pax.length ? 'ok' : 'muted'}>pax {paxDone}/{wave.pax.length}</Badge>}

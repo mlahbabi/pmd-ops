@@ -1,53 +1,37 @@
-// Bloc « suivi du vol » d'une vague : liens Flightradar24 (aucune donnée chargée), statut automatique si clé AirLabs,
-// et « heure réelle » partagée saisie par l'équipe (note Supabase liée à la vague → visible par les 4, flash si retard).
-import { useState } from 'react'
+// Bloc « suivi du vol » d'une vague ouverte : détail du statut par vol + lien Flightradar24 (aucune donnée chargée).
 import { useApp } from '../context'
-import { flightCodes, fr24Url, useFlightStatus, hasLiveKey, statusLabel } from '../lib/flights'
-import { fmtIso, mParts, toDate } from '../lib/time'
+import { flightCodes, fr24Url, useFlightStatus, statusLabel, etaOf, deltaMin } from '../lib/flights'
+import { mParts, toDate } from '../lib/time'
 import type { Wave } from '../lib/types'
-import { Badge } from './ui'
 
-function LiveStatus({ code, active }: { code: string; active: boolean }) {
+function Line({ code, wave, active }: { code: string; wave: Wave; active: boolean }) {
   const st = useFlightStatus(code, active)
-  if (!st) return null
-  const t = st.arrEstimated || st.depActual || st.arrSched
-  const tone = st.status === 'cancelled' ? 'red' : (st.delay || 0) >= 30 ? 'red' : (st.delay || 0) >= 10 ? 'orange' : 'ok'
-  return <Badge tone={tone}>📡 {code} {statusLabel(st)}{t ? ` · ${t}` : ''}{st.delay ? ` (+${st.delay} min)` : ''}</Badge>
+  const type = wave.type === 'depart' ? 'depart' : 'arrivee'
+  const eta = st ? etaOf(st, type) : undefined
+  const d = st && eta ? deltaMin(eta, wave.heure) : null
+  return (
+    <div className="flex flex-wrap items-center gap-2 text-sm">
+      <a href={fr24Url(code)} target="_blank" rel="noreferrer" className="chip text-xs min-h-8 py-1">✈️ {code} · Flightradar24</a>
+      {st ? (
+        <span className={d != null && d >= 30 ? 'text-alert-red font-semibold' : d != null && d >= 10 ? 'text-alert-orange font-semibold' : 'text-ok'}>
+          {statusLabel(st)}{type === 'arrivee' ? (st.arrEstimated ? ` · arrivée estimée ${st.arrEstimated}` : '') : (st.depActual ? ` · décollé ${st.depActual}` : st.depEstimated ? ` · décollage estimé ${st.depEstimated}` : '')}
+          {d != null ? (d > 4 ? ` (+${d} min)` : d < -4 ? ` (−${-d} min)` : ' (à l\'heure)') : ''}
+        </span>
+      ) : active ? <span className="text-xs text-warm">statut en attente…</span> : <span className="text-xs text-warm">suivi actif de 5 h avant à 2 h après l'horaire</span>}
+    </div>
+  )
 }
 
 export default function FlightPanel({ wave }: { wave: Wave }) {
-  const { now, store, addNote } = useApp()
+  const { now } = useApp()
   const codes = flightCodes(wave.vol)
-  const [txt, setTxt] = useState('')
-  const [late, setLate] = useState(false)
-  const itemId = `eta:${wave.id}`
-  const notes = store.notes.filter(n => n.item_id === itemId).slice(0, 3)
-  const ref = toDate(wave.date, wave.heure)
-  const active = mParts(now).date === wave.date && Math.abs(ref.getTime() - now.getTime()) < 5 * 3600_000
-  if (!codes.length && wave.type === 'programme') return null
+  if (!codes.length) return null
+  const ref = toDate(wave.date, wave.heure).getTime() - now.getTime()
+  const active = mParts(now).date === wave.date && ref < 5 * 3600_000 && ref > -2 * 3600_000
   return (
-    <div className="rounded-xl border border-line bg-ink-3/60 p-3 space-y-2">
-      <div className="flex flex-wrap items-center gap-1.5">
-        <span className="text-xs uppercase tracking-wider text-warm mr-1">Suivi du vol</span>
-        {codes.map(c => (
-          <a key={c} href={fr24Url(c)} target="_blank" rel="noreferrer" className="chip text-xs min-h-8 py-1">✈️ {c} · Flightradar24</a>
-        ))}
-      </div>
-      {hasLiveKey() && active && <div className="flex flex-wrap gap-1.5">{codes.map(c => <LiveStatus key={c} code={c} active={active} />)}</div>}
-      {notes.length > 0 && (
-        <div className="space-y-1">
-          {notes.map(n => (
-            <div key={n.id} className={`text-sm rounded-lg px-2 py-1 ${n.level === 'alerte' ? 'bg-alert-orange/20 border border-alert-orange/60' : 'bg-ink-2'}`}>
-              🕒 <b>{n.text}</b> <span className="text-xs text-warm">— {n.author}, {fmtIso(n.created_at)}</span>
-            </div>
-          ))}
-        </div>
-      )}
-      <form className="flex gap-2 items-center" onSubmit={e => { e.preventDefault(); if (!txt.trim()) return; addNote(`${codes[0] ? codes[0] + ' : ' : ''}${txt.trim()}`, late ? 'alerte' : 'info', itemId); setTxt(''); setLate(false) }}>
-        <input className="input min-h-10 text-sm flex-1" placeholder="Heure réelle / retard (ex. atterri 18:12, +40 min)" value={txt} onChange={e => setTxt(e.target.value)} />
-        <button type="button" onClick={() => setLate(l => !l)} className={`chip text-xs min-h-10 ${late ? 'bg-alert-orange text-ink border-alert-orange' : ''}`}>Retard</button>
-        <button className="btn btn-primary min-h-10 px-3 text-sm" disabled={!txt.trim()}>OK</button>
-      </form>
+    <div className="rounded-xl border border-line bg-ink-3/60 p-3 space-y-1.5">
+      <div className="text-xs uppercase tracking-wider text-warm">Suivi du vol</div>
+      {codes.map(c => <Line key={c} code={c} wave={wave} active={active} />)}
     </div>
   )
 }

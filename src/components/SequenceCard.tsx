@@ -5,6 +5,8 @@ import { ownerOf, waveById } from '../lib/data'
 import { fmtMins, seqStatus, type SeqStatus } from '../lib/time'
 import type { Sequence } from '../lib/types'
 import { Badge, CheckRow, LevelBadge, PersonChip, TYPE_ICON, Warn } from './ui'
+import EtaBadge from './EtaBadge'
+import { flightCodes } from '../lib/flights'
 
 export function StatusBadge({ st }: { st: SeqStatus }) {
   if (st.state === 'past') return <Badge tone="muted">terminé</Badge>
@@ -35,6 +37,7 @@ export default function SequenceCard({ seq, defaultOpen = false, showDate = fals
         <div className="flex-1 min-w-0">
           <div className="flex flex-wrap items-center gap-1.5 mb-1">
             <StatusBadge st={st} />
+            {wave && wave.type !== 'programme' && flightCodes(wave.vol).map(c => <EtaBadge key={c} code={c} date={wave.date} heure={wave.heure} type={wave.type === 'depart' ? 'depart' : 'arrivee'} />)}
             <LevelBadge level={seq.level} />
             {seq.aConfirmer && <Warn />}
           </div>
