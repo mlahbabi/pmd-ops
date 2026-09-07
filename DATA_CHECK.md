@@ -28,6 +28,19 @@ Fichiers comparés ligne à ligne aux versions du 03/09 : `PLAN DE TABLE PMEETIN
 - Roll-ups plans de table : le nom de Bedhiafi est masqué sur place par une étiquette (pas de réimpression).
 - 5e prise de parole à Diaffa : David Dupont-Noel (CEO).
 
+### Mise à jour du 07/09 midi (V2.4) — emails Clémence 07/09 07:47 et 09:46 + fichiers « 080926 »
+
+| Changement | Source | Impact |
+|---|---|---|
+| Elmaleh : aucun transfert à l'arrivée (part directement en clientèle), transfert retour seulement | Email 07:47 + plans de vol | Vague 08/09 13:50 TB7522 = Bourtourault, Villeminot (2 pax). Retour 11/09 07:50 inchangé. |
+| Ondias placée : Diaffa T3 place 7 (Chaste passe en 8), Rôtisserie T2 place 11, équipe 5 ; Partner Audit Abidjan | Email 07:47 + plan de table + teambuilding | Diaffa 65 placés (9·8·8·8·8·8·8·8), Rôtisserie 60 (6 × 10), Marrakech Express 42 (7 × 6). |
+| Tonka placé : Rôtisserie T5 place 4 (Meizou → Ndoye → Bourtourault décalés), équipe 7 | Idem | ⚠️ Le fichier le laisse aussi dans la navette 14h30 : point n°26 à trancher avec Clémence. |
+| Sayam : Rôtisserie T2 place 9 → 8 | Plan de table | Le doublon Sayam / Sall Plantagenet est résolu. Reste le doublon Diaffa T8 place 8. |
+| Mavungu : AT639 depuis Paris (et non via Casa) ; vol retour du 13/09 va changer, il attend une place | Email 09:46 + plans de vol | ⚠️ point n°27. |
+| Nuitée supplémentaire de Tonka confirmée dans la liste client (58 chambres la nuit du 10→11) | Liste VF 080926 | Conforme à l'app (196 nuitées). |
+
+Les plans de table et les équipes sont désormais lus directement dans les fichiers client (plus de saisie manuelle) : toute nouvelle version se réintègre en relançant le générateur.
+
 ### Totaux de contrôle (V2)
 
 | Indicateur | 03/09 | 07/09 | Source |

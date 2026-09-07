@@ -158,15 +158,13 @@
   },
   {
    "id": "pd15",
-   "sujet": "Doublons de place (sans impact impression) : Diaffa T8 place 8 (Chaghil Brasseur / N'Guessan) ; Rôtisserie T2 place 9 (Sall Plantagenet / Sayam)",
+   "sujet": "Doublon de place (sans impact impression) : Diaffa T8 place 8 (Chaghil Brasseur / N'Guessan). Le doublon Rôtisserie T2 est résolu dans le fichier du 08/09 (Sayam place 8).",
    "responsable": "Clémence",
    "echeance": "sur place",
    "level": "normal",
    "persons": [
     "chaghil-brasseur",
-    "n-guessan",
-    "sall-plantagenet",
-    "sayam"
+    "n-guessan"
    ]
   },
   {
