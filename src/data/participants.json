@@ -1,6 +1,6 @@
 {
- "version": "V2.3 — 07/09/2026",
- "updatedAt": "2026-09-07T10:00:00+01:00",
+ "version": "V2.4 — 07/09/2026",
+ "updatedAt": "2026-09-07T11:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -302,7 +302,7 @@
    "diaffa_place": 4,
    "statut": "invité externe",
    "equipe_tb": null,
-   "rotisserie_table": null,
+   "rotisserie_table": "absent",
    "rotisserie_place": null,
    "retour_radisson_1430": false,
    "id": "benjelloun-touimi",
@@ -522,7 +522,7 @@
    "diaffa_table": 8,
    "diaffa_place": 6,
    "rotisserie_table": 5,
-   "rotisserie_place": 8,
+   "rotisserie_place": 9,
    "statut": "intervenant",
    "equipe_tb": null,
    "id": "bourtourault",
@@ -544,7 +544,7 @@
     "mode": "vol"
    },
    "transferts": [
-    "w0809-1340",
+    "w0809-1350",
     "w1109-1555"
    ]
   },
@@ -568,7 +568,7 @@
    "equipe_tb": null,
    "id": "chaghil-brasseur",
    "a_confirmer": [
-    "Diaffa T8 : place 8 en doublon avec N'Guessan"
+    "Diaffa T8 : place 8 en doublon avec Yann-Eric N'GUESSAN"
    ],
    "pays": "France",
    "arr": {
@@ -608,7 +608,7 @@
    "categorie": "T&L",
    "vip": "",
    "diaffa_table": 3,
-   "diaffa_place": 7,
+   "diaffa_place": 8,
    "rotisserie_table": 4,
    "rotisserie_place": 5,
    "statut": "participant",
@@ -810,7 +810,7 @@
    "diaffa_place": 2,
    "statut": "invité externe",
    "equipe_tb": null,
-   "rotisserie_table": null,
+   "rotisserie_table": "absent",
    "rotisserie_place": null,
    "retour_radisson_1430": false,
    "id": "el-habti",
@@ -855,7 +855,7 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "elmaleh",
-   "note_app": "Plan de vol modifié le 06/09 : arrivée TO9800 13:40 (Orly) au lieu de AF1876 17:50 ; départ AF1277 10:40 le 11/09 au lieu de AF1777 06:10.",
+   "note_app": "Arrive le 08/09 à 13:40 par TO9800 (Orly) mais part directement en clientèle : AUCUN transfert à l'arrivée (Clémence 07/09). Transfert retour le 11/09 : AF1277 10:40, prise en charge 07:50.",
    "pays": "France",
    "arr": {
     "date": "08/09",
@@ -874,7 +874,6 @@
     "mode": "vol"
    },
    "transferts": [
-    "w0809-1340",
     "w1109-0750"
    ]
   },
@@ -929,7 +928,7 @@
    "diaffa_place": 2,
    "statut": "invité externe",
    "equipe_tb": null,
-   "rotisserie_table": null,
+   "rotisserie_table": "absent",
    "rotisserie_place": null,
    "retour_radisson_1430": false,
    "id": "fikrat",
@@ -1656,12 +1655,15 @@
    "statut": "participant",
    "retour_radisson_1430": false,
    "id": "mavungu",
+   "a_confirmer": [
+    "Vol retour du 13/09 va changer : il attend une place (Clémence 07/09)"
+   ],
    "pays": "RD Congo",
    "arr": {
     "date": "07/09",
     "heure": "16:40",
     "vol": "AT639",
-    "de": "via Casablanca (vols Kinshasa annulés)",
+    "de": "Paris",
     "cie": "Royal Air Maroc",
     "mode": "vol"
    },
@@ -1673,7 +1675,7 @@
     "cie": "Royal Air Maroc",
     "mode": "vol"
    },
-   "note_app": "Changement du 07/09 (Mehdi) : arrive aujourd'hui à 16:40 par AT639 au lieu de AT413M 18:10, en raison d'une annulation des vols depuis Kinshasa. Départ 13/09 AT412R inchangé.",
+   "note_app": "Changement du 07/09 : arrive aujourd'hui à 16:40 par AT639 depuis Paris au lieu de AT413M 18:10 (vols depuis Kinshasa annulés). Retour du 13/09 (AT412R) va changer : il attend une place.",
    "transferts": [
     "w0709-1640",
     "w1309-1555"
@@ -1741,7 +1743,7 @@
    "diaffa_table": 4,
    "diaffa_place": 3,
    "rotisserie_table": 5,
-   "rotisserie_place": 4,
+   "rotisserie_place": 5,
    "statut": "participant",
    "retour_radisson_1430": false,
    "id": "meizou",
@@ -1915,12 +1917,12 @@
    "diaffa_table": 8,
    "diaffa_place": 8,
    "rotisserie_table": 5,
-   "rotisserie_place": 7,
+   "rotisserie_place": 8,
    "statut": "participant",
    "retour_radisson_1430": false,
    "id": "n-guessan",
    "a_confirmer": [
-    "Diaffa T8 : place 8 en doublon avec Chaghil Brasseur"
+    "Diaffa T8 : place 8 en doublon avec Nata CHAGHIL BRASSEUR"
    ],
    "pays": "COTE D'IVOIRE via Paris",
    "arr": {
@@ -2003,7 +2005,7 @@
    "diaffa_table": 4,
    "diaffa_place": 5,
    "rotisserie_table": 5,
-   "rotisserie_place": 6,
+   "rotisserie_place": 7,
    "statut": "participant",
    "retour_radisson_1430": false,
    "id": "ndoye",
@@ -2165,25 +2167,20 @@
    "statut": "participant",
    "categorie": "",
    "vip": "",
-   "bureau": "",
-   "metier_tb": "",
-   "fonction": "",
+   "bureau": "Abidjan",
+   "metier_tb": "Audit",
+   "fonction": "Partner",
    "regime": "",
    "note_hotel": "",
-   "equipe_tb": null,
+   "equipe_tb": 5,
    "retour_radisson_1430": false,
-   "diaffa_table": null,
-   "diaffa_place": null,
-   "rotisserie_table": null,
-   "rotisserie_place": null,
+   "diaffa_table": 3,
+   "diaffa_place": 7,
+   "rotisserie_table": 2,
+   "rotisserie_place": 11,
    "id": "ondias",
-   "note_app": "Avait annulé, revient finalement (Clémence, 06/09). Gère seule son hébergement et ses transferts aéroport (vient accompagnée) mais monte dans les bus de groupe (Diaffa, Médina, Beldi — décision Mehdi 07/09). À compter à toutes les séquences : déjeuners, dîners, Marrakech Express. Aucune chambre au Radisson.",
-   "a_confirmer": [
-    "table Diaffa",
-    "table Rôtisserie",
-    "équipe Marrakech Express",
-    "bureau / métier"
-   ],
+   "note_app": "Avait annulé, revient finalement (Clémence, 06/09). Gère seule son hébergement et ses transferts aéroport (vient accompagnée) mais monte dans les bus de groupe (décision Mehdi 07/09). Placée le 07/09 : Diaffa T3, Rôtisserie T2, équipe 5 du Marrakech Express. Aucune chambre au Radisson.",
+   "a_confirmer": [],
    "arr": {
     "date": null,
     "heure": null,
@@ -2220,7 +2217,7 @@
    "diaffa_table": 7,
    "diaffa_place": 4,
    "rotisserie_table": 5,
-   "rotisserie_place": 5,
+   "rotisserie_place": 6,
    "statut": "organisation Deloitte",
    "retour_radisson_1430": false,
    "id": "pierron",
@@ -2395,9 +2392,6 @@
    "statut": "participant",
    "retour_radisson_1430": false,
    "id": "sall-plantagenet",
-   "a_confirmer": [
-    "Rôtisserie T2 : place 9 en doublon avec Sayam"
-   ],
    "pays": "Sénégal via Paris",
    "arr": {
     "date": "08/09",
@@ -2435,13 +2429,10 @@
    "diaffa_table": 6,
    "diaffa_place": 4,
    "rotisserie_table": 2,
-   "rotisserie_place": 9,
+   "rotisserie_place": 8,
    "statut": "participant",
    "equipe_tb": null,
    "id": "sayam",
-   "a_confirmer": [
-    "Rôtisserie T2 : place 9 en doublon avec Sall Plantagenet"
-   ],
    "pays": "Congo via Paris",
    "arr": {
     "date": "08/09",
@@ -2607,15 +2598,18 @@
    "vip": "",
    "diaffa_table": 1,
    "diaffa_place": 9,
-   "rotisserie_table": null,
+   "rotisserie_table": 5,
    "statut": "participant",
-   "equipe_tb": null,
-   "rotisserie_place": null,
+   "equipe_tb": 7,
+   "rotisserie_place": 4,
    "id": "tonka",
-   "note_app": "Changement urgent (06/09) : arrive le 07/09 par IB1853 depuis Madrid à 17:05 (au lieu de AF1876 17:50) ; reste une nuit de plus, repart le 11/09 par AF1877 18:55. À compter au déjeuner du 10, au dîner Rôtisserie et au déjeuner Beldi. Reste dans la navette retour 14h30 (décision Mehdi 07/09).",
+   "note_app": "Changement urgent (06/09) : arrive le 07/09 par IB1853 depuis Madrid à 17:05 ; reste une nuit de plus, repart le 11/09 par AF1877 18:55. Placé le 07/09 : Rôtisserie T5/P4, équipe 7 du Marrakech Express (le fichier le laisse aussi dans la navette 14h30 ⚠️).",
    "a_confirmer": [
-    "table Rôtisserie (plan de table à jour attendu de Clémence)"
+    "Fichier client du 08/09 contradictoire : équipe 7 du Marrakech Express ET navette retour 14h30 — à trancher"
    ],
+   "fonction": "Partner",
+   "metier_tb": "Audit",
+   "bureau": "Kinshasa",
    "pays": "RD Congo via Paris",
    "arr": {
     "date": "07/09",
@@ -2679,7 +2673,7 @@
     "mode": "vol"
    },
    "transferts": [
-    "w0809-1340",
+    "w0809-1350",
     "w1009-0710"
    ]
   },

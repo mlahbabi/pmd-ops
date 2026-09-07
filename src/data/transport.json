@@ -1,6 +1,6 @@
 {
- "version": "V2.3 — 07/09/2026",
- "updatedAt": "2026-09-07T10:00:00+01:00",
+ "version": "V2.4 — 07/09/2026",
+ "updatedAt": "2026-09-07T11:00:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -109,21 +109,20 @@
    "level": "normal"
   },
   {
-   "id": "w0809-1340",
+   "id": "w0809-1350",
    "date": "2026-09-08",
-   "heure": "13:40",
+   "heure": "13:50",
    "type": "arrivee",
-   "vol": "TO9800 (Orly) 13:40 + TB7522 (Orly — TUI) 13:50",
+   "vol": "TB7522 (Orly — TUI)",
    "pax": [
-    "elmaleh",
     "bourtourault",
     "villeminot"
    ],
    "vehicule": "1 Vito",
-   "note": "NOUVEAU : Elmaleh arrive par TO9800 à 13:40 (plus sur AF1876). Le Vito attend TB7522 13:50 — départ groupé ~14:30.",
+   "note": "Elmaleh (TO9800 13:40) n'est PAS à prendre en charge : il part directement en clientèle (Clémence 07/09).",
    "origine": "Aéroport RAK",
    "destination": "Radisson Blu",
-   "level": "important"
+   "level": "normal"
   },
   {
    "id": "w0809-1515",
@@ -633,12 +632,14 @@
     "soppo-priso",
     "tayaa",
     "thiaw",
+    "tonka",
     "watat",
-    "zouari"
+    "zouari",
+    "ondias"
    ],
-   "paxEstime": "~41",
+   "paxEstime": "~42",
    "vehicule": "3 × 17 pl",
-   "note": "Retour groupé fin d'activité : 40 + Ondias.",
+   "note": "Retour groupé fin d'activité : les 42 des équipes (Tonka ⚠️ aussi listé navette 14h30).",
    "origine": "Riad Dar Essalam (Médina)",
    "destination": "Radisson Blu",
    "level": "normal"

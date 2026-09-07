@@ -1,6 +1,6 @@
 {
- "version": "V2.3 — 07/09/2026",
- "updatedAt": "2026-09-07T10:00:00+01:00",
+ "version": "V2.4 — 07/09/2026",
+ "updatedAt": "2026-09-07T11:00:00+01:00",
  "nom": "Marrakech Express",
  "date": "2026-09-10",
  "prestataire": "EVO / Evolution 2 — Driss, Andréa, Rhita (facilitateurs terrain)",
@@ -58,7 +58,8 @@
     "bernardini",
     "faouzi",
     "guinot",
-    "n-guessan"
+    "n-guessan",
+    "ondias"
    ]
   },
   {
@@ -79,7 +80,8 @@
     "hassouni",
     "koundi",
     "ndoye",
-    "nguema"
+    "nguema",
+    "tonka"
    ]
   }
  ],
@@ -104,9 +106,9 @@
   "tonka"
  ],
  "notes": [
-  "40 pax placés en 7 équipes (6·6·6·6·5·6·5) — fichier client du 07/09, Bedhiafi retirée.",
-  "⚠️ Ondias à placer dans une équipe (Clémence). Tonka reste dans la navette 14h30 (décision Mehdi 07/09).",
-  "Navette retour anticipé 14:30 : 18 pax (liste du 07/09, Kopp à reconfirmer) — 1 × 17 pl + 1 Vito.",
-  "Commande EVO passée à 43 → aligner à 41."
+  "42 pax en 7 équipes de 6 — fichier client du 08/09 (Ondias équipe 5, Tonka équipe 7).",
+  "⚠️ Tonka figure à la fois en équipe 7 et dans la navette 14h30 dans le fichier client : à trancher (point n°26).",
+  "Navette retour anticipé 14:30 : 18 pax (liste du 08/09, Kopp et Tonka à reconfirmer) — 1 × 17 pl + 1 Vito.",
+  "Commande EVO passée à 43 → aligner à 42."
  ]
 }

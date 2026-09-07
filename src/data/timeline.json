@@ -1,6 +1,6 @@
 {
- "version": "V2.3 — 07/09/2026",
- "updatedAt": "2026-09-07T10:00:00+01:00",
+ "version": "V2.4 — 07/09/2026",
+ "updatedAt": "2026-09-07T11:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -111,7 +111,7 @@
    "effectif": "",
    "type": "orga",
    "level": "critique",
-   "details": "AUJOURD'HUI : Mavungu arrive à 16:40 par AT639 (vols Kinshasa annulés, plus sur AT413M 18:10) et Tonka à 17:05 par IB1853 (Madrid, plus sur AF1876) : Vito avec Farid en place à 16:40, départ groupé ~17:45. Clémence et Hajer (AF1876 17:50) sont accueillies par Mehdi et Mouad avec le véhicule de Mehdi — pas de Vito à 17:50 (transporteur informé). Elmaleh le 08/09 à 13:40 (TO9800) et départ 11/09 AF1277 10:40. Malouche en voiture (plus sur AF1776). Bedhiafi annulée (AT413 18:10 le 08/09, AT402 le 12/09). Tonka repart le 11/09 par AF1877 (navette Beldi 16:25) et non le 10/09.",
+   "details": "AUJOURD'HUI : Mavungu arrive à 16:40 par AT639 (vols Kinshasa annulés, plus sur AT413M 18:10) et Tonka à 17:05 par IB1853 (Madrid, plus sur AF1876) : Vito avec Farid en place à 16:40, départ groupé ~17:45. Clémence et Hajer (AF1876 17:50) sont accueillies par Mehdi et Mouad avec le véhicule de Mehdi — pas de Vito à 17:50 (transporteur informé). Elmaleh : AUCUN transfert le 08/09 (part en clientèle), retour 11/09 AF1277 10:40 (prise en charge 07:50). Malouche en voiture (plus sur AF1776). Bedhiafi annulée (AT413 18:10 le 08/09, AT402 le 12/09). Tonka repart le 11/09 par AF1877 (navette Beldi 16:25) et non le 10/09.",
    "checklist": [
     {
      "id": "s0709-dispatch-c1",
@@ -127,7 +127,7 @@
     },
     {
      "id": "s0709-dispatch-c4",
-     "label": "Simohamed informé : Elmaleh 08/09 13:40 + 11/09 07:50"
+     "label": "Simohamed informé : Elmaleh sans transfert le 08/09, retour 11/09 07:50"
     },
     {
      "id": "s0709-dispatch-c5",
@@ -417,37 +417,36 @@
    "waveId": "w0809-1305"
   },
   {
-   "id": "w0809-1340",
+   "id": "w0809-1350",
    "date": "2026-09-08",
-   "start": "13:40",
+   "start": "13:50",
    "end": null,
-   "title": "Arrivée TO9800 (Orly) 13:40 + TB7522 (Orly — TUI) 13:50 — 3 pax",
+   "title": "Arrivée TB7522 (Orly — TUI) — 2 pax",
    "lieu": "Aéroport RAK → Radisson",
-   "effectif": "3",
+   "effectif": "2",
    "type": "transport",
-   "level": "important",
-   "details": "Michel ELMALEH, Olivier BOURTOURAULT, Julien VILLEMINOT. Véhicule : 1 Vito. NOUVEAU : Elmaleh arrive par TO9800 à 13:40 (plus sur AF1876). Le Vito attend TB7522 13:50 — départ groupé ~14:30.",
+   "level": "normal",
+   "details": "Olivier BOURTOURAULT, Julien VILLEMINOT. Véhicule : 1 Vito. Elmaleh (TO9800 13:40) n'est PAS à prendre en charge : il part directement en clientèle (Clémence 07/09).",
    "checklist": [
     {
-     "id": "w0809-1340-c1",
+     "id": "w0809-1350-c1",
      "label": "Chauffeur en place"
     },
     {
-     "id": "w0809-1340-c2",
+     "id": "w0809-1350-c2",
      "label": "Passagers complets"
     },
     {
-     "id": "w0809-1340-c3",
+     "id": "w0809-1350-c3",
      "label": "Parti"
     }
    ],
    "persons": [
-    "elmaleh",
     "bourtourault",
     "villeminot"
    ],
    "owner": "",
-   "waveId": "w0809-1340"
+   "waveId": "w0809-1350"
   },
   {
    "id": "w0809-1515",
@@ -1259,10 +1258,10 @@
    "end": "14:30",
    "title": "Brief + constitution des équipes Marrakech Express",
    "lieu": "Le Grand Bazar (Médina)",
-   "effectif": "40 + Ondias ⚠️",
+   "effectif": "42",
    "type": "activite",
    "level": "important",
-   "details": "EVO : Driss, Andréa, Rhita (facilitateurs terrain). 40 pax placés en 7 équipes (6·6·6·6·5·6·5) + Ondias à placer ⚠️ (Tonka reste en navette 14h30). Voir onglet Marrakech Express.",
+   "details": "EVO : Driss, Andréa, Rhita (facilitateurs terrain). 42 pax en 7 équipes de 6 (fichier client du 08/09 : Ondias équipe 5, Tonka équipe 7 — Tonka aussi listé navette 14h30 ⚠️). Voir onglet Marrakech Express.",
    "checklist": [
     {
      "id": "s1009-brief-c1",
@@ -1270,7 +1269,7 @@
     },
     {
      "id": "s1009-brief-c2",
-     "label": "Équipes constituées (Ondias placée)"
+     "label": "Équipes constituées"
     },
     {
      "id": "s1009-brief-c3",
@@ -1350,7 +1349,7 @@
    "end": "16:45",
    "title": "Lancement Marrakech Express — chasse au trésor médina",
    "lieu": "Médina",
-   "effectif": "41",
+   "effectif": "42",
    "type": "activite",
    "level": "important",
    "details": "~2h de jeu. Suivi MRCO avec EVO.",
@@ -1374,7 +1373,7 @@
    "end": "17:10",
    "title": "Arrivée au Riad Dar Essalam — thé + scores / trophée",
    "lieu": "Riad Dar Essalam (Médina)",
-   "effectif": "41",
+   "effectif": "42",
    "type": "activite",
    "level": "normal",
    "details": "Thé à la menthe + annonce des scores. Fin ~17:10, retour 17:30.",
@@ -1392,12 +1391,12 @@
    "date": "2026-09-10",
    "start": "17:30",
    "end": null,
-   "title": "Transfert Médina → Radisson — fin Marrakech Express — ~41 pax",
+   "title": "Transfert Médina → Radisson — fin Marrakech Express — ~42 pax",
    "lieu": "Riad Dar Essalam (Médina) → Radisson Blu",
-   "effectif": "~41",
+   "effectif": "~42",
    "type": "transport",
    "level": "normal",
-   "details": "Véhicule : 3 × 17 pl. Retour groupé fin d'activité : 40 + Ondias.",
+   "details": "Véhicule : 3 × 17 pl. Retour groupé fin d'activité : les 42 des équipes (Tonka ⚠️ aussi listé navette 14h30).",
    "checklist": [
     {
      "id": "p1009-1730-c1",
@@ -1451,8 +1450,10 @@
     "soppo-priso",
     "tayaa",
     "thiaw",
+    "tonka",
     "watat",
-    "zouari"
+    "zouari",
+    "ondias"
    ],
    "owner": "",
    "waveId": "p1009-1730"
