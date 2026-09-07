@@ -1,6 +1,6 @@
 {
- "version": "V2.0 — 07/09/2026",
- "updatedAt": "2026-09-07T08:30:00+01:00",
+ "version": "V2.1 — 07/09/2026",
+ "updatedAt": "2026-09-07T09:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -873,7 +873,7 @@
    "checklist": [
     {
      "id": "s0909-setup-c1",
-     "label": "Roll-up plan de table à l'entrée"
+     "label": "Roll-up plan de table à l'entrée — étiquette posée sur le nom Bedhiafi (T5)"
     },
     {
      "id": "s0909-setup-c2",
@@ -938,12 +938,12 @@
    "date": "2026-09-09",
    "start": "20:00",
    "end": null,
-   "title": "Transfert Radisson → Dar Diaffa — ~62 pax",
+   "title": "Transfert Radisson → Dar Diaffa — 62 pax",
    "lieu": "Radisson Blu → Dar Diaffa (Médina)",
-   "effectif": "~62",
+   "effectif": "62",
    "type": "transport",
    "level": "critique",
-   "details": "Véhicule : 4 × 17 pl (+ 1 Vito réserve). Dîner — dépose rue Jbel Lakhdar. 61 pax hébergés + Ondias (bus ? ⚠️) + 3 invités externes (mode d'arrivée à confirmer). 1 Vito en réserve.",
+   "details": "Véhicule : 4 × 17 pl (+ 1 Vito réserve). Dîner — dépose rue Jbel Lakhdar. 61 pax hébergés + Ondias (prend le bus) = 62, + 3 invités externes (mode d'arrivée à confirmer). 1 Vito en réserve.",
    "checklist": [
     {
      "id": "p0909-2000-c1",
@@ -993,7 +993,7 @@
    "effectif": "65",
    "type": "vip",
    "level": "important",
-   "details": "8 tables (9·8·7·8·8·8·8·8 = 64 placés + Ondias ⚠️). Menu : salades marocaines & briouates / épaule d'agneau au four (plat alternatif Righi) / pastilla au lait fleur d'oranger. Forfait Premium (vins marocains & français, eaux, thé). Musique live + spectacle. 5 PRISES DE PAROLE EN DÉBUT DE DÎNER (Clémence 06/09) : Rédouane Bellefqih (Managing Partner Maroc), les 3 invités externes, + 1 à confirmer ⚠️. Service continu pendant les discours, musiciens en pause, micro HF Badr. Un PM MRCO = interlocuteur de Clémence pour chaque prise de parole. 4 convives quittent vers 21:30. PAS D'AFTER (confirmé 06/09). Photographe Fabrice Gino.",
+   "details": "8 tables (9·8·7·8·8·8·8·8 = 64 placés + Ondias ⚠️). Menu : salades marocaines & briouates / épaule d'agneau au four (plat alternatif Righi) / pastilla au lait fleur d'oranger. Forfait Premium (vins marocains & français, eaux, thé). Musique live + spectacle. 5 PRISES DE PAROLE EN DÉBUT DE DÎNER (Clémence 06/09) : Rédouane Bellefqih (Managing Partner Maroc), les 3 invités externes, et David Dupont-Noel (CEO). Service continu pendant les discours, musiciens en pause, micro HF Badr. Un PM MRCO = interlocuteur de Clémence pour chaque prise de parole. 4 convives quittent vers 21:30. PAS D'AFTER (confirmé 06/09). Photographe Fabrice Gino.",
    "checklist": [
     {
      "id": "s0909-diner-c1",
@@ -1013,7 +1013,7 @@
     },
     {
      "id": "s0909-diner-c5",
-     "label": "Prise de parole 5 — ⚠️ à confirmer"
+     "label": "Prise de parole 5 — Dupont-Noel (CEO)"
     },
     {
      "id": "s0909-diner-c6",
@@ -1025,6 +1025,7 @@
     "benjelloun-touimi",
     "el-habti",
     "fikrat",
+    "dupont-noel",
     "righi",
     "ondias"
    ],
@@ -1035,9 +1036,9 @@
    "date": "2026-09-09",
    "start": "23:00",
    "end": null,
-   "title": "Transfert Dar Diaffa → Radisson — ~62 pax",
+   "title": "Transfert Dar Diaffa → Radisson — 62 pax",
    "lieu": "Dar Diaffa (Médina) → Radisson Blu",
-   "effectif": "~62",
+   "effectif": "62",
    "type": "transport",
    "level": "normal",
    "details": "Véhicule : 4 × 17 pl. Retour groupé après le dîner (pas d'after).",
@@ -1249,10 +1250,10 @@
    "end": "14:30",
    "title": "Brief + constitution des équipes Marrakech Express",
    "lieu": "Le Grand Bazar (Médina)",
-   "effectif": "40 + 2 ⚠️",
+   "effectif": "40 + Ondias ⚠️",
    "type": "activite",
    "level": "important",
-   "details": "EVO : Driss, Andréa, Rhita (facilitateurs terrain). 40 pax placés en 7 équipes (6·6·6·6·5·6·5) + Tonka et Ondias à placer ⚠️. Voir onglet Marrakech Express.",
+   "details": "EVO : Driss, Andréa, Rhita (facilitateurs terrain). 40 pax placés en 7 équipes (6·6·6·6·5·6·5) + Ondias à placer ⚠️ (Tonka reste en navette 14h30). Voir onglet Marrakech Express.",
    "checklist": [
     {
      "id": "s1009-brief-c1",
@@ -1260,7 +1261,7 @@
     },
     {
      "id": "s1009-brief-c2",
-     "label": "Équipes constituées (Tonka, Ondias placés)"
+     "label": "Équipes constituées (Ondias placée)"
     },
     {
      "id": "s1009-brief-c3",
@@ -1295,7 +1296,7 @@
    "effectif": "18",
    "type": "transport",
    "level": "critique",
-   "details": "Véhicule : 1 × 17 pl + 1 Vito. Liste nominative de 18 (fichier du 07/09) — ⚠️ Tonka fait désormais le Marrakech Express selon Clémence, Kopp partirait le matin : liste à reconfirmer.",
+   "details": "Véhicule : 1 × 17 pl + 1 Vito. Liste nominative de 18 (fichier du 07/09, Tonka inclus). Kopp ⚠️ : partirait le matin.",
    "checklist": [
     {
      "id": "p1009-1430-c1",
@@ -1340,7 +1341,7 @@
    "end": "16:45",
    "title": "Lancement Marrakech Express — chasse au trésor médina",
    "lieu": "Médina",
-   "effectif": "~42",
+   "effectif": "41",
    "type": "activite",
    "level": "important",
    "details": "~2h de jeu. Suivi MRCO avec EVO.",
@@ -1364,7 +1365,7 @@
    "end": "17:10",
    "title": "Arrivée au Riad Dar Essalam — thé + scores / trophée",
    "lieu": "Riad Dar Essalam (Médina)",
-   "effectif": "~42",
+   "effectif": "41",
    "type": "activite",
    "level": "normal",
    "details": "Thé à la menthe + annonce des scores. Fin ~17:10, retour 17:30.",
@@ -1382,12 +1383,12 @@
    "date": "2026-09-10",
    "start": "17:30",
    "end": null,
-   "title": "Transfert Médina → Radisson — fin Marrakech Express — ~42 pax",
+   "title": "Transfert Médina → Radisson — fin Marrakech Express — ~41 pax",
    "lieu": "Riad Dar Essalam (Médina) → Radisson Blu",
-   "effectif": "~42",
+   "effectif": "~41",
    "type": "transport",
    "level": "normal",
-   "details": "Véhicule : 3 × 17 pl. Retour groupé fin d'activité : 40 + Tonka + Ondias.",
+   "details": "Véhicule : 3 × 17 pl. Retour groupé fin d'activité : 40 + Ondias.",
    "checklist": [
     {
      "id": "p1009-1730-c1",
@@ -1476,7 +1477,7 @@
    "checklist": [
     {
      "id": "s1009-setup-c1",
-     "label": "Roll-up plan de table à l'entrée"
+     "label": "Roll-up plan de table à l'entrée — étiquette posée sur le nom Bedhiafi (T2)"
     },
     {
      "id": "s1009-setup-c2",

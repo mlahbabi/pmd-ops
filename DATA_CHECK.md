@@ -20,6 +20,14 @@ Fichiers comparés ligne à ligne aux versions du 03/09 : `PLAN DE TABLE PMEETIN
 | 10 | **Rôtisserie** : mot d'intro du CEO (sans équipement) → dîner → after avec 2 points de bar séparés | Email 06/09 | Timeline mise à jour (Dupont-Noel = CEO). |
 | 11 | Pas d'écrans supplémentaires à l'hôtel | Email 06/09 | Noté dans le setup du 08/09 et la plénière. |
 
+### Décisions de Mehdi du 07/09 (V2.1)
+
+- Kopp : laissé partout (déjeuner, navette 14h30, Rôtisserie T6/P8) avec badge ⚠️ tant que Clémence n'a pas confirmé le départ en train.
+- Tonka : reste dans la navette retour 14h30 (fichier du 07/09), pas au Marrakech Express.
+- Ondias : monte dans les bus de groupe (Diaffa 20:00, Médina 12:15, Beldi 11:45).
+- Roll-ups plans de table : le nom de Bedhiafi est masqué sur place par une étiquette (pas de réimpression).
+- 5e prise de parole à Diaffa : David Dupont-Noel (CEO).
+
 ### Totaux de contrôle (V2)
 
 | Indicateur | 03/09 | 07/09 | Source |

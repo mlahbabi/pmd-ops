@@ -1,6 +1,6 @@
 {
- "version": "V2.0 — 07/09/2026",
- "updatedAt": "2026-09-07T08:30:00+01:00",
+ "version": "V2.1 — 07/09/2026",
+ "updatedAt": "2026-09-07T09:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -778,7 +778,7 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "dupont-noel",
-   "note_app": "CEO. Arrive par la route depuis Casablanca le 09/09 (départ Casa ~17:30). Accueil à l'hôtel par MRCO puis transfert dîner Diaffa. Petit mot d'intro au dîner Rôtisserie du 10/09 (sans équipement).",
+   "note_app": "CEO. Arrive par la route depuis Casablanca le 09/09 (départ Casa ~17:30). Accueil à l'hôtel par MRCO puis transfert dîner Diaffa. 5e prise de parole au dîner Diaffa (confirmé par Mehdi le 07/09). Petit mot d'intro au dîner Rôtisserie du 10/09 (sans équipement).",
    "pays": "France, arrivée via Casablanca en voiture",
    "arr": {
     "date": "09/09",
@@ -2176,13 +2176,12 @@
    "rotisserie_table": null,
    "rotisserie_place": null,
    "id": "ondias",
-   "note_app": "Avait annulé, revient finalement (Clémence, 06/09). Gère seule son hébergement et ses transferts (vient accompagnée). À compter à toutes les séquences : déjeuners, dîners, Marrakech Express. Aucune chambre au Radisson.",
+   "note_app": "Avait annulé, revient finalement (Clémence, 06/09). Gère seule son hébergement et ses transferts aéroport (vient accompagnée) mais monte dans les bus de groupe (Diaffa, Médina, Beldi — décision Mehdi 07/09). À compter à toutes les séquences : déjeuners, dîners, Marrakech Express. Aucune chambre au Radisson.",
    "a_confirmer": [
     "table Diaffa",
     "table Rôtisserie",
     "équipe Marrakech Express",
-    "bureau / métier",
-    "prend-elle les bus de groupe (Médina, Beldi) ?"
+    "bureau / métier"
    ],
    "arr": {
     "date": null,
@@ -2612,10 +2611,9 @@
    "equipe_tb": null,
    "rotisserie_place": null,
    "id": "tonka",
-   "note_app": "Changement urgent (06/09) : arrive le 07/09 par IB1853 depuis Madrid à 17:05 (au lieu de AF1876 17:50) ; reste une nuit de plus, repart le 11/09 par AF1877 18:55. À compter au déjeuner du 10, au Marrakech Express, au dîner Rôtisserie et au déjeuner Beldi.",
+   "note_app": "Changement urgent (06/09) : arrive le 07/09 par IB1853 depuis Madrid à 17:05 (au lieu de AF1876 17:50) ; reste une nuit de plus, repart le 11/09 par AF1877 18:55. À compter au déjeuner du 10, au dîner Rôtisserie et au déjeuner Beldi. Reste dans la navette retour 14h30 (décision Mehdi 07/09).",
    "a_confirmer": [
-    "table Rôtisserie (plan de table à jour attendu de Clémence)",
-    "Marrakech Express : équipe ou navette 14h30 ? (fichier du 07/09 le laisse en navette 14h30)"
+    "table Rôtisserie (plan de table à jour attendu de Clémence)"
    ],
    "pays": "RD Congo via Paris",
    "arr": {

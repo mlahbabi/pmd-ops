@@ -1,6 +1,6 @@
 {
- "version": "V2.0 — 07/09/2026",
- "updatedAt": "2026-09-07T08:30:00+01:00",
+ "version": "V2.1 — 07/09/2026",
+ "updatedAt": "2026-09-07T09:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -56,7 +56,7 @@
   },
   {
    "id": "pd22",
-   "sujet": "Plans de table à jour attendus de Clémence : Tonka à placer Rôtisserie, Ondias à placer Diaffa + Rôtisserie, Tonka/Ondias au Marrakech Express (équipes)",
+   "sujet": "Plans de table à jour attendus de Clémence : Tonka à placer Rôtisserie, Ondias à placer Diaffa + Rôtisserie + équipe Marrakech Express",
    "responsable": "Clémence",
    "echeance": "2026-09-07",
    "level": "alerte",
@@ -66,15 +66,8 @@
    ]
   },
   {
-   "id": "pd23",
-   "sujet": "Diaffa : qui fait la 5e prise de parole (Clémence en annonce 5, 4 identifiées) ?",
-   "responsable": "Clémence",
-   "echeance": "2026-09-08",
-   "level": "normal"
-  },
-  {
    "id": "pd24",
-   "sujet": "Ondias : prend-elle les bus de groupe (Diaffa 20:00, Médina 12:15, Beldi 11:45) ? Bureau / métier pour la fiche",
+   "sujet": "Ondias : bureau / métier pour la fiche",
    "responsable": "Clémence",
    "echeance": "2026-09-08",
    "level": "normal",
@@ -195,7 +188,7 @@
   },
   {
    "id": "pd19",
-   "sujet": "Signalétique : réception et contrôle des impressions (V2), cartes Bedhiafi à retirer",
+   "sujet": "Signalétique : réception et contrôle des impressions (V2), cartes Bedhiafi à retirer, étiquettes à prévoir pour masquer son nom sur les 2 roll-ups plans de table",
    "responsable": "Mehdi",
    "echeance": "2026-09-07",
    "level": "normal"

@@ -1,6 +1,6 @@
 {
- "version": "V2.0 — 07/09/2026",
- "updatedAt": "2026-09-07T08:30:00+01:00",
+ "version": "V2.1 — 07/09/2026",
+ "updatedAt": "2026-09-07T09:00:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -520,9 +520,9 @@
    "type": "programme",
    "vol": "Radisson → Dar Diaffa",
    "pax": [],
-   "paxEstime": "~62",
+   "paxEstime": "62",
    "vehicule": "4 × 17 pl (+ 1 Vito réserve)",
-   "note": "Dîner — dépose rue Jbel Lakhdar. 61 pax hébergés + Ondias (bus ? ⚠️) + 3 invités externes (mode d'arrivée à confirmer). 1 Vito en réserve.",
+   "note": "Dîner — dépose rue Jbel Lakhdar. 61 pax hébergés + Ondias (prend le bus) = 62, + 3 invités externes (mode d'arrivée à confirmer). 1 Vito en réserve.",
    "origine": "Radisson Blu",
    "destination": "Dar Diaffa (Médina)",
    "level": "critique"
@@ -534,7 +534,7 @@
    "type": "programme",
    "vol": "Dar Diaffa → Radisson",
    "pax": [],
-   "paxEstime": "~62",
+   "paxEstime": "62",
    "vehicule": "4 × 17 pl",
    "note": "Retour groupé après le dîner (pas d'after).",
    "origine": "Dar Diaffa (Médina)",
@@ -583,7 +583,7 @@
    ],
    "paxEstime": "18",
    "vehicule": "1 × 17 pl + 1 Vito",
-   "note": "Liste nominative de 18 (fichier du 07/09) — ⚠️ Tonka fait désormais le Marrakech Express selon Clémence, Kopp partirait le matin : liste à reconfirmer.",
+   "note": "Liste nominative de 18 (fichier du 07/09, Tonka inclus). Kopp ⚠️ : partirait le matin.",
    "origine": "Le Grand Bazar (Médina)",
    "destination": "Radisson Blu",
    "level": "critique"
@@ -636,9 +636,9 @@
     "watat",
     "zouari"
    ],
-   "paxEstime": "~42",
+   "paxEstime": "~41",
    "vehicule": "3 × 17 pl",
-   "note": "Retour groupé fin d'activité : 40 + Tonka + Ondias.",
+   "note": "Retour groupé fin d'activité : 40 + Ondias.",
    "origine": "Riad Dar Essalam (Médina)",
    "destination": "Radisson Blu",
    "level": "normal"
