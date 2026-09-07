@@ -1,6 +1,6 @@
 {
- "version": "V1.0 — 03/09/2026",
- "updatedAt": "2026-09-03T22:00:00+01:00",
+ "version": "V2.0 — 07/09/2026",
+ "updatedAt": "2026-09-07T08:30:00+01:00",
  "items": [
   {
    "id": "radisson",
@@ -14,11 +14,11 @@
    ],
    "acces": "Dépose bus devant l'hôtel (parking + voiturier pour les rotations les 09, 10 et 11/09).",
    "quoi": [
-    "Hébergement : chambres Supérieures single BB, 199 nuitées, 4 sur-classements suite (dont Boisselier)",
-    "Plénière (cabaret 6 pers., sono 2 fixes + 2 HF, VP + écran) + 3 salles de sous-commission",
+    "Hébergement : chambres Supérieures single BB, 196 nuitées après changements du 07/09 (rooming V7 à transmettre ⚠️), 4 sur-classements suite (dont Boisselier)",
+    "Plénière (cabaret 6 pers., sono 2 fixes + 2 HF, VP + écran, pas d'écrans supplémentaires) + 3 salles de sous-commission",
     "Salle Gingembre : réunion privée Boisselier 10/09 12:00–13:30",
     "Petite salle : atelier 10 pax 10/09 14:30–18:00",
-    "Restaurant Lila : dîner J1 (53) et déjeuner J2 (62)",
+    "Restaurant Lila : dîner J1 (52) et déjeuner J2 (62)",
     "Bagagerie dédiée le 11/09 dès 08:00, chargement bus 11:15"
    ],
    "setup": [
@@ -48,15 +48,15 @@
    ],
    "acces": "Dépose des 4 minibus rue Jbel Lakhdar, puis à pied.",
    "quoi": [
-    "Dîner J2 mercredi 09/09 — 65 convives, 8 tables",
-    "Rooftop vin & bière 20:30 (double vue Koutoubia) puis passage à table",
-    "4 prises de parole ~15 min (Bellefqih + 3 invités), micro HF Badr",
-    "Musique live + spectacle"
+    "Dîner J2 mercredi 09/09 — 65 convives (64 placés + Ondias ⚠️), 8 tables",
+    "Verre d'accueil 15 min au rooftop (vin & bière, double vue Koutoubia) puis passage à table",
+    "5 prises de parole en début de dîner (Bellefqih + 3 invités + 1 ⚠️), micro HF Badr",
+    "Musique live + spectacle — pas d'after"
    ],
    "setup": [
     "18:00 : roll-up plan de table à l'entrée + PM MRCO",
     "Prismes n° de table ×8 en hauteur",
-    "Menus-marque-place ×65",
+    "Menus-marque-place : carte Bedhiafi (T5) à retirer, Ondias sur carte vierge",
     "Colonnes son + 2 micros HF (Badr Khyat) — Diaffa n'a rien à louer"
    ],
    "plan": "diaffa",
@@ -74,9 +74,9 @@
    ],
    "acces": "Aller groupé 12:15 depuis le Radisson (4 × 17 pl).",
    "quoi": [
-    "Déjeuner J3 jeudi 10/09 — 59 pax",
+    "Déjeuner J3 jeudi 10/09 — 60 pax (58 + Tonka + Ondias)",
     "Brief + constitution des équipes Marrakech Express 14:20",
-    "Navette retour anticipé 14:30 (18 pax)"
+    "Navette retour anticipé 14:30 (18 pax, liste à reconfirmer ⚠️)"
    ],
    "setup": [
     "Liste nominative des 18 du retour 14:30 à remettre sur site"
@@ -117,14 +117,15 @@
    ],
    "acces": "À pied depuis le Radisson — aucun véhicule.",
    "quoi": [
-    "Dîner J3 jeudi 10/09 — 59 convives, 6 tables de 10",
+    "Dîner J3 jeudi 10/09 — 60 convives (58 placés + Tonka + Ondias ⚠️), 6 tables",
+    "Mot d'intro du CEO (sans équipement) → dîner → after",
     "DJ Badr Khyat",
-    "2 points de bar hors forfait (paiement individuel) : vin & bière près des tables, bar spiritueux"
+    "After : 2 points de bar séparés hors forfait (paiement individuel)"
    ],
    "setup": [
     "18:30 : roll-up plan de table + PM MRCO à l'entrée",
     "Prismes ×6",
-    "Menus-marque-place ×59",
+    "Menus-marque-place : carte Bedhiafi (T2) à retirer, Tonka + Ondias sur cartes vierges",
     "DJ + son + micro HF Badr"
    ],
    "plan": "rotisserie",
@@ -144,7 +145,7 @@
    ],
    "acces": "Transfert 11:45 depuis le Radisson AVEC BAGAGES (4 × 17 pl). Beldi → RAK ~25 min.",
    "quoi": [
-    "Déjeuner J4 vendredi 11/09 — 50 confirmés (dispatch ~52 ⚠️)",
+    "Déjeuner J4 vendredi 11/09 — ~52 (50 confirmés au Beldi ⚠️, −Bedhiafi +Tonka +Ondias)",
     "Service dès 12:15–12:30, priorité aux 16 de la navette 13:35",
     "Espace calme + wifi jusqu'à 16:25",
     "5 navettes vers l'aéroport : 13:35, 14:00, 15:00, 15:55, 16:25"

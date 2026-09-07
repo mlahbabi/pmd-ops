@@ -31,6 +31,7 @@ button, input, select, textarea { font: inherit; }
 .btn-danger { background: rgba(229,72,77,.15); border-color: var(--color-alert-red); color: #ffb4b6; }
 .input { width: 100%; min-height: 44px; border-radius: .75rem; border: 1px solid var(--color-line); background: var(--color-ink-3); color: var(--color-ivory); padding: .5rem .8rem; }
 .input::placeholder { color: var(--color-warm); }
+@keyframes toast-in { from { transform: translateY(-12px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes pulse-red { 0%,100% { box-shadow: 0 0 0 0 rgba(229,72,77,.55);} 50% { box-shadow: 0 0 0 6px rgba(229,72,77,0);} }
 .pulse-red { animation: pulse-red 1.6s ease-out infinite; }
 input[type="datetime-local"] { color-scheme: dark; }

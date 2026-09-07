@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import { useApp } from '../context'
+import Toasts from './Toasts'
 
 const TABS = [
   { to: '/', label: 'Maintenant', icon: '⏱️' },
@@ -14,6 +15,7 @@ export default function Layout() {
   const { store, simulated } = useApp()
   return (
     <div className="min-h-dvh flex flex-col">
+      <Toasts />
       <div className="safe-top sticky top-0 z-30">
         {!store.online && <div className="bg-alert-orange text-ink text-xs font-semibold text-center px-3 py-1">Hors ligne — données en cache. Les coches partiront au retour du réseau.</div>}
         {store.online && store.mode === 'local' && <div className="bg-ink-3 text-warm text-xs text-center px-3 py-1 border-b border-line">Mode local — coches enregistrées sur cet appareil uniquement (Supabase non configuré)</div>}

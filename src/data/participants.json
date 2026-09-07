@@ -1,6 +1,6 @@
 {
- "version": "V1.0 — 03/09/2026",
- "updatedAt": "2026-09-03T22:00:00+01:00",
+ "version": "V2.0 — 07/09/2026",
+ "updatedAt": "2026-09-07T08:30:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -173,50 +173,6 @@
    ]
   },
   {
-   "nom": "BEDHIAFI",
-   "prenom": "Afef",
-   "arrivee": "08/09",
-   "depart": "12/09",
-   "nuitees": 4,
-   "regime": "",
-   "note_hotel": "",
-   "fonction": "Partner",
-   "metier_tb": "Advisory",
-   "bureau": "Tunis",
-   "equipe_tb": 5,
-   "genre": "F",
-   "categorie": "Conseil",
-   "vip": "",
-   "diaffa_table": 5,
-   "diaffa_place": 7,
-   "rotisserie_table": 2,
-   "rotisserie_place": 3,
-   "statut": "participant",
-   "retour_radisson_1430": false,
-   "id": "bedhiafi",
-   "pays": "Tunis via Casablanca",
-   "arr": {
-    "date": "08/09",
-    "heure": "18:10",
-    "vol": "AT413",
-    "de": "Casablanca",
-    "cie": "RAM Express",
-    "mode": "vol"
-   },
-   "dep": {
-    "date": "12/09",
-    "heure": "10:40",
-    "vol": "AT402",
-    "vers": "Casablanca",
-    "cie": "RAM Express",
-    "mode": "vol"
-   },
-   "transferts": [
-    "w0809-1810",
-    "w1209-0815"
-   ]
-  },
-  {
    "nom": "BELEMQADEM",
    "prenom": "Hicham",
    "arrivee": "09/09",
@@ -339,7 +295,7 @@
   {
    "nom": "BENJELLOUN TOUIMI",
    "prenom": "Brahim",
-   "genre": "",
+   "genre": "H",
    "categorie": "VIP",
    "vip": "VIP",
    "diaffa_table": 1,
@@ -350,10 +306,15 @@
    "rotisserie_place": null,
    "retour_radisson_1430": false,
    "id": "benjelloun-touimi",
-   "note_app": "Invité externe du dîner Diaffa (prise de parole). Mode d'arrivée à confirmer par Clémence.",
+   "note_app": "Invité externe du dîner Diaffa (prise de parole). Dort au Radisson le 09/09. Mode d'arrivée au dîner à confirmer.",
    "a_confirmer": [
     "mode d'arrivée Diaffa"
    ],
+   "arrivee": "09/09",
+   "depart": "10/09",
+   "nuitees": 1,
+   "regime": "",
+   "note_hotel": "Chambre du 09→10 (réaffectation de la chambre annulée hors délai) — confirmé par la liste client du 07/09",
    "arr": {
     "date": null,
     "heure": null,
@@ -583,7 +544,7 @@
     "mode": "vol"
    },
    "transferts": [
-    "w0809-1350",
+    "w0809-1340",
     "w1109-1555"
    ]
   },
@@ -817,7 +778,7 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "dupont-noel",
-   "note_app": "Arrive par la route depuis Casablanca le 09/09 (départ Casa ~17:30). Accueil à l'hôtel par MRCO puis transfert dîner Diaffa.",
+   "note_app": "CEO. Arrive par la route depuis Casablanca le 09/09 (départ Casa ~17:30). Accueil à l'hôtel par MRCO puis transfert dîner Diaffa. Petit mot d'intro au dîner Rôtisserie du 10/09 (sans équipement).",
    "pays": "France, arrivée via Casablanca en voiture",
    "arr": {
     "date": "09/09",
@@ -894,26 +855,27 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "elmaleh",
+   "note_app": "Plan de vol modifié le 06/09 : arrivée TO9800 13:40 (Orly) au lieu de AF1876 17:50 ; départ AF1277 10:40 le 11/09 au lieu de AF1777 06:10.",
    "pays": "France",
    "arr": {
     "date": "08/09",
-    "heure": "17:50",
-    "vol": "AF1876",
-    "de": "Paris CDG",
-    "cie": "Air France",
+    "heure": "13:40",
+    "vol": "TO9800",
+    "de": "Paris Orly",
+    "cie": "Transavia",
     "mode": "vol"
    },
    "dep": {
     "date": "11/09",
-    "heure": "06:10",
-    "vol": "AF1777",
+    "heure": "10:40",
+    "vol": "AF1277",
     "vers": "Paris CDG",
     "cie": "Air France",
     "mode": "vol"
    },
    "transferts": [
-    "w0809-1750",
-    "w1109-0345"
+    "w0809-1340",
+    "w1109-0750"
    ]
   },
   {
@@ -1249,44 +1211,6 @@
    ]
   },
   {
-   "nom": "INVITÉ DÎNER 09/09",
-   "prenom": "(nom à communiquer)",
-   "arrivee": "09/09",
-   "depart": "10/09",
-   "nuitees": 1,
-   "regime": "",
-   "note_hotel": "1 chambre — réaffectation de la chambre annulée hors délai",
-   "statut": "invité externe",
-   "equipe_tb": null,
-   "diaffa_table": null,
-   "rotisserie_table": null,
-   "diaffa_place": null,
-   "rotisserie_place": null,
-   "retour_radisson_1430": false,
-   "id": "invite-diner-09-09",
-   "a_confirmer": [
-    "nom à communiquer par Clémence"
-   ],
-   "note_app": "Chambre 09→10 réservée pour un invité du dîner Diaffa (1 des 3 invités externes). Nom à communiquer.",
-   "arr": {
-    "date": null,
-    "heure": null,
-    "vol": null,
-    "de": null,
-    "cie": null,
-    "mode": "non communiqué"
-   },
-   "dep": {
-    "date": null,
-    "heure": null,
-    "vol": null,
-    "vers": null,
-    "cie": null,
-    "mode": "non communiqué"
-   },
-   "transferts": []
-  },
-  {
    "nom": "JACQUART",
    "prenom": "Damien",
    "arrivee": "08/09",
@@ -1384,13 +1308,13 @@
    "diaffa_place": 5,
    "rotisserie_table": 6,
    "rotisserie_place": 8,
-   "note_app": "Rooming = départ 10/09, vol non communiqué, mais placé Rôtisserie T6 le 10 au soir.",
+   "note_app": "Clémence (06/09) : repartirait a priori en train vers Casa le jeudi 10 matin. Si confirmé : ni déjeuner Grand Bazar, ni navette 14h30, ni Rôtisserie. Nuit du 09→10 au Radisson.",
    "statut": "intervenant",
    "equipe_tb": null,
    "id": "kopp",
    "a_confirmer": [
-    "vol retour non communiqué",
-    "départ 10/09 vs dîner Rôtisserie T6"
+    "Retour a priori en train vers Casa le jeudi 10 au matin (Clémence, 06/09) — aucun vol",
+    "Encore placé Rôtisserie T6/P8 et dans la navette 14h30 alors qu'il partirait le matin"
    ],
    "pays": "France",
    "arr": {
@@ -1407,7 +1331,7 @@
     "vol": null,
     "vers": null,
     "cie": null,
-    "mode": "non communiqué"
+    "mode": "a priori train vers Casa le 10/09 au matin (à confirmer)"
    },
    "transferts": []
   },
@@ -1688,14 +1612,15 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "malouche",
+   "note_app": "Plan de vol du 07/09 : arrive en voiture avec un associé marocain (plus de transfert aller, n'est plus sur AF1776 23:15). Départ 11/09 AF1077 inchangé.",
    "pays": "Paris",
    "arr": {
     "date": "08/09",
-    "heure": "23:15",
-    "vol": "AF1776",
-    "de": "Paris CDG",
-    "cie": "Air France",
-    "mode": "vol"
+    "heure": null,
+    "vol": null,
+    "de": null,
+    "cie": null,
+    "mode": "Pas de plan de vol, arrivée avec un associé marocain en voiture"
    },
    "dep": {
     "date": "11/09",
@@ -1706,7 +1631,6 @@
     "mode": "vol"
    },
    "transferts": [
-    "w0809-2315",
     "w1109-1335"
    ]
   },
@@ -2234,6 +2158,51 @@
    ]
   },
   {
+   "nom": "ONDIAS",
+   "prenom": "Fanny",
+   "genre": "F",
+   "statut": "participant",
+   "categorie": "",
+   "vip": "",
+   "bureau": "",
+   "metier_tb": "",
+   "fonction": "",
+   "regime": "",
+   "note_hotel": "",
+   "equipe_tb": null,
+   "retour_radisson_1430": false,
+   "diaffa_table": null,
+   "diaffa_place": null,
+   "rotisserie_table": null,
+   "rotisserie_place": null,
+   "id": "ondias",
+   "note_app": "Avait annulé, revient finalement (Clémence, 06/09). Gère seule son hébergement et ses transferts (vient accompagnée). À compter à toutes les séquences : déjeuners, dîners, Marrakech Express. Aucune chambre au Radisson.",
+   "a_confirmer": [
+    "table Diaffa",
+    "table Rôtisserie",
+    "équipe Marrakech Express",
+    "bureau / métier",
+    "prend-elle les bus de groupe (Médina, Beldi) ?"
+   ],
+   "arr": {
+    "date": null,
+    "heure": null,
+    "vol": null,
+    "de": null,
+    "cie": null,
+    "mode": "gère seule (vient accompagnée)"
+   },
+   "dep": {
+    "date": null,
+    "heure": null,
+    "vol": null,
+    "vers": null,
+    "cie": null,
+    "mode": "gère seule"
+   },
+   "transferts": []
+  },
+  {
    "nom": "PIERRON",
    "prenom": "Clémence",
    "arrivee": "07/09",
@@ -2324,7 +2293,7 @@
    "arrivee": "08/09",
    "depart": "11/09",
    "nuitees": 3,
-   "regime": "Sans agneau (signalé le 03/09)",
+   "regime": "Pas d'agneau",
    "note_hotel": "Contrainte alimentaire ajoutée le 03/09",
    "retour_radisson_1430": true,
    "genre": "H",
@@ -2337,7 +2306,7 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "righi",
-   "note_app": "Sans agneau signalé le 03/09 : plat alternatif demandé à Diaffa + Beldi.",
+   "note_app": "Sans agneau (liste client du 07/09) : plat alternatif demandé à Diaffa (épaule d'agneau) et au Beldi (couscous royal). Clémence demande une option de secours pour le dîner du 09.",
    "pays": "France",
    "arr": {
     "date": "08/09",
@@ -2628,32 +2597,37 @@
    "nom": "TONKA",
    "prenom": "Tshiamala",
    "arrivee": "07/09",
-   "depart": "10/09",
-   "nuitees": 3,
+   "depart": "11/09",
+   "nuitees": 4,
    "regime": "",
-   "note_hotel": "",
+   "note_hotel": "Nuit supplémentaire du 10→11 (Clémence, 06/09) — liste des nuitées à jour attendue",
    "retour_radisson_1430": true,
    "genre": "H",
    "categorie": "A&A",
    "vip": "",
    "diaffa_table": 1,
    "diaffa_place": 9,
-   "rotisserie_table": "absent",
+   "rotisserie_table": null,
    "statut": "participant",
    "equipe_tb": null,
    "rotisserie_place": null,
    "id": "tonka",
+   "note_app": "Changement urgent (06/09) : arrive le 07/09 par IB1853 depuis Madrid à 17:05 (au lieu de AF1876 17:50) ; reste une nuit de plus, repart le 11/09 par AF1877 18:55. À compter au déjeuner du 10, au Marrakech Express, au dîner Rôtisserie et au déjeuner Beldi.",
+   "a_confirmer": [
+    "table Rôtisserie (plan de table à jour attendu de Clémence)",
+    "Marrakech Express : équipe ou navette 14h30 ? (fichier du 07/09 le laisse en navette 14h30)"
+   ],
    "pays": "RD Congo via Paris",
    "arr": {
     "date": "07/09",
-    "heure": "17:50",
-    "vol": "AF1876",
-    "de": "Paris CDG",
-    "cie": "Air France",
+    "heure": "17:05",
+    "vol": "IB1853",
+    "de": "Madrid",
+    "cie": "Iberia",
     "mode": "vol"
    },
    "dep": {
-    "date": "10/09",
+    "date": "11/09",
     "heure": "18:55",
     "vol": "AF1877",
     "vers": "Paris CDG",
@@ -2661,8 +2635,8 @@
     "mode": "vol"
    },
    "transferts": [
-    "w0709-1750",
-    "w1009-1630"
+    "w0709-1705",
+    "w1109-1625"
    ]
   },
   {
@@ -2706,7 +2680,7 @@
     "mode": "vol"
    },
    "transferts": [
-    "w0809-1350",
+    "w0809-1340",
     "w1009-0710"
    ]
   },

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ckId, useApp } from '../context'
 import { DATA_VERSION, pending, sequences, sequencesOfDay } from '../lib/data'
@@ -27,16 +27,6 @@ export default function Now() {
   const pendingDue = pending.filter(p => !store.checks[`pending:${p.id}`]?.done && (p.echeance.includes('-') ? p.echeance <= today : today >= '2026-09-09'))
   const nextDay = DAYS.find(d => d > today)
   const nextSeqs = !future.length && !enCours.length && nextDay ? sequences.filter(s => s.date === nextDay).slice(0, 3) : []
-
-  // Vibration à T-15 (une fois par séquence)
-  const vibrated = useRef(new Set<string>())
-  useEffect(() => {
-    future.forEach(({ s, st }) => {
-      if (st.badge === 'T-15' && s.level !== 'normal' && !vibrated.current.has(s.id)) {
-        vibrated.current.add(s.id); try { navigator.vibrate?.([200, 100, 200]) } catch { /* non supporté */ }
-      }
-    })
-  }, [future])
 
   const [noteText, setNoteText] = useState('')
   const [noteLevel, setNoteLevel] = useState<NoteLevel>('info')

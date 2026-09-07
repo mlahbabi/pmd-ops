@@ -1,64 +1,70 @@
 # DATA_CHECK — PMD Ops (Partners’ Meeting, Marrakech, 07 → 13 septembre 2026)
 
-Vérification du 03/09/2026 (soir) de `participants.json` (66 entrées, source principale) contre les fichiers sources datés 030926, par script Node (xlsx + mammoth). Règle de conflit appliquée : `participants.json` > xlsx/docx du 03/09 > reste.
+## Mise à jour du 07/09/2026 (V2.0) — emails « Derniers changements » de Clémence Pierron (06/09) + 4 fichiers du 07/09
 
-## 1. Sources vérifiées
+Fichiers comparés ligne à ligne aux versions du 03/09 : `PLAN DE TABLE PMEETING -070926.xlsx`, `Teambuilding - 070926.xlsx`, `Liste participants VF - pour envoi Mehdi - 070926.xlsx`, `Conso Plans-de-Vol … 070926.xlsx`. La liste des nuitées à jour et les plans de table intégrant Tonka et Ondias annoncés « pour demain » par Clémence le 06/09 soir ne sont pas encore reçus.
+
+### Changements intégrés
+
+| # | Changement | Source | Impact dans l'app |
+|---|---|---|---|
+| 1 | **Afef Bedhiafi annulée** | Email 06/09 + retirée des 4 fichiers | Fiche supprimée. −4 nuitées (08→12). Vagues 08/09 18:10 AT413 (7 pax) et 12/09 08:15 (8 pax). Diaffa T5 = 8, Rôtisserie T2 = 9. Équipe TB 5 = 5 pax (40 au total). |
+| 2 | **Michel Elmaleh** : arrivée TO9800 13:40 Orly (au lieu de AF1876 17:50), départ AF1277 10:40 le 11/09 (au lieu de AF1777 06:10) | Email 06/09 + plans de vol | Nouvelle vague 08/09 13:40 (Vito commun avec TB7522 13:50 : 3 pax). AF1876 17:50 = 18 pax. Le 11/09 : vague 03:45 = Djibo seule ; vague 07:50 = Zouari, Watat, Elmaleh. |
+| 3 | **Tshiamala Tonka** : arrive le 07/09 par IB1853 (Madrid) 17:05 ; reste une nuit de plus ; repart le 11/09 par AF1877 18:55 | Email 06/09 soir (urgent) + plans de vol | Nouvelle vague 07/09 17:05 (même Vito que 17:50 et 18:10). Course du 10/09 16:30 supprimée. Ajouté à la navette Beldi 16:25 du 11/09 (8 pax). +1 nuitée. À compter au déjeuner du 10, Marrakech Express, Rôtisserie, Beldi : table Rôtisserie et équipe ⚠️ (plans à jour attendus). |
+| 4 | **Fanny Ondias** revient (avait annulé) ; gère seule hébergement et transferts ; à compter à toutes les séquences | Email 06/09 soir | Fiche créée (participant, sans chambre, sans transfert aéroport). Tables Diaffa / Rôtisserie, équipe TB, bureau : ⚠️. Effectifs repas +1. |
+| 5 | **Mohamed-Ali Malouche** : arrive en voiture avec un associé marocain (plus sur AF1776 23:15) | Plans de vol 07/09 (non mentionné dans l'email) | Vague 08/09 23:15 = Bernardini, Ibraima (2 pax, late dinner 2). Départ 11/09 navette 13:35 inchangé. |
+| 6 | **Brahim Benjelloun Touimi** = la chambre du 09→10 | Liste participants VF 07/09 (nuit du 9 au 10 cochée) | Entrée « Invité dîner 09/09 » fusionnée dans sa fiche. Point n°4 clos. |
+| 7 | **Jonathan Righi** : « Pas d'agneau » désormais dans la liste client | Liste VF 07/09 + email | Régime confirmé ; option de secours demandée par Clémence pour Diaffa (plat alternatif) et Beldi. |
+| 8 | **Julien Kopp** : « repartirait a priori en train vers Casa le jeudi 10 matin » | Email 06/09 | Toujours placé Rôtisserie T6/P8 et dans la navette 14h30 dans les fichiers du 07/09 : ⚠️ à trancher (point n°1). |
+| 9 | **Diaffa** : verre d'accueil 15 min, **5 prises de parole** en début de dîner, **pas d'after** | Email 06/09 | Timeline et checklist mises à jour ; 5e prise de parole ⚠️ (4 identifiées : Bellefqih + 3 invités). |
+| 10 | **Rôtisserie** : mot d'intro du CEO (sans équipement) → dîner → after avec 2 points de bar séparés | Email 06/09 | Timeline mise à jour (Dupont-Noel = CEO). |
+| 11 | Pas d'écrans supplémentaires à l'hôtel | Email 06/09 | Noté dans le setup du 08/09 et la plénière. |
+
+### Totaux de contrôle (V2)
+
+| Indicateur | 03/09 | 07/09 | Source |
+|---|---|---|---|
+| Fiches | 66 | 65 (56 participants, 2 orga Deloitte, 4 intervenants, 3 invités externes) | JSON |
+| Nuitées Radisson | 199 | 196 (1·1·1·1·5·52·62·58·13·2) | Liste VF 07/09 + Tonka +1 |
+| Marrakech Express | 41 / 7 équipes | 40 placés (6·6·6·6·5·6·5) + Tonka et Ondias à placer | Teambuilding 07/09 |
+| Navette 14h30 | 18 | 18 (Kopp et Tonka à reconfirmer) | Teambuilding 07/09 |
+| Dîner Diaffa | 65 | 64 placés + Ondias = 65 | Plan de table 07/09 |
+| Dîner Rôtisserie | 59 | 58 placés + Tonka + Ondias = 60 | Plan de table 07/09 |
+| Déjeuner Grand Bazar | 59 | 60 (Kopp ⚠️) | — |
+| Déjeuner Beldi | 50 confirmés / ~52 | ~52 (−Bedhiafi +Tonka +Ondias) | — |
+| Vagues aéroport | 29 | 29 (+17:05 IB1853, +13:40 TO9800, −16:30 Tonka, fusion 13:40/13:50) | Dispatch V5 (app) |
+
+### À faire hors app (signalé dans Points en attente)
+
+- Dispatch V5 à transmettre à Simohamed **avant 17:05 aujourd'hui** (Tonka IB1853).
+- Rooming V7 à transmettre au Radisson (196 nuitées).
+- Plans de table + teambuilding + nuitées à jour à recevoir de Clémence (Tonka, Ondias).
+- Signalétique : retirer les 2 cartes Bedhiafi ; cartes vierges Ondias ×2 et Tonka ×1 ; les roll-ups plans de table imprimés mentionnent encore Bedhiafi.
+
+---
+
+## Vérification initiale du 03/09/2026 (V1.0)
+
+Vérification de `participants.json` (66 entrées, source principale) contre les fichiers sources datés 030926, par script Node (xlsx + mammoth). Règle de conflit appliquée : `participants.json` > xlsx/docx du 03/09 > reste.
 
 | Source | Rôle | Résultat |
 |---|---|---|
 | `participants.json` (fourni) | 66 entrées : 62 rooming + 1 invité chambre + 3 invités externes Diaffa | Base de l'app, enrichie des vols et des vagues de transfert |
-| Deloitte_Radisson_Rooming_Nuitees_V6_030926.xlsx | Séjours, nuitées, régimes, notes hôtel | 62 pax + 1 invité, 199 nuitées — **conforme** |
-| Liste participants VF - 030926.xlsx | Séjour client, teambuilding, contraintes | 62 lignes — **conforme** (écart Righi, §2) |
-| Teambuilding liste du 030926.xlsx | 7 équipes / 41 pax ; navette 14h30 (18 pax) | **conforme** |
-| Plan de table des diners - 030926 def.xlsx | Onglet « mercredi 8 » = Diaffa 09/09 (65 cartes, 8 tables) ; onglet « jeudi 9 » = Rôtisserie 10/09 (59 cartes, 6 tables) | **conforme** (2 doublons de place dans la source, §2) |
-| Conso Plans-de-Vol … -030926.xlsx | Vols arrivée/départ, provenance | 62 lignes — **conforme** (écart Kopp) |
-| MRCO_Dispatch_Transport_Sept2026_V4_030926.docx | 29 vagues aéroport + 6 transferts programme | Tous les pax avec vol ont une vague — **conforme** |
-| Deloitte_Radisson_Fiche_Fonction_V5_030926.docx | Salles, restauration, contingent, contacts hôtel | Programme ops ; **tarif, taxe de séjour et intitulé « séminaire des dirigeants » exclus** |
-| Deloitte_PushMail_Programme_Participants_020926.docx | Programme officiel participants | Libellés des séquences de travail repris (plénière, ateliers Design thinking, formation IA, pitchs, AG/closing) ; horaires cohérents avec la spec §6 |
-| PMD_Signaletique_Imprimeur_V3 - 030926 B.zip | Signalétique | Dézippé : contenu interne nommé **V2** (`PMD_Signaletique_Imprimeur_V2/…`). Menus 65+5 / 59+5, 10 prismes, 5 roll-ups, 500 sous-verres, 6 pancartes |
-| Logos PMD Black / White | Identité | Redimensionnés (900 px) + icônes PWA 192/512/180 |
+| Deloitte_Radisson_Rooming_Nuitees_V6_030926.xlsx | Séjours, nuitées, régimes, notes hôtel | 62 pax + 1 invité, 199 nuitées — conforme |
+| Liste participants VF - 030926.xlsx | Séjour client, teambuilding, contraintes | 62 lignes — conforme (écart Righi) |
+| Teambuilding liste du 030926.xlsx | 7 équipes / 41 pax ; navette 14h30 (18 pax) | conforme |
+| Plan de table des diners - 030926 def.xlsx | Onglet « mercredi 8 » = Diaffa 09/09 ; onglet « jeudi 9 » = Rôtisserie 10/09 | conforme (2 doublons de place dans la source) |
+| Conso Plans-de-Vol … -030926.xlsx | Vols arrivée/départ | 62 lignes — conforme (écart Kopp) |
+| MRCO_Dispatch_Transport_Sept2026_V4_030926.docx | 29 vagues aéroport + 6 transferts programme | conforme |
+| Deloitte_Radisson_Fiche_Fonction_V5_030926.docx | Salles, restauration, contingent | tarif, taxe de séjour et intitulé « séminaire des dirigeants » exclus |
+| Deloitte_PushMail_Programme_Participants_020926.docx | Programme officiel participants | libellés repris |
+| PMD_Signaletique_Imprimeur_V3 - 030926 B.zip | Signalétique | contenu interne nommé V2 |
 
-## 2. Écarts relevés
+Écarts relevés le 03/09 et toujours valables : doublons de place Diaffa T8 (place 8) et Rôtisserie T2 (place 9) conservés et signalés en rouge ; Villeminot « F » dans le fichier client (homme) ; lignes « KO » du plan Rôtisserie ignorées ; nuit 12→13 = 2 chambres (fiche fonction V5 : 1) ; adresses Grand Bazar et Dar Essalam non fournies ; numéros de Clémence et Hajer absents de la spec.
 
-| # | Objet | Écart | Traitement dans l'app |
-|---|---|---|---|
-| 1 | KOPP Julien | Vols : arrivée 08/09 ; rooming V6 et participants.json : nuit 09→10, départ 10/09 ; plan de table : placé Rôtisserie T6/P8 le 10 au soir ; vol de départ non communiqué. | participants.json fait foi (09→10). Badge ⚠️ « à confirmer » sur la fiche, point en attente n°1. |
-| 2 | BENJELLOUN TOUIMI, EL HABTI, FIKRAT | Au plan Diaffa (T1/P4, T5/P2, T6/P2) mais absents rooming et liste client ; `statut: participant` dans participants.json alors que la spec §2 les définit comme invités externes. | Statut **invité externe** (spec > JSON sur ce point), pas d'hébergement, mode d'arrivée ⚠️. Genre inconnu pour Benjelloun Touimi et Fikrat (civilité vide). |
-| 3 | INVITÉ DÎNER 09/09 | Chambre 09→10 « nom à communiquer » (rooming V6). | Entrée conservée telle quelle, ⚠️, point en attente n°4. Non fusionnée avec l'un des 3 invités (pas de source). |
-| 4 | Plan Diaffa T8 | Place 8 attribuée deux fois (Chaghil Brasseur, N'Guessan), place 2 vide. | Conservé tel quel, **signalé en rouge** dans le plan de table, ⚠️ sur les 2 fiches, point n°15. |
-| 5 | Plan Rôtisserie T2 | Place 9 attribuée deux fois (Sayam, Sall Plantagenet), place 8 vide. | Idem. |
-| 6 | Plan Rôtisserie T5 | 9 convives, place 9 vide. | Affiché tel quel (10·10·10·10·9·10 = 59). La spec §6 dit « 58 convives » : le plan client donne 59 cartes. |
-| 7 | VILLEMINOT Julien | Genre « F » dans le plan client ; intervenant homme (`genre: H` dans participants.json). | H, ⚠️ civilité du menu Diaffa, point n°16. |
-| 8 | RIGHI Jonathan | « Sans agneau » dans la rooming V6 (03/09), absent de la liste client. | Rooming fait foi ; régime affiché en rouge, plat alternatif Diaffa + Beldi. |
-| 9 | Rôtisserie, lignes « KO » | Courivaud, « El hatbti », PDG1, PDG2 = lignes annulées/doublons de la source. | Ignorées. |
-| 10 | Dispatch V4 vs fiche transport V2 (28/08) | N'Goran sans transfert, Gourd décalé au 09/09 17:50, Wafeu / Ondias / Courivaud retirées, Sayam sur AF1876 17:50. | V4 fait foi. |
-| 11 | Beldi 11/09 | 50 pax confirmés au Beldi vs ~52 dans le dispatch. | Affiché « 50 confirmés (dispatch ~52 ⚠️) », point n°14. |
-| 12 | Nuit 12→13 | Rooming : 2 chambres (Mavungu, Queron) ; fiche fonction V5 : 1. | 2 affiché, ⚠️ à aligner avec l'hôtel. |
-| 13 | Fiche fonction V5 | Contient un tarif (déjeuner VIP), la taxe de séjour, l'intitulé « Séminaire des dirigeants ». | **Exclus** de l'app (règles absolues). |
-| 14 | Lieux | Aucune adresse fournie pour Le Grand Bazar et le Riad Dar Essalam. | « ⚠️ à confirmer » sur les fiches lieux. |
-| 15 | Contacts | Farid : numéro absent ; Clémence / Hajer : pas de numéro dans la spec §8 (celui de Hajer figure dans le push-mail participants, non repris car document client) ; photographe non identifié. | ⚠️ sur les contacts concernés. |
+### Hypothèses
 
-## 3. Éléments affichés « à confirmer » ⚠️ dans l'app
-
-Kopp (vol retour / Rôtisserie) · mode d'arrivée des 3 invités externes · nom de l'invité chambre 09→10 · civilité Villeminot · doublons de place T8 Diaffa et T2 Rôtisserie · dîner orga du 07/09 (lieu) · rooftop Diaffa (confirmation écrite Imane) · effectif Beldi · nuit 12→13 · buffets Lila et menu VIP Boisselier · adresses Grand Bazar / Dar Essalam · numéros Farid, Clémence, Hajer · photographe · impression signalétique.
-
-## 4. Totaux de contrôle
-
-| Indicateur | Valeur | Source |
-|---|---|---|
-| Fiches | 66 (56 participants, 2 organisation Deloitte, 4 intervenants, 4 invités externes dont 1 chambre sans nom) | participants.json |
-| Nuitées | 199 | Rooming V6 |
-| Marrakech Express | 41 pax, 7 équipes (6·6·6·6·6·6·5) | Teambuilding liste |
-| Dîner Diaffa 09/09 | 65 convives, 8 tables (9·8·7·8·9·8·8·8) | Plan de table |
-| Dîner Rôtisserie 10/09 | 59 convives, 6 tables (10·10·10·10·9·10) | Plan de table |
-| Navette retour 14h30 le 10/09 | 18 pax | Teambuilding liste / Dispatch V4 |
-| Vagues transport | 29 aéroport + 6 programme | Dispatch V4 |
-| Séquences timeline | 68 (03 → 12/09) | Spec §6 |
-| Régimes alimentaires | 7 | Rooming V6 |
-| Points en attente | 19 | Spec §9 |
-
-## 5. Hypothèses prises
-
-1. Les 3 invités externes ont le statut « invité externe » (spec §2 et §5.3) bien que `participants.json` les marque « participant » ; l'entrée « INVITÉ DÎNER 09/09 » reste distincte tant que le client n'a pas donné le nom.
-2. Les doublons de place sont conservés tels quels (fichier client) et signalés en rouge, plutôt que réattribués.
-3. Une séquence sans heure de fin est considérée « en cours » pendant 45 min après son début (ou jusqu'à ce que sa checklist soit cochée à 100 %) ; tous les départs aéroport et transferts groupés sont de niveau `critique` (spec §12).
+1. Les 3 invités externes ont le statut « invité externe » (spec) ; Benjelloun Touimi est celui qui dort le 09/09 (liste client du 07/09).
+2. Les doublons de place sont conservés tels quels et signalés en rouge.
+3. Une séquence sans heure de fin reste « en cours » 45 min ou jusqu'à sa checklist à 100 % ; tous les départs aéroport et transferts groupés sont de niveau critique.
+4. (07/09) Elmaleh, arrivé à 13:40, partage le Vito de 13:50 (Bourtourault, Villeminot) ; Tonka, arrivé à 17:05, partage le Vito des vagues 17:50 et 18:10 ; Elmaleh rejoint la Vito de 07:50 le 11/09 (AF1277 10:40 = même dépose que AT402 10:40).
