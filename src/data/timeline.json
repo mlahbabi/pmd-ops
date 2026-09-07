@@ -1,6 +1,6 @@
 {
- "version": "V2.8 — 07/09/2026",
- "updatedAt": "2026-09-07T20:30:00+01:00",
+ "version": "V2.9 — 08/09/2026",
+ "updatedAt": "2026-09-08T08:30:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1211,7 +1211,7 @@
    "effectif": "1",
    "type": "vip",
    "level": "important",
-   "details": "Confidentialité requise. Déjeuner servi en salle (menu à choisir par Clémence ; il peut préférer sa chambre pour la 2e partie).",
+   "details": "Confidentialité requise. Déjeuner servi en salle, forfait boissons soft — Menu 3 : salade de crevettes, suprêmes de pamplemousse et d'orange, vinaigrette à la framboise / Saint-Pierre rôti, risotto au safran, légumes de saison / crème brûlée au safran et aux dattes. Il peut préférer sa chambre pour la 2e partie.",
    "checklist": [
     {
      "id": "s1009-boisselier-c1",
@@ -1219,6 +1219,10 @@
     },
     {
      "id": "s1009-boisselier-c2",
+     "label": "Menu 3 + softs confirmés à l'hôtel"
+    },
+    {
+     "id": "s1009-boisselier-c3",
      "label": "Déjeuner servi en salle"
     }
    ],

@@ -1,6 +1,6 @@
 {
- "version": "V2.8 — 07/09/2026",
- "updatedAt": "2026-09-07T20:30:00+01:00",
+ "version": "V2.9 — 08/09/2026",
+ "updatedAt": "2026-09-08T08:30:00+01:00",
  "items": [
   {
    "id": "m0809-diner",
@@ -39,11 +39,10 @@
   {
    "id": "m1009-vip",
    "date": "2026-09-10",
-   "sequence": "Déjeuner VIP",
+   "sequence": "Déjeuner VIP — M. Boisselier",
    "lieu": "Radisson — salle Gingembre",
-   "menu": "À choisir (M. Boisselier) ⚠️",
-   "boissons": "Softs",
-   "aConfirmer": true
+   "menu": "Menu 3 (choisi le 08/09) : Salade de crevettes, suprêmes de pamplemousse et d'orange, vinaigrette à la framboise / Saint-Pierre rôti, risotto au safran, légumes de saison / Crème brûlée au safran et aux dattes",
+   "boissons": "Forfait boissons soft"
   },
   {
    "id": "m1009-diner",
