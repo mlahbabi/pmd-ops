@@ -1,6 +1,6 @@
 {
- "version": "V2.6 — 07/09/2026",
- "updatedAt": "2026-09-07T14:00:00+01:00",
+ "version": "V2.7 — 07/09/2026",
+ "updatedAt": "2026-09-07T14:30:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -638,11 +638,11 @@
   {
    "nom": "DE BEAUVOIR",
    "prenom": "Amaury",
-   "arrivee": "09/09",
+   "arrivee": "08/09",
    "depart": "11/09",
-   "nuitees": 2,
+   "nuitees": 3,
    "regime": "",
-   "note_hotel": "",
+   "note_hotel": "Arrivée avancée au 08/09 (Clémence, 07/09 14:24) — nuit supplémentaire 08→09",
    "retour_radisson_1430": true,
    "genre": "H",
    "categorie": "VIP",
@@ -656,9 +656,9 @@
    "id": "de-beauvoir",
    "pays": "France",
    "arr": {
-    "date": "09/09",
-    "heure": "09:40",
-    "vol": "AF1276",
+    "date": "08/09",
+    "heure": "17:50",
+    "vol": "AF1876",
     "de": "Paris CDG",
     "cie": "Air France",
     "mode": "vol"
@@ -671,8 +671,9 @@
     "cie": "Air France",
     "mode": "vol"
    },
+   "note_app": "Changement du 07/09 : arrive mardi 08/09 par AF1876 17:50 (vague principale) au lieu de mercredi 09/09 09:40 avec Boisselier. Départ 11/09 AF1077 inchangé.",
    "transferts": [
-    "w0909-0940",
+    "w0809-1750",
     "w1109-1335"
    ]
   },

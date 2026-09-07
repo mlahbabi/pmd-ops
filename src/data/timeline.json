@@ -1,6 +1,6 @@
 {
- "version": "V2.6 — 07/09/2026",
- "updatedAt": "2026-09-07T14:00:00+01:00",
+ "version": "V2.7 — 07/09/2026",
+ "updatedAt": "2026-09-07T14:30:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -160,7 +160,7 @@
    "effectif": "",
    "type": "orga",
    "level": "important",
-   "details": "Bedhiafi annulée (4 nuits 08→12), Tonka +1 nuit (10→11), chambre 09→10 au nom de Brahim Benjelloun Touimi. Total 196 nuitées. Liste des nuitées à jour attendue de Clémence.",
+   "details": "Bedhiafi annulée (4 nuits 08→12), Tonka +1 nuit (10→11), De Beauvoir +1 nuit (08→09, arrivée avancée), chambre 09→10 au nom de Brahim Benjelloun Touimi. Total 197 nuitées. Late check-in Tonka ~00:15.",
    "checklist": [
     {
      "id": "s0709-hotel-c1",
@@ -172,11 +172,16 @@
     },
     {
      "id": "s0709-hotel-c3",
+     "label": "Hôtel informé de la nuit 08→09 de De Beauvoir"
+    },
+    {
+     "id": "s0709-hotel-c4",
      "label": "Chambre 09→10 au nom de Benjelloun Touimi"
     }
    ],
    "persons": [
     "tonka",
+    "de-beauvoir",
     "benjelloun-touimi"
    ],
    "owner": ""
@@ -371,7 +376,7 @@
    "end": null,
    "title": "Check-in / installation — arrivées autonomes",
    "lieu": "Radisson Blu",
-   "effectif": "52 chambres",
+   "effectif": "53 chambres",
    "type": "orga",
    "level": "normal",
    "details": "Chambres Supérieures single, BB. 4 sur-classements suite (dont Boisselier, arrive le 09). Hors dispatch (aucun transfert) : Jacquart (voiture depuis Casa), Queron (voiture perso), N'Goran et Malouche (voiture avec associé marocain), Kopp (autonome via Casa), + 13 arrivées autonomes.",
@@ -528,12 +533,12 @@
    "date": "2026-09-08",
    "start": "17:50",
    "end": null,
-   "title": "Arrivée AF1876 (CDG) ×16 + TO3018 (Orly) ×2 — 18 pax",
+   "title": "Arrivée AF1876 (CDG) ×17 + TO3018 (Orly) ×2 — 19 pax",
    "lieu": "Aéroport RAK → Radisson",
-   "effectif": "18",
+   "effectif": "19",
    "type": "transport",
    "level": "critique",
-   "details": "Frédérick BLEDOU, Ambroise DEPOUILLY, Felicia DJIBO, Joe-Pépin FOUNDOUX, Alain GUINOT, Roméo KOUDOU, Yves MADRE, Dominique MEIZOU, Yann-Eric N'GUESSAN, Yves NGUEMA, Badara NIANG, Bob David NZOIMBENGENE, Jonathan RIGHI, Rama SALL PLANTAGENET, Vylie SAYAM, Sandrine SOPPO PRISO, Nicolas BALESME, Dimitri LUCAS. Véhicule : 1 × 17 pl + 1 Vito. Vague principale (18 pax, Elmaleh retiré). Balesme et Lucas arrivent par TO3018 (Orly).",
+   "details": "Frédérick BLEDOU, Amaury DE BEAUVOIR, Ambroise DEPOUILLY, Felicia DJIBO, Joe-Pépin FOUNDOUX, Alain GUINOT, Roméo KOUDOU, Yves MADRE, Dominique MEIZOU, Yann-Eric N'GUESSAN, Yves NGUEMA, Badara NIANG, Bob David NZOIMBENGENE, Jonathan RIGHI, Rama SALL PLANTAGENET, Vylie SAYAM, Sandrine SOPPO PRISO, Nicolas BALESME, Dimitri LUCAS. Véhicule : 1 × 17 pl + 1 Vito. Vague principale (19 pax : De Beauvoir ajouté le 07/09, Elmaleh retiré). Balesme et Lucas arrivent par TO3018 (Orly).",
    "checklist": [
     {
      "id": "w0809-1750-c1",
@@ -550,6 +555,7 @@
    ],
    "persons": [
     "bledou",
+    "de-beauvoir",
     "depouilly",
     "djibo",
     "foundoux",
@@ -615,7 +621,7 @@
    "end": "22:30",
    "title": "Dîner J1 — Restaurant Lila",
    "lieu": "Radisson Blu — Lila",
-   "effectif": "52",
+   "effectif": "53",
    "type": "restauration",
    "level": "normal",
    "details": "Grand buffet marocain & international. Softs + forfait vin marocain (½). Service souple pour arrivées tardives. Régimes : voir vue Régimes.",
@@ -732,12 +738,12 @@
    "date": "2026-09-09",
    "start": "09:40",
    "end": null,
-   "title": "Arrivée AF1276 (CDG) — 2 pax",
+   "title": "Arrivée AF1276 (CDG) — 1 pax",
    "lieu": "Aéroport RAK → Radisson",
-   "effectif": "2",
+   "effectif": "1",
    "type": "transport",
    "level": "important",
-   "details": "Bertrand BOISSELIER, Amaury DE BEAUVOIR. Véhicule : 1 Vito. VIP ++++ : M. Boisselier (président du CA France)",
+   "details": "Bertrand BOISSELIER. Véhicule : 1 Vito. VIP ++++ : M. Boisselier (président du CA France), seul (De Beauvoir arrive désormais le 08/09).",
    "checklist": [
     {
      "id": "w0909-0940-c1",
@@ -753,8 +759,7 @@
     }
    ],
    "persons": [
-    "boisselier",
-    "de-beauvoir"
+    "boisselier"
    ],
    "owner": "",
    "waveId": "w0909-0940"
