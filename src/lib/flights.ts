@@ -18,7 +18,8 @@ export type FlightStatus = { code: string; status: string; depSched?: string; de
 // clé « airlabs_key » → automatique sur tous les téléphones), variable de build VITE_AIRLABS_KEY.
 import { getState } from './store'
 export const AIRLABS_LS = 'pmd:airlabs'
-const envKey = (import.meta.env.VITE_AIRLABS_KEY as string | undefined) || ''
+// Clé AirLabs de MRCO (compte gratuit, 1 000 requêtes/mois) — outil interne, remplaçable par VITE_AIRLABS_KEY ou la table config.
+const envKey = (import.meta.env.VITE_AIRLABS_KEY as string | undefined) || '09a1fc3f-c1ef-4336-9b26-2961d0cdc229'
 const readKey = () => { try { return (localStorage.getItem(AIRLABS_LS) || getState().config.airlabs_key || envKey).trim() } catch { return envKey } }
 let KEY = readKey()
 export const setAirlabsKey = (k: string) => { try { if (k.trim()) localStorage.setItem(AIRLABS_LS, k.trim()); else localStorage.removeItem(AIRLABS_LS) } catch { /* ignore */ } KEY = readKey(); cache.clear() }
