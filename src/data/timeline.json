@@ -1,6 +1,6 @@
 {
- "version": "V2.4 — 07/09/2026",
- "updatedAt": "2026-09-07T11:00:00+01:00",
+ "version": "V2.5 — 07/09/2026",
+ "updatedAt": "2026-09-07T12:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -916,28 +916,35 @@
    "owner": ""
   },
   {
-   "id": "s0909-dupont",
+   "id": "s0909-route",
    "date": "2026-09-09",
    "start": "18:30",
    "end": null,
-   "title": "Arrivée de David Dupont-Noel (CEO) par la route depuis Casa",
+   "title": "Arrivée par la route depuis Casa : Dupont-Noel, Bellefqih, Faouzi, Belemqadem (même véhicule)",
    "lieu": "Radisson Blu",
-   "effectif": "1",
+   "effectif": "4",
    "type": "vip",
    "level": "important",
-   "details": "Départ Casa ~17:30. Accueil hôtel par MRCO, intégré au transfert dîner de 20:00.",
+   "details": "Les 4 arrivent ensemble dans le même véhicule (Mehdi, 07/09) : David Dupont-Noel (CEO), Rédouane Bellefqih (Managing Partner Maroc), Adnane Faouzi, Hicham Belemqadem. Départ Casa ~17:30. Accueil à l'hôtel par MRCO, check-in, puis transfert dîner Diaffa de 20:00.",
    "checklist": [
     {
-     "id": "s0909-dupont-c1",
-     "label": "Accueilli à l'hôtel"
+     "id": "s0909-route-c1",
+     "label": "Véhicule arrivé à l'hôtel (4 pax)"
     },
     {
-     "id": "s0909-dupont-c2",
-     "label": "Intégré au transfert 20:00"
+     "id": "s0909-route-c2",
+     "label": "Check-in des 4 fait"
+    },
+    {
+     "id": "s0909-route-c3",
+     "label": "Intégrés au transfert 20:00"
     }
    ],
    "persons": [
-    "dupont-noel"
+    "dupont-noel",
+    "bellefqih",
+    "faouzi",
+    "belemqadem"
    ],
    "owner": ""
   },
