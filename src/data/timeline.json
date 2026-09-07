@@ -1,6 +1,6 @@
 {
- "version": "V2.2 — 07/09/2026",
- "updatedAt": "2026-09-07T09:30:00+01:00",
+ "version": "V2.3 — 07/09/2026",
+ "updatedAt": "2026-09-07T10:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -111,7 +111,7 @@
    "effectif": "",
    "type": "orga",
    "level": "critique",
-   "details": "AUJOURD'HUI : Mavungu arrive à 16:40 par AT639 (vols Kinshasa annulés, plus sur AT413M 18:10) et Tonka à 17:05 par IB1853 (Madrid, plus sur AF1876). Le Vito est en place à 16:40, attend 17:05 puis 17:50, départ groupé ~18:30. Elmaleh le 08/09 à 13:40 (TO9800) et départ 11/09 AF1277 10:40. Malouche en voiture (plus sur AF1776). Bedhiafi annulée (AT413 18:10 le 08/09, AT402 le 12/09). Tonka repart le 11/09 par AF1877 (navette Beldi 16:25) et non le 10/09.",
+   "details": "AUJOURD'HUI : Mavungu arrive à 16:40 par AT639 (vols Kinshasa annulés, plus sur AT413M 18:10) et Tonka à 17:05 par IB1853 (Madrid, plus sur AF1876) : Vito avec Farid en place à 16:40, départ groupé ~17:45. Clémence et Hajer (AF1876 17:50) sont accueillies par Mehdi et Mouad avec le véhicule de Mehdi — pas de Vito à 17:50 (transporteur informé). Elmaleh le 08/09 à 13:40 (TO9800) et départ 11/09 AF1277 10:40. Malouche en voiture (plus sur AF1776). Bedhiafi annulée (AT413 18:10 le 08/09, AT402 le 12/09). Tonka repart le 11/09 par AF1877 (navette Beldi 16:25) et non le 10/09.",
    "checklist": [
     {
      "id": "s0709-dispatch-c1",
@@ -119,18 +119,22 @@
     },
     {
      "id": "s0709-dispatch-c2",
-     "label": "Simohamed informé : Tonka 17:05 IB1853 aujourd'hui"
+     "label": "Simohamed informé : Tonka 17:05 IB1853 aujourd'hui, départ groupé ~17:45"
     },
     {
      "id": "s0709-dispatch-c3",
-     "label": "Simohamed informé : Elmaleh 08/09 13:40 + 11/09 07:50"
+     "label": "Simohamed informé : pas de Vito à 17:50 (Clémence + Hajer avec Mehdi)"
     },
     {
      "id": "s0709-dispatch-c4",
-     "label": "Simohamed informé : Malouche et Bedhiafi retirés"
+     "label": "Simohamed informé : Elmaleh 08/09 13:40 + 11/09 07:50"
     },
     {
      "id": "s0709-dispatch-c5",
+     "label": "Simohamed informé : Malouche et Bedhiafi retirés"
+    },
+    {
+     "id": "s0709-dispatch-c6",
      "label": "Simohamed informé : Tonka départ 11/09 16:25 Beldi, course du 10/09 16:30 annulée"
     }
    ],
@@ -183,7 +187,7 @@
    "effectif": "1",
    "type": "transport",
    "level": "critique",
-   "details": "Gervais MAVUNGU. Véhicule : 1 Vito. NOUVEAU (07/09) : vols depuis Kinshasa annulés, Mavungu n'est plus sur AT413M 18:10. Le chauffeur est en place à 16:40, puis attend IB1853 17:05 et AF1876 17:50 — départ groupé ~18:30. À transmettre à Simohamed.",
+   "details": "Gervais MAVUNGU. Véhicule : 1 Vito — Farid. NOUVEAU (07/09) : vols depuis Kinshasa annulés, Mavungu n'est plus sur AT413M 18:10. Farid + chauffeur en place à 16:40, puis attente de IB1853 17:05 — départ groupé ~17:45. À transmettre à Simohamed.",
    "checklist": [
     {
      "id": "w0709-1640-c1",
@@ -214,7 +218,7 @@
    "effectif": "1",
    "type": "transport",
    "level": "critique",
-   "details": "Tshiamala TONKA. Véhicule : Même Vito. NOUVEAU (06/09) : Tonka n'est plus sur AF1876. Le Vito attend ensuite AF1876 17:50 — départ groupé ~18:30.",
+   "details": "Tshiamala TONKA. Véhicule : Même Vito — Farid. NOUVEAU (06/09) : Tonka n'est plus sur AF1876. Départ groupé avec Mavungu ~17:45 vers le Radisson.",
    "checklist": [
     {
      "id": "w0709-1705-c1",
@@ -245,7 +249,7 @@
    "effectif": "2",
    "type": "transport",
    "level": "important",
-   "details": "Hajer BATNINI, Clémence PIERRON. Véhicule : Même Vito. Dernière vague du jour — départ groupé ~18:30 avec Mavungu et Tonka (plus d'attente du 18:10)",
+   "details": "Hajer BATNINI, Clémence PIERRON. Véhicule : Véhicule de Mehdi — Mehdi + Mouad. Accueil personnel de Clémence et Hajer (nos contacts client) par Mehdi et Mouad avec le véhicule de Mehdi. Pas de Vito : le transporteur est au courant.",
    "checklist": [
     {
      "id": "w0709-1750-c1",

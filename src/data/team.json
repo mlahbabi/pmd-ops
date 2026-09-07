@@ -1,17 +1,42 @@
 {
- "version": "V2.2 — 07/09/2026",
- "updatedAt": "2026-09-07T09:30:00+01:00",
+ "version": "V2.3 — 07/09/2026",
+ "updatedAt": "2026-09-07T10:00:00+01:00",
  "membres": [
   "Mehdi",
   "Mouad",
   "Eva",
   "Farid"
  ],
- "affectations": [],
- "moments": [
+ "affectations": [
+  {
+   "sequenceId": "w0709-1640",
+   "owner": "Farid",
+   "role": "accueil aéroport Mavungu (Vito)",
+   "note": ""
+  },
+  {
+   "sequenceId": "w0709-1705",
+   "owner": "Farid",
+   "role": "accueil aéroport Tonka (Vito)",
+   "note": ""
+  },
   {
    "sequenceId": "w0709-1750",
-   "label": "Accueil aéroport 07/09 (17:50 + 18:10)"
+   "owner": "Mehdi",
+   "role": "accueil Clémence & Hajer — véhicule Mehdi",
+   "note": ""
+  },
+  {
+   "sequenceId": "w0709-1750",
+   "owner": "Mouad",
+   "role": "accueil Clémence & Hajer — véhicule Mehdi",
+   "note": ""
+  }
+ ],
+ "moments": [
+  {
+   "sequenceId": "w0709-1640",
+   "label": "Accueil aéroport 07/09 (16:40 Mavungu, 17:05 Tonka, 17:50 Clémence & Hajer)"
   },
   {
    "sequenceId": "w0809-1750",
