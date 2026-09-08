@@ -1,6 +1,6 @@
 {
- "version": "V2.17 — 08/09/2026",
- "updatedAt": "2026-09-08T14:20:00+01:00",
+ "version": "V2.18 — 08/09/2026",
+ "updatedAt": "2026-09-08T14:40:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -1241,15 +1241,15 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "jacquart",
-   "note_app": "Arrivée par la route depuis Casa (aucun transfert aller). Départ navette Beldi 13:35 le 11/09.",
+   "note_app": "Arrive par la route le 08/09 vers 20:30 avec Mohamed Ali Malouche (info Mehdi 08/09) — pendant le dîner Lila : accueil au desk, check-in, puis rejoint le buffet. Départ 11/09 navette Beldi 13:35 (AF1077).",
    "pays": "Paris",
    "arr": {
     "date": "08/09",
-    "heure": null,
+    "heure": "20:30",
     "vol": null,
     "de": null,
     "cie": null,
-    "mode": "Pas de plan de vol pour l'aller, arrivée via Casa avec un associé marocain"
+    "mode": "en voiture, arrivée prévue vers 20:30 (info du 08/09) — avec Mohamed Ali Malouche"
    },
    "dep": {
     "date": "11/09",
@@ -1288,11 +1288,11 @@
    "pays": "Tunis via Casablanca",
    "arr": {
     "date": "08/09",
-    "heure": null,
+    "heure": "17:00",
     "vol": null,
     "de": null,
     "cie": null,
-    "mode": "Pas de plan de vol, arrivée autonome et retour autonome via Casa"
+    "mode": "en voiture, arrivée prévue vers 17:00 (info du 08/09) — avec Thierry Queron"
    },
    "dep": {
     "date": "11/09",
@@ -1302,6 +1302,7 @@
     "cie": null,
     "mode": "retour autonome"
    },
+   "note_app": "Arrive par la route le 08/09 vers 17:00 avec Thierry Queron (info Mehdi 08/09). Accueil au desk, check-in.",
    "transferts": []
   },
   {
@@ -1624,15 +1625,15 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "malouche",
-   "note_app": "Plan de vol du 07/09 : arrive en voiture avec un associé marocain (plus de transfert aller, n'est plus sur AF1776 23:15). Départ 11/09 AF1077 inchangé.",
+   "note_app": "Arrive par la route le 08/09 vers 20:30 avec Damien Jacquart (info Mehdi 08/09) — pendant le dîner Lila : accueil au desk, check-in, puis rejoint le buffet. Départ 11/09 navette Beldi 13:35 (AF1077).",
    "pays": "Paris",
    "arr": {
     "date": "08/09",
-    "heure": null,
+    "heure": "20:30",
     "vol": null,
     "de": null,
     "cie": null,
-    "mode": "Pas de plan de vol, arrivée avec un associé marocain en voiture"
+    "mode": "en voiture, arrivée prévue vers 20:30 (info du 08/09) — avec Damien Jacquart"
    },
    "dep": {
     "date": "11/09",
@@ -2276,15 +2277,15 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "queron",
-   "note_app": "Voiture personnelle à l'arrivée. Départ 13/09 AF1877.",
+   "note_app": "Arrive par la route le 08/09 vers 17:00 avec Mohamed Ali Jebira (info Mehdi 08/09). Accueil au desk, check-in. Départ 13/09 AF1877.",
    "pays": "France",
    "arr": {
     "date": "08/09",
-    "heure": null,
+    "heure": "17:00",
     "vol": null,
     "de": null,
     "cie": null,
-    "mode": "Pas de plan de vol, arrivée via transport personnel (en voiture)"
+    "mode": "en voiture, arrivée prévue vers 17:00 (info du 08/09) — avec Mohamed Ali Jebira"
    },
    "dep": {
     "date": "13/09",
