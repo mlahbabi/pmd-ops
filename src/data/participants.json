@@ -1,6 +1,6 @@
 {
- "version": "V2.12 — 08/09/2026",
- "updatedAt": "2026-09-08T11:00:00+01:00",
+ "version": "V2.13 — 08/09/2026",
+ "updatedAt": "2026-09-08T12:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -2653,15 +2653,12 @@
    "diaffa_table": 8,
    "diaffa_place": 7,
    "rotisserie_table": "absent",
-   "note_app": "Intervenant. Genre 'F' dans le fichier client = erreur probable.",
+   "note_app": "Intervenant, remplace une annulation. Civilité M. confirmée par Mehdi le 08/09 (le fichier client indiquait F).",
    "statut": "intervenant",
    "equipe_tb": null,
    "rotisserie_place": null,
    "retour_radisson_1430": false,
    "id": "villeminot",
-   "a_confirmer": [
-    "civilité sur le menu Diaffa (fichier client : F)"
-   ],
    "pays": "France",
    "arr": {
     "date": "08/09",

@@ -1,6 +1,6 @@
 {
- "version": "V2.12 — 08/09/2026",
- "updatedAt": "2026-09-08T11:00:00+01:00",
+ "version": "V2.13 — 08/09/2026",
+ "updatedAt": "2026-09-08T12:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -903,7 +903,7 @@
    "effectif": "",
    "type": "setup",
    "level": "critique",
-   "details": "Roll-up plan de table à l'entrée + PM MRCO, prismes n° de table ×8 en hauteur, menus-marque-place à chaque place (64 imprimés + Ondias sur carte vierge ; retirer la carte Bedhiafi T5), colonnes son + 2 micros HF (Badr Khyat). Vérifier le plat alternatif de M. Righi (sans agneau) et la civilité du menu Villeminot.",
+   "details": "Roll-up plan de table à l'entrée + PM MRCO, prismes n° de table ×8 en hauteur, menus-marque-place à chaque place (64 imprimés + Ondias sur carte vierge ; retirer la carte Bedhiafi T5), colonnes son + 2 micros HF (Badr Khyat). Vérifier le plat alternatif de M. Righi (sans agneau).",
    "checklist": [
     {
      "id": "s0909-setup-c1",

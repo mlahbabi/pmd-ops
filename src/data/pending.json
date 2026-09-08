@@ -1,6 +1,6 @@
 {
- "version": "V2.12 — 08/09/2026",
- "updatedAt": "2026-09-08T11:00:00+01:00",
+ "version": "V2.13 — 08/09/2026",
+ "updatedAt": "2026-09-08T12:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -176,16 +176,6 @@
    "persons": [
     "chaghil-brasseur",
     "n-guessan"
-   ]
-  },
-  {
-   "id": "pd16",
-   "sujet": "Villeminot marqué « F » dans le fichier client → vérifier civilité sur son menu Diaffa (cartes vierges en réserve)",
-   "responsable": "MRCO",
-   "echeance": "2026-09-09",
-   "level": "normal",
-   "persons": [
-    "villeminot"
    ]
   },
   {
