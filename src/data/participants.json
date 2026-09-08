@@ -1,6 +1,6 @@
 {
- "version": "V2.10 — 08/09/2026",
- "updatedAt": "2026-09-08T09:30:00+01:00",
+ "version": "V2.11 — 08/09/2026",
+ "updatedAt": "2026-09-08T10:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -404,11 +404,11 @@
    "pays": "USA via Casablanca",
    "arr": {
     "date": "08/09",
-    "heure": "13:05",
+    "heure": null,
     "vol": "AT411",
     "de": "Casablanca",
     "cie": "RAM Express",
-    "mode": "vol"
+    "mode": "modifié — à reconfirmer"
    },
    "dep": {
     "date": "12/09",
@@ -418,8 +418,11 @@
     "cie": "RAM Express",
     "mode": "vol"
    },
+   "a_confirmer": [
+    "N'arrivera pas à l'heure prévue (AT411 13:05 le 08/09) — nouvel horaire / vol à reconfirmer avec Clémence"
+   ],
+   "note_app": "Info du 08/09 : n'arrivera pas par AT411 à 13:05 comme prévu. Retirée de la course de 13:05 ; nouvelle heure d'arrivée et transfert à caler dès confirmation de Clémence. Départ 12/09 AT412 inchangé.",
    "transferts": [
-    "w0809-1305",
     "w1209-1625"
    ]
   },

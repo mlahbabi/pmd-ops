@@ -1,6 +1,6 @@
 {
- "version": "V2.10 — 08/09/2026",
- "updatedAt": "2026-09-08T09:30:00+01:00",
+ "version": "V2.11 — 08/09/2026",
+ "updatedAt": "2026-09-08T10:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -411,12 +411,12 @@
    "date": "2026-09-08",
    "start": "13:05",
    "end": null,
-   "title": "Arrivée AT411 (Casa) — 2 pax",
+   "title": "Arrivée AT411 (Casa) — 1 pax",
    "lieu": "Aéroport RAK → Radisson",
-   "effectif": "2",
+   "effectif": "1",
    "type": "transport",
-   "level": "normal",
-   "details": "Kodjo AKPATIGBE, March BISHOP. Véhicule : 1 Vito.",
+   "level": "important",
+   "details": "Kodjo AKPATIGBE. Véhicule : 1 Vito. ⚠️ March Bishop n'arrivera PAS à 13:05 comme prévu (info du 08/09) — nouvel horaire à reconfirmer avec Clémence. Akpatigbe seul sur cette course.",
    "checklist": [
     {
      "id": "w0809-1305-c1",
@@ -432,8 +432,7 @@
     }
    ],
    "persons": [
-    "akpatigbe",
-    "bishop"
+    "akpatigbe"
    ],
    "owner": "",
    "waveId": "w0809-1305"
