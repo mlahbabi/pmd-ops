@@ -1,6 +1,6 @@
 {
- "version": "V2.9 — 08/09/2026",
- "updatedAt": "2026-09-08T08:30:00+01:00",
+ "version": "V2.10 — 08/09/2026",
+ "updatedAt": "2026-09-08T09:30:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -95,9 +95,9 @@
   },
   {
    "id": "pd06",
-   "sujet": "Radisson : buffets Lila (dîner J1 + déjeuner J2) sélection à recevoir",
+   "sujet": "Radisson : sélection du buffet Lila du dîner J1 (08/09) à recevoir — celle du déjeuner J2 est reçue (buffet C + plats marocains)",
    "responsable": "Fatima Zahra",
-   "echeance": "2026-09-07",
+   "echeance": "2026-09-08",
    "level": "normal"
   },
   {

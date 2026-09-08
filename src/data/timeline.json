@@ -1,6 +1,6 @@
 {
- "version": "V2.9 — 08/09/2026",
- "updatedAt": "2026-09-08T08:30:00+01:00",
+ "version": "V2.10 — 08/09/2026",
+ "updatedAt": "2026-09-08T09:30:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -787,8 +787,13 @@
    "effectif": "62 (61 + Ondias)",
    "type": "restauration",
    "level": "normal",
-   "details": "Buffet marocain & international, terrasse + intérieur, softs.",
-   "checklist": [],
+   "details": "Buffet international C + plats marocains (tajine de poulet, tangia marrakchia, tajine berbère, salades marocaines) — détail dans Plus → Menus. Terrasse + intérieur, softs. Régimes : Elmaleh (ni viande, ni fruits de mer, ni crustacés), Batnini / Mtimet / N'Guessan (sans porc), Soppo Priso (sans viande rouge), Zouari (halal), Righi (sans agneau) — buffet compatible, à signaler au maître d'hôtel.",
+   "checklist": [
+    {
+     "id": "s0909-dej-c1",
+     "label": "Régimes signalés au maître d'hôtel"
+    }
+   ],
    "persons": [],
    "owner": ""
   },
