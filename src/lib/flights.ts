@@ -15,7 +15,14 @@ export const flightAwareUrl = (code: string) => `https://www.flightaware.com/liv
 
 export type FlightStatus = { code: string; status: string; depSched?: string; depEstimated?: string; depActual?: string; arrSched?: string; arrEstimated?: string; delay?: number; fetchedAt: number }
 /** Heure utile pour l'équipe : arrivée → estimée/réelle d'atterrissage ; départ → décollage estimé/réel. */
-export const etaOf = (s: FlightStatus, type: 'arrivee' | 'depart') => (type === 'arrivee' ? s.arrEstimated || s.arrSched : s.depActual || s.depEstimated || s.depSched)
+export const addMin = (t: string, d: number) => { const m = ((Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5)) + d) % 1440 + 1440) % 1440; return `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}` }
+/** Heure utile : estimée / réelle si connue, sinon horaire prévu décalé du retard annoncé, sinon horaire prévu. */
+export const etaOf = (s: FlightStatus, type: 'arrivee' | 'depart') => {
+  const est = type === 'arrivee' ? s.arrEstimated : s.depActual || s.depEstimated
+  if (est) return est
+  const sched = type === 'arrivee' ? s.arrSched : s.depSched
+  return sched && s.delay ? addMin(sched, s.delay) : sched
+}
 /** Écart en minutes entre « HH:MM » réel et « HH:MM » prévu (positif = retard). */
 export function deltaMin(eta: string, sched: string) {
   const m = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5))
