@@ -1,6 +1,6 @@
 {
- "version": "V2.16 — 08/09/2026",
- "updatedAt": "2026-09-08T14:00:00+01:00",
+ "version": "V2.17 — 08/09/2026",
+ "updatedAt": "2026-09-08T14:20:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -198,13 +198,14 @@
     "mtimet",
     "sahli",
     "watat",
-    "zouari"
+    "zouari",
+    "bishop"
    ],
    "vehicule": "1 × 17 pl",
-   "note": "7 pax (Bedhiafi annulée). Ou rotation du même 17 pl, récupération ~18:50",
+   "note": "7 pax + ⚠️ March BISHOP SOUS RÉSERVE : elle est à Casablanca et tente d'obtenir une place sur AT413 (décollage 17:05) — à confirmer vers 17:05 (point 28). Sinon : AT403 22:35 → 23:25 (même vol que la course de 23:15 ? à voir). Ou rotation du même 17 pl, récupération ~18:50.",
    "origine": "Aéroport RAK",
    "destination": "Radisson Blu",
-   "level": "important"
+   "level": "critique"
   },
   {
    "id": "w0809-2315",
