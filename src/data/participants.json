@@ -1,6 +1,6 @@
 {
- "version": "V2.15 — 08/09/2026",
- "updatedAt": "2026-09-08T13:30:00+01:00",
+ "version": "V2.16 — 08/09/2026",
+ "updatedAt": "2026-09-08T14:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -113,8 +113,8 @@
    "pays": "Gabon, transit via Paris",
    "arr": {
     "date": "08/09",
-    "heure": "17:50",
-    "vol": "TO3018",
+    "heure": "21:30",
+    "vol": "TO3124",
     "de": "Paris Orly",
     "cie": "Transavia",
     "mode": "vol"
@@ -127,8 +127,9 @@
     "cie": "Transavia",
     "mode": "vol"
    },
+   "note_app": "Vol décalé (info du 08/09) : arrive à 21:30 par TO3124 au lieu de TO3018 17:50. Course dédiée 21:30. Départ 12/09 TO3011 06:45 inchangé.",
    "transferts": [
-    "w0809-1750",
+    "w0809-2130",
     "w1209-0645"
    ]
   },
