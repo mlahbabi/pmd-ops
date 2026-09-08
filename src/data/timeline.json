@@ -1,6 +1,6 @@
 {
- "version": "V2.13 — 08/09/2026",
- "updatedAt": "2026-09-08T12:00:00+01:00",
+ "version": "V2.14 — 08/09/2026",
+ "updatedAt": "2026-09-08T13:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -590,6 +590,33 @@
    "waveId": "w0809-1750"
   },
   {
+   "id": "s0809-route-1800",
+   "date": "2026-09-08",
+   "start": "18:00",
+   "end": null,
+   "title": "Arrivée en voiture : Anass Nadem + Nadia Alaoui (vers 18:00)",
+   "lieu": "Radisson Blu — desk d'accueil",
+   "effectif": "2",
+   "type": "orga",
+   "level": "important",
+   "details": "Info du 08/09 : ils arrivent ensemble par la route vers 18:00. Accueil au desk, check-in, remise des infos dîner (Lila 20:00).",
+   "checklist": [
+    {
+     "id": "s0809-route-1800-c1",
+     "label": "Nadem et Alaoui accueillis"
+    },
+    {
+     "id": "s0809-route-1800-c2",
+     "label": "Check-in fait"
+    }
+   ],
+   "persons": [
+    "nadem",
+    "alaoui"
+   ],
+   "owner": ""
+  },
+  {
    "id": "w0809-1810",
    "date": "2026-09-08",
    "start": "18:10",
@@ -625,6 +652,33 @@
    ],
    "owner": "",
    "waveId": "w0809-1810"
+  },
+  {
+   "id": "s0809-route-1900",
+   "date": "2026-09-08",
+   "start": "19:00",
+   "end": null,
+   "title": "Arrivée en voiture : Grégoire Chaste + Jawad Bencheqroun (vers 19:00)",
+   "lieu": "Radisson Blu — desk d'accueil",
+   "effectif": "2",
+   "type": "orga",
+   "level": "important",
+   "details": "Info du 08/09 : ils arrivent ensemble par la route vers 19:00. Accueil au desk, check-in, remise des infos dîner (Lila 20:00).",
+   "checklist": [
+    {
+     "id": "s0809-route-1900-c1",
+     "label": "Chaste et Bencheqroun accueillis"
+    },
+    {
+     "id": "s0809-route-1900-c2",
+     "label": "Check-in fait"
+    }
+   ],
+   "persons": [
+    "chaste",
+    "bencheqroun"
+   ],
+   "owner": ""
   },
   {
    "id": "s0809-diner",

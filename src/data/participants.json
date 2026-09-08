@@ -1,6 +1,6 @@
 {
- "version": "V2.13 — 08/09/2026",
- "updatedAt": "2026-09-08T12:00:00+01:00",
+ "version": "V2.14 — 08/09/2026",
+ "updatedAt": "2026-09-08T13:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -71,11 +71,11 @@
    "pays": "Maroc",
    "arr": {
     "date": "08/09",
-    "heure": null,
+    "heure": "18:00",
     "vol": null,
     "de": null,
     "cie": null,
-    "mode": "Pas de plan de vol, arrivée autonome et retour autonome via Casa"
+    "mode": "en voiture, arrivée prévue vers 18:00 (info du 08/09) — avec Anass Nadem"
    },
    "dep": {
     "date": "11/09",
@@ -85,6 +85,7 @@
     "cie": null,
     "mode": "retour autonome"
    },
+   "note_app": "Arrive par la route le 08/09 vers 18:00 avec Anass Nadem (info Mehdi 08/09). Accueil au desk, check-in.",
    "transferts": []
   },
   {
@@ -278,11 +279,11 @@
    "pays": "Maroc",
    "arr": {
     "date": "08/09",
-    "heure": null,
+    "heure": "19:00",
     "vol": null,
     "de": null,
     "cie": null,
-    "mode": "Pas de plan de vol, arrivée via transport personnel (en voiture)"
+    "mode": "en voiture, arrivée prévue vers 19:00 (info du 08/09) — avec Grégoire Chaste"
    },
    "dep": {
     "date": "11/09",
@@ -292,6 +293,7 @@
     "cie": null,
     "mode": "retour autonome"
    },
+   "note_app": "Arrive par la route le 08/09 vers 19:00 avec Grégoire Chaste (info Mehdi 08/09). Accueil au desk, check-in.",
    "transferts": []
   },
   {
@@ -622,11 +624,11 @@
    "pays": "Maroc",
    "arr": {
     "date": "08/09",
-    "heure": null,
+    "heure": "19:00",
     "vol": null,
     "de": null,
     "cie": null,
-    "mode": "Pas de plan de vol, arrivée via transport personnel (en voiture)"
+    "mode": "en voiture, arrivée prévue vers 19:00 (info du 08/09) — avec Jawad Bencheqroun"
    },
    "dep": {
     "date": "11/09",
@@ -636,6 +638,7 @@
     "cie": null,
     "mode": "retour autonome"
    },
+   "note_app": "Arrive par la route le 08/09 vers 19:00 avec Jawad Bencheqroun (info Mehdi 08/09). Accueil au desk, check-in.",
    "transferts": []
   },
   {
@@ -1978,11 +1981,11 @@
    "pays": "Maroc",
    "arr": {
     "date": "08/09",
-    "heure": null,
+    "heure": "18:00",
     "vol": null,
     "de": null,
     "cie": null,
-    "mode": "Pas de plan de vol, arrivée via transport personnel (en voiture)"
+    "mode": "en voiture, arrivée prévue vers 18:00 (info du 08/09) — avec Nadia Alaoui"
    },
    "dep": {
     "date": "11/09",
@@ -1992,6 +1995,7 @@
     "cie": null,
     "mode": "retour autonome"
    },
+   "note_app": "Arrive par la route le 08/09 vers 18:00 avec Nadia Alaoui (info Mehdi 08/09). Accueil au desk, check-in.",
    "transferts": []
   },
   {
