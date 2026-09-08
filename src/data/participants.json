@@ -1,6 +1,6 @@
 {
- "version": "V2.18 — 08/09/2026",
- "updatedAt": "2026-09-08T14:40:00+01:00",
+ "version": "V2.19 — 08/09/2026",
+ "updatedAt": "2026-09-08T15:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -421,10 +421,7 @@
     "cie": "RAM Express",
     "mode": "vol"
    },
-   "a_confirmer": [
-    "Place sur AT413 (Casa 17:05 → RAK 18:10) à confirmer — elle est à Casablanca (info 08/09 ~14:15)"
-   ],
-   "note_app": "A manqué AT411 13:05. Arrivée à Casablanca le 08/09, elle tente une place sur AT413 (17:05 → 18:10) : ajoutée sous réserve à la course de 18:10. Repli possible : AT403 22:35 → 23:25. Départ 12/09 AT412 inchangé.",
+   "note_app": "A manqué AT411 13:05 ; confirmée sur AT413 Casablanca 17:05 → Marrakech 18:10 (08/09), course de 18:10 avec les 7 de Tunis. Départ 12/09 AT412 inchangé.",
    "transferts": [
     "w0809-1810",
     "w1209-1625"

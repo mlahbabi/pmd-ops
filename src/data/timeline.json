@@ -1,6 +1,6 @@
 {
- "version": "V2.18 — 08/09/2026",
- "updatedAt": "2026-09-08T14:40:00+01:00",
+ "version": "V2.19 — 08/09/2026",
+ "updatedAt": "2026-09-08T15:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -568,37 +568,6 @@
    "owner": ""
   },
   {
-   "id": "s0809-bishop",
-   "date": "2026-09-08",
-   "start": "17:05",
-   "end": null,
-   "title": "March Bishop : a-t-elle une place sur AT413 (décollage Casa 17:05) ?",
-   "lieu": "Téléphone — Clémence / Bishop",
-   "effectif": "1",
-   "type": "orga",
-   "level": "critique",
-   "details": "Elle est à Casablanca et tente d'embarquer sur AT413 (17:05 → 18:10). Si oui : elle rejoint la course de 18:10 (17 places, Farid/chauffeur prévenus). Si non : repli AT403 22:35 → 23:25, course à ajouter. Prévenir la réception pour le check-in tardif le cas échéant.",
-   "checklist": [
-    {
-     "id": "s0809-bishop-c1",
-     "label": "Place AT413 confirmée (ou non)"
-    },
-    {
-     "id": "s0809-bishop-c2",
-     "label": "Simohamed / chauffeur de 18:10 prévenu"
-    },
-    {
-     "id": "s0809-bishop-c3",
-     "label": "Réception informée de l'heure de check-in"
-    }
-   ],
-   "persons": [
-    "bishop"
-   ],
-   "owner": "",
-   "aConfirmer": true
-  },
-  {
    "id": "w0809-1750",
    "date": "2026-09-08",
    "start": "17:50",
@@ -682,8 +651,8 @@
    "lieu": "Aéroport RAK → Radisson",
    "effectif": "8",
    "type": "transport",
-   "level": "critique",
-   "details": "Karim KOUNDI, Ramzi MAATOUG, Nejla MEJRI, Aymen MTIMET, Tarek SAHLI, Lovet WATAT, Anis ZOUARI, March BISHOP. Véhicule : 1 × 17 pl. 7 pax + ⚠️ March BISHOP SOUS RÉSERVE : elle est à Casablanca et tente d'obtenir une place sur AT413 (décollage 17:05) — à confirmer vers 17:05 (point 28). Sinon : AT403 22:35 → 23:25 (même vol que la course de 23:15 ? à voir). Ou rotation du même 17 pl, récupération ~18:50.",
+   "level": "important",
+   "details": "Karim KOUNDI, Ramzi MAATOUG, Nejla MEJRI, Aymen MTIMET, Tarek SAHLI, Lovet WATAT, Anis ZOUARI, March BISHOP. Véhicule : 1 × 17 pl. 8 pax : March Bishop confirmée sur AT413 (08/09, après avoir manqué AT411). Ou rotation du même 17 pl, récupération ~18:50.",
    "checklist": [
     {
      "id": "w0809-1810-c1",

@@ -1,6 +1,6 @@
 {
- "version": "V2.18 — 08/09/2026",
- "updatedAt": "2026-09-08T14:40:00+01:00",
+ "version": "V2.19 — 08/09/2026",
+ "updatedAt": "2026-09-08T15:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -74,16 +74,6 @@
    "level": "alerte",
    "persons": [
     "balesme"
-   ]
-  },
-  {
-   "id": "pd28",
-   "sujet": "Bishop : à Casablanca, tente une place sur AT413 (17:05 → 18:10) — confirmer vers 17:05 ; si oui course de 18:10, sinon repli AT403 23:25 et course à ajouter",
-   "responsable": "Mehdi → Clémence",
-   "echeance": "2026-09-08",
-   "level": "alerte",
-   "persons": [
-    "bishop"
    ]
   },
   {
