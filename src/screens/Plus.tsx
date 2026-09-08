@@ -14,6 +14,7 @@ export function PlusIndex() {
   const { user, store } = useApp()
   const open = pending.filter(p => !store.checks[`pending:${p.id}`]?.done).length
   const items = [
+    { to: '/rooming', icon: '🏨', label: 'Desk & Rooming', sub: 'Arrivées du jour par vol, chambres par nuit, départs' },
     { to: '/plus/contacts', icon: '📇', label: 'Contacts', sub: 'MRCO, client, transport, lieux, prestataires' },
     { to: '/plus/signaletique', icon: '🪧', label: 'Signalétique & matériel', sub: 'Inventaire à installer, coches partagées' },
     { to: '/plus/equipe', icon: '🧑‍🤝‍🧑', label: 'Équipe MRCO', sub: 'Qui fait quoi — à compléter' },

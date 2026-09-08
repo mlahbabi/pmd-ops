@@ -11,6 +11,7 @@ import Personne from './screens/Personne'
 import Transport from './screens/Transport'
 import { LieuxList, LieuDetail } from './screens/Lieux'
 import { PlusIndex, Contacts, Signaletique, Equipe, Points, Menus, Express, Reglages } from './screens/Plus'
+import Rooming from './screens/Rooming'
 
 function Gate() {
   const { user } = useApp()
@@ -24,6 +25,7 @@ function Gate() {
         <Route path="personnes" element={<Personnes />} />
         <Route path="personnes/:id" element={<Personne />} />
         <Route path="transport" element={<Transport />} />
+        <Route path="rooming" element={<Rooming />} />
         <Route path="lieux" element={<LieuxList />} />
         <Route path="lieux/:id" element={<LieuDetail />} />
         <Route path="plus" element={<PlusIndex />} />

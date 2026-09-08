@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ckId, useApp } from '../context'
-import { DATA_VERSION, pending, sequences, sequencesOfDay } from '../lib/data'
-import { DAYS, dayLabel, fmtIso, jOf, mParts, seqStatus, toDate } from '../lib/time'
+import { DATA_VERSION, pending, people, sequences, sequencesOfDay, sleepsOn } from '../lib/data'
+import { DAYS, dayLabel, ddmm, fmtIso, jOf, mParts, seqStatus, toDate } from '../lib/time'
 import type { NoteLevel } from '../lib/store'
 import SequenceCard from '../components/SequenceCard'
 import { Badge, Empty, Section } from '../components/ui'
@@ -25,6 +25,9 @@ export default function Now() {
   const upcoming = [...pinned, ...future.filter(x => !x.st.pinned)].slice(0, Math.max(3, pinned.length))
   const critToday = daySeqs.filter(s => s.level === 'critique')
   const pendingDue = pending.filter(p => !store.checks[`pending:${p.id}`]?.done && (p.echeance.includes('-') ? p.echeance <= today : today >= '2026-09-09'))
+  const arrToday = people.filter(p => p.arrivee === ddmm(today) && p.depart)
+  const depToday = people.filter(p => p.depart === ddmm(today) && p.arrivee)
+  const occupiedToday = people.filter(p => sleepsOn(p, today)).length
   const nextDay = DAYS.find(d => d > today)
   const nextSeqs = !future.length && !enCours.length && nextDay ? sequences.filter(s => s.date === nextDay).slice(0, 3) : []
 
@@ -67,6 +70,13 @@ export default function Now() {
         </div>
       )}
 
+      {(arrToday.length > 0 || depToday.length > 0) && (
+        <Link to="/rooming" className="card p-3 mb-4 flex items-center gap-3">
+          <span className="text-2xl">🏨</span>
+          <span className="flex-1 text-sm"><b>Desk & Rooming</b> · aujourd'hui {arrToday.length} arrivée{arrToday.length > 1 ? 's' : ''}, {depToday.length} départ{depToday.length > 1 ? 's' : ''}, {occupiedToday} chambres cette nuit</span>
+          <span className="text-warm">›</span>
+        </Link>
+      )}
       <Section title="En cours">
         {enCours.length ? <div className="space-y-2">{enCours.map(x => <SequenceCard key={x.s.id} seq={x.s} defaultOpen />)}</div> : <Empty>Rien en cours{daySeqs.length ? '' : ' — aucune séquence ce jour'}.</Empty>}
       </Section>
