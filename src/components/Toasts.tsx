@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { ckId, useApp } from '../context'
 import { sequencesOfDay, waves } from '../lib/data'
 import { fmtMins, mParts, seqStatus } from '../lib/time'
-import { deltaMin, etaOf, fetchStatus, flightCodes, isActive, statusLabel, useApiError, TTL as TTL_FLIGHT } from '../lib/flights'
+import { deltaOf, etaOf, fetchStatus, flightCodes, isActive, statusLabel, useApiError, TTL as TTL_FLIGHT } from '../lib/flights'
 
 const TTL = 20_000
 type Toast = { id: string; title: string; body: string; tone: 'red' | 'orange' | 'yellow' | 'lav'; to?: string; at: number }
@@ -58,18 +58,19 @@ export default function Toasts() {
   const flightBucket = useRef(new Map<string, string>())
   useEffect(() => {
     const today = mParts(now).date
-    const due = waves.filter(w => w.date === today && w.type !== 'programme' && isActive(now, w.date, w.heure))
+    const due = waves.filter(w => w.date === today && w.type !== 'programme' && isActive(now, w.date, w.heure, w.type === 'depart' ? 'depart' : 'arrivee'))
     let stop = false
     const run = async () => {
       if (document.visibilityState === 'hidden') return
       for (const w of due) {
+        const type = w.type === 'depart' ? 'depart' : 'arrivee'
         for (const code of flightCodes(w.vol)) {
-          const st = await fetchStatus(code, w.date, w.heure, w.type === 'depart' ? 'depart' : 'arrivee')
+          const st = await fetchStatus(code, w.date, w.heure, type)
           if (stop || !st) continue
           // Flash si retard ≥ 10 min, avance ≥ 15 min (chauffeur à avancer) ou annulation ; un flash par palier de 15 min.
-          const type = w.type === 'depart' ? 'depart' : 'arrivee'
+          // Retard mesuré sur l'horaire du vol lui-même (départ : décollage prévu, pas la prise en charge).
           const eta = etaOf(st, type)
-          const d = eta ? deltaMin(eta, w.heure) : (st.delay || 0)
+          const d = deltaOf(st, type, w.heure) ?? 0
           const notable = st.status === 'cancelled' || d >= 10 || d <= -15
           if (!notable) continue
           const bucket = st.status === 'cancelled' ? 'annule' : String(Math.round(d / 15))

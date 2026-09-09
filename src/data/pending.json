@@ -1,6 +1,6 @@
 {
- "version": "V2.21 — 09/09/2026",
- "updatedAt": "2026-09-09T11:20:00+01:00",
+ "version": "V2.22 — 09/09/2026",
+ "updatedAt": "2026-09-09T14:10:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -64,6 +64,16 @@
    "level": "alerte",
    "persons": [
     "tonka"
+   ]
+  },
+  {
+   "id": "pd32",
+   "sujet": "Dupont-Noel : TO3017 du 11/09 17:50 (Marrakech → Orly) introuvable sur Flightradar24 à J-2 (AT412 18:20 de la même vague est bien programmé) — faire confirmer le billet par Clémence",
+   "responsable": "Mehdi → Clémence",
+   "echeance": "2026-09-10",
+   "level": "alerte",
+   "persons": [
+    "dupont-noel"
    ]
   },
   {

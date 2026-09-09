@@ -4,11 +4,12 @@
 import { useEffect, useState, useSyncExternalStore } from 'react'
 import { mParts, toDate } from './time'
 
-/** Extrait les numéros de vol d'un libellé (« AF1876 (CDG) ×16 + TO3018 (Orly) ×2 » → AF1876, TO3018). */
+/** Extrait les numéros de vol d'un libellé (« AF1876 (CDG) ×16 + TO3018 (Orly) ×2 » → AF1876, TO3018).
+ *  Un suffixe lettre du plan de vol client (« AT412R », « AT413M ») est retiré : le vol suivi est AT412 / AT413. */
 export function flightCodes(label: string | null | undefined): string[] {
   if (!label) return []
   const out: string[] = []
-  const re = /\b([A-Z][A-Z0-9]\d{2,4}[A-Z]?)\b/g
+  const re = /\b([A-Z][A-Z0-9]\d{2,4})[A-Z]?\b/g
   let m: RegExpExecArray | null
   while ((m = re.exec(label))) { if (!out.includes(m[1])) out.push(m[1]) }
   return out
@@ -27,20 +28,32 @@ export const etaOf = (s: FlightStatus, type: FlightType) => {
   const sched = type === 'arrivee' ? s.arrSched : s.depSched
   return sched && s.delay ? addMin(sched, s.delay) : sched
 }
+/** Horaire prévu du vol selon la source (arrivée : atterrissage ; départ : décollage). */
+export const schedOf = (s: FlightStatus, type: FlightType) => (type === 'arrivee' ? s.arrSched : s.depSched)
 /** Écart en minutes entre « HH:MM » réel et « HH:MM » prévu (positif = retard). */
 export function deltaMin(eta: string, sched: string) {
   const m = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5))
   let d = m(eta) - m(sched); if (d > 720) d -= 1440; if (d < -720) d += 1440; return d
 }
+/** Écart du vol par rapport à SON horaire prévu (pas l'heure de la vague : pour un départ, la vague = prise en charge H-2).
+ *  `fallbackHeure` n'est utilisé que si la source ne donne pas l'horaire prévu (vagues d'arrivée : heure = atterrissage). */
+export function deltaOf(s: FlightStatus, type: FlightType, fallbackHeure?: string): number | null {
+  const eta = etaOf(s, type)
+  const sched = schedOf(s, type) || (type === 'arrivee' ? fallbackHeure : undefined)
+  if (eta && sched) return deltaMin(eta, sched)
+  return s.delay ?? null
+}
 
-// Fenêtre de suivi automatique : de 5 h avant à 1 h après l'horaire prévu, le jour même (le retard au départ
-// d'un Paris → Marrakech se voit ~3 h 30 avant l'atterrissage). Rafraîchi toutes les 5 min, jamais en arrière-plan.
+// Fenêtre de suivi automatique, le jour même : arrivée → de 5 h avant à 1 h après l'atterrissage (le retard au départ
+// d'un Paris → Marrakech se voit ~3 h 30 avant) ; départ → de 5 h avant la prise en charge à 3 h après (décollage ≈ H+2).
+// Rafraîchi toutes les 5 min, jamais en arrière-plan.
 export const ACTIVE_BEFORE_MS = 5 * 3600_000
 export const ACTIVE_AFTER_MS = 1 * 3600_000
-export const ACTIVE_LABEL = 'de 5 h avant à 1 h après l\'horaire'
-export const isActive = (now: Date, date: string, heure: string) => {
+export const ACTIVE_AFTER_DEP_MS = 3 * 3600_000
+export const ACTIVE_LABEL = 'de 5 h avant à 1 h après l\'horaire (départs : jusqu\'à 3 h après la prise en charge)'
+export const isActive = (now: Date, date: string, heure: string, type: FlightType = 'arrivee') => {
   const ref = toDate(date, heure).getTime() - now.getTime()
-  return mParts(now).date === date && ref < ACTIVE_BEFORE_MS && ref > -ACTIVE_AFTER_MS
+  return mParts(now).date === date && ref < ACTIVE_BEFORE_MS && ref > -(type === 'depart' ? ACTIVE_AFTER_DEP_MS : ACTIVE_AFTER_MS)
 }
 export const TTL = 5 * 60_000
 
@@ -68,21 +81,31 @@ export const getApiError = () => apiError
 /** Erreur courante du suivi automatique (null si tout va bien), réactive. */
 export function useApiError() { return useSyncExternalStore(l => { errListeners.add(l); return () => { errListeners.delete(l) } }, getApiError, getApiError) }
 
-// ---- Flightradar24 : liste des rotations d'un numéro de vol (futures et passées), on retient celle dont l'horaire
-// prévu est le plus proche de l'horaire de la vague. Heures converties en heure du Maroc.
+// ---- Flightradar24 : liste des rotations d'un numéro de vol (futures et passées). On ne garde que celles qui touchent
+// Marrakech (arrivée : destination RAK ; départ : origine RAK — écarte les correspondances comme AF718 CDG → DSS),
+// puis celle dont l'horaire prévu est le plus proche de la vague. Heures converties en heure du Maroc.
+const HOME = 'RAK'
 const fmtMa = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Africa/Casablanca', hour: '2-digit', minute: '2-digit', hour12: false })
 const hmEpoch = (e?: number | null) => (e ? fmtMa.format(new Date(e * 1000)).replace('h', ':') : undefined)
-type Fr24Item = { identification?: { number?: { default?: string } }; status?: { live?: boolean; text?: string; generic?: { status?: { text?: string; type?: string } } }; time?: { scheduled?: { departure?: number | null; arrival?: number | null }; estimated?: { departure?: number | null; arrival?: number | null }; real?: { departure?: number | null; arrival?: number | null }; other?: { eta?: number | null } } }
+type Fr24Item = { identification?: { number?: { default?: string } }; airport?: { origin?: { code?: { iata?: string } }; destination?: { code?: { iata?: string } } }; status?: { live?: boolean; text?: string; generic?: { status?: { text?: string; type?: string } } }; time?: { scheduled?: { departure?: number | null; arrival?: number | null }; estimated?: { departure?: number | null; arrival?: number | null }; real?: { departure?: number | null; arrival?: number | null }; other?: { eta?: number | null } } }
+const sleep = (ms: number) => new Promise(r => setTimeout(r, ms))
 async function fetchFr24(code: string, ref: Date, type: FlightType): Promise<FlightStatus | null> {
-  const r = await fetch(`https://api.flightradar24.com/common/v1/flight/list.json?query=${encodeURIComponent(code)}&fetchBy=flight&limit=25`)
-  if (!r.ok) throw new Error(`FR24 ${r.status}`)
-  const j = await r.json()
-  const data: Fr24Item[] = j?.result?.response?.data || []
+  let j: { result?: { response?: { data?: Fr24Item[] } } } | null = null
+  for (let i = 0; i < 2 && !j; i++) {
+    try {
+      const r = await fetch(`https://api.flightradar24.com/common/v1/flight/list.json?query=${encodeURIComponent(code)}&fetchBy=flight&limit=25`, { cache: 'no-store' })
+      if (!r.ok) throw new Error(`FR24 ${r.status}`)
+      j = await r.json()
+    } catch (e) { if (i === 1) throw e; await sleep(2000) }
+  }
+  const all: Fr24Item[] = j?.result?.response?.data || []
+  const data = all.filter(x => (type === 'arrivee' ? x.airport?.destination?.code?.iata : x.airport?.origin?.code?.iata) === HOME)
   if (!data.length) return null
-  const refS = ref.getTime() / 1000
+  // Départ : la vague est la prise en charge (≈ H-2), on vise le décollage ~2 h plus tard.
+  const refS = ref.getTime() / 1000 + (type === 'depart' ? 2 * 3600 : 0)
   const key = (x: Fr24Item) => (type === 'arrivee' ? x.time?.scheduled?.arrival : x.time?.scheduled?.departure) || 0
   const best = data.slice().sort((a, b) => Math.abs(key(a) - refS) - Math.abs(key(b) - refS))[0]
-  if (!best || Math.abs(key(best) - refS) > 12 * 3600) return null
+  if (!best || Math.abs(key(best) - refS) > 8 * 3600) return null
   const t = best.time || {}
   const g = (best.status?.generic?.status?.text || '').toLowerCase()
   const depSched = t.scheduled?.departure, arrSched = t.scheduled?.arrival
@@ -96,8 +119,9 @@ async function fetchFr24(code: string, ref: Date, type: FlightType): Promise<Fli
   else if (best.status?.live || depReal) status = 'active'
   else if (depEst && depSched && depEst - depSched >= 10 * 60) status = 'delayed'
   let delay: number | undefined
-  if (arrEst && arrSched) delay = Math.round((arrEst - arrSched) / 60)
+  if (type === 'arrivee' && arrEst && arrSched) delay = Math.round((arrEst - arrSched) / 60)
   else if ((depReal || depEst) && depSched) delay = Math.round(((depReal || depEst)! - depSched) / 60)
+  else if (arrEst && arrSched) delay = Math.round((arrEst - arrSched) / 60)
   return { code, status, source: 'fr24', depSched: hmEpoch(depSched), depEstimated: hmEpoch(depEst), depActual: hmEpoch(depReal), arrSched: hmEpoch(arrSched), arrEstimated: hmEpoch(arrEst), delay, fetchedAt: Date.now() }
 }
 
@@ -115,15 +139,17 @@ async function fetchAirlabs(code: string): Promise<FlightStatus | null> {
   return { code, status: d.status || '', source: 'airlabs', depSched: hm(d.dep_time), depEstimated: hm(d.dep_estimated), depActual: hm(d.dep_actual), arrSched: hm(d.arr_time), arrEstimated: hm(d.arr_actual || d.arr_estimated), delay: typeof d.delayed === 'number' ? d.delayed : undefined, fetchedAt: Date.now() }
 }
 
-/** Statut d'un vol pour une vague donnée (date + heure prévue). Cache 5 min par vol et par jour. */
+/** Statut d'un vol pour une vague donnée (date + heure de la vague). Cache 5 min par vol, jour et sens. */
 export async function fetchStatus(code: string, date: string, heure: string, type: FlightType = 'arrivee'): Promise<FlightStatus | null> {
-  const ck = `${code}|${date}`
+  const ck = `${code}|${date}|${type}`
   const hit = cache.get(ck)
   if (hit !== undefined && hit && Date.now() - hit.fetchedAt < TTL) return hit
   const ref = toDate(date, heure)
   try {
     const st = await fetchFr24(code, ref, type)
     if (st) { setApiError(null); cache.set(ck, st); return st }
+    // Vol inconnu de Flightradar24 pour cette date : pas une panne, on n'insiste pas pendant 5 min.
+    setApiError(null); cache.set(ck, { code, status: 'unknown', source: 'fr24', fetchedAt: Date.now() }); return null
   } catch { /* on tente le secours */ }
   try {
     const st = await fetchAirlabs(code)
@@ -134,6 +160,8 @@ export async function fetchStatus(code: string, date: string, heure: string, typ
   }
   return hit ?? null
 }
+/** Vrai si la source connaît le vol mais qu'il n'a pas de rotation à cette date (à vérifier côté billets). */
+export const isUnknown = (s: FlightStatus | null) => !!s && s.status === 'unknown'
 
 /** Statut en direct d'un vol, si `active` (vol du jour, dans la fenêtre utile).
  *  Pas de requête tant que l'app est en arrière-plan ; rafraîchi au retour au premier plan. */
@@ -142,11 +170,11 @@ export function useFlightStatus(code: string | null, active: boolean, date?: str
   useEffect(() => {
     if (!code || !active || !date || !heure) return
     let stop = false
-    const run = () => { if (document.visibilityState === 'hidden') return; void fetchStatus(code, date, heure, type).then(s => { if (!stop) setSt(s) }) }
+    const run = () => { if (document.visibilityState === 'hidden') return; void fetchStatus(code, date, heure, type).then(s => { if (!stop) setSt(s ?? cache.get(`${code}|${date}|${type}`) ?? null) }) }
     run(); const t = setInterval(run, TTL)
     document.addEventListener('visibilitychange', run)
     return () => { stop = true; clearInterval(t); document.removeEventListener('visibilitychange', run) }
   }, [code, active, date, heure, type])
   return st
 }
-export const statusLabel = (s: FlightStatus) => ({ scheduled: 'prévu', active: 'en vol', landed: 'atterri', cancelled: 'ANNULÉ', diverted: 'dérouté', delayed: 'retardé' } as Record<string, string>)[s.status] || s.status
+export const statusLabel = (s: FlightStatus) => ({ scheduled: 'prévu', active: 'en vol', landed: 'atterri', cancelled: 'ANNULÉ', diverted: 'dérouté', delayed: 'retardé', unknown: 'introuvable à cette date' } as Record<string, string>)[s.status] || s.status
