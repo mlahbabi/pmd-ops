@@ -1,6 +1,6 @@
 {
- "version": "V2.20 — 09/09/2026",
- "updatedAt": "2026-09-09T10:50:00+01:00",
+ "version": "V2.21 — 09/09/2026",
+ "updatedAt": "2026-09-09T11:20:00+01:00",
  "membres": [
   "Mehdi",
   "Mouad",
@@ -8,6 +8,12 @@
   "Farid"
  ],
  "affectations": [
+  {
+   "sequenceId": "p0909-1945",
+   "owner": "Eva",
+   "role": "accompagne le bus du départ anticipé 19:45 (7 pax) Radisson → Dar Diaffa",
+   "note": "Rassemblement lobby 19:35 : Batnini, Boisselier, De Beauvoir, Depouilly, Dupont-Noel, Elmaleh, Pierron"
+  },
   {
    "sequenceId": "w0709-1640",
    "owner": "Farid",
@@ -109,6 +115,10 @@
   {
    "sequenceId": "w1209-0345",
    "label": "Départs 12/09 & 13/09"
+  },
+  {
+   "sequenceId": "p0909-1945",
+   "label": "Départ anticipé Dar Diaffa 09/09 19:45 (7 pax)"
   }
  ]
 }

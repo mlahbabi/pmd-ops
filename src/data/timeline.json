@@ -1,6 +1,6 @@
 {
- "version": "V2.20 — 09/09/2026",
- "updatedAt": "2026-09-09T10:50:00+01:00",
+ "version": "V2.21 — 09/09/2026",
+ "updatedAt": "2026-09-09T11:20:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1128,16 +1128,53 @@
    "owner": ""
   },
   {
+   "id": "p0909-1945",
+   "date": "2026-09-09",
+   "start": "19:45",
+   "end": null,
+   "title": "Transfert Radisson → Dar Diaffa — DÉPART ANTICIPÉ — 7 pax",
+   "lieu": "Radisson Blu → Dar Diaffa (Médina)",
+   "effectif": "7",
+   "type": "transport",
+   "level": "critique",
+   "details": "Véhicule : 1 × 17 pl. Liste bus du 09/09 (Clémence) : 7 personnes barrées « OK – départ anticipé à 19h45 ». Bus accompagné par EVA. Rassemblement lobby 19:35, dépose rue Jbel Lakhdar puis à pied. Ne pas attendre les autres : le groupe principal part à 20:00.",
+   "checklist": [
+    {
+     "id": "p0909-1945-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "p0909-1945-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "p0909-1945-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "batnini",
+    "boisselier",
+    "de-beauvoir",
+    "depouilly",
+    "dupont-noel",
+    "elmaleh",
+    "pierron"
+   ],
+   "owner": "",
+   "waveId": "p0909-1945"
+  },
+  {
    "id": "p0909-2000",
    "date": "2026-09-09",
    "start": "20:00",
    "end": null,
-   "title": "Transfert Radisson → Dar Diaffa — 62 pax",
+   "title": "Transfert Radisson → Dar Diaffa — 55 pax",
    "lieu": "Radisson Blu → Dar Diaffa (Médina)",
-   "effectif": "62",
+   "effectif": "55",
    "type": "transport",
    "level": "critique",
-   "details": "Véhicule : 4 × 17 pl (+ 1 Vito réserve). Dîner — dépose rue Jbel Lakhdar. 61 pax hébergés + Ondias (prend le bus) = 62, + 3 invités externes (mode d'arrivée à confirmer). 1 Vito en réserve.",
+   "details": "Véhicule : 3 × 17 pl + 1 Vito réserve ⚠️ (4e bus parti à 19:45). Dîner — dépose rue Jbel Lakhdar. Groupe principal : 54 hébergés (61 − 7 partis à 19:45) + Ondias (prend le bus) = 55, + 3 invités externes (mode d'arrivée à confirmer). ⚠️ Véhicules : si le bus de 19:45 est l'un des 4, il reste 3 × 17 pl + Vito réserve = 58 places pour 55 — à valider avec Simohamed.",
    "checklist": [
     {
      "id": "p0909-2000-c1",

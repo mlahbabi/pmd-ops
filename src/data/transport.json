@@ -1,6 +1,6 @@
 {
- "version": "V2.20 — 09/09/2026",
- "updatedAt": "2026-09-09T10:50:00+01:00",
+ "version": "V2.21 — 09/09/2026",
+ "updatedAt": "2026-09-09T11:20:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -527,15 +527,37 @@
    "level": "critique"
   },
   {
+   "id": "p0909-1945",
+   "date": "2026-09-09",
+   "heure": "19:45",
+   "type": "programme",
+   "vol": "Radisson → Dar Diaffa — DÉPART ANTICIPÉ",
+   "pax": [
+    "batnini",
+    "boisselier",
+    "de-beauvoir",
+    "depouilly",
+    "dupont-noel",
+    "elmaleh",
+    "pierron"
+   ],
+   "paxEstime": "7",
+   "vehicule": "1 × 17 pl",
+   "note": "Liste bus du 09/09 (Clémence) : 7 personnes barrées « OK – départ anticipé à 19h45 ». Bus accompagné par EVA. Rassemblement lobby 19:35, dépose rue Jbel Lakhdar puis à pied. Ne pas attendre les autres : le groupe principal part à 20:00.",
+   "origine": "Radisson Blu",
+   "destination": "Dar Diaffa (Médina)",
+   "level": "critique"
+  },
+  {
    "id": "p0909-2000",
    "date": "2026-09-09",
    "heure": "20:00",
    "type": "programme",
    "vol": "Radisson → Dar Diaffa",
    "pax": [],
-   "paxEstime": "62",
-   "vehicule": "4 × 17 pl (+ 1 Vito réserve)",
-   "note": "Dîner — dépose rue Jbel Lakhdar. 61 pax hébergés + Ondias (prend le bus) = 62, + 3 invités externes (mode d'arrivée à confirmer). 1 Vito en réserve.",
+   "paxEstime": "55",
+   "vehicule": "3 × 17 pl + 1 Vito réserve ⚠️ (4e bus parti à 19:45)",
+   "note": "Dîner — dépose rue Jbel Lakhdar. Groupe principal : 54 hébergés (61 − 7 partis à 19:45) + Ondias (prend le bus) = 55, + 3 invités externes (mode d'arrivée à confirmer). ⚠️ Véhicules : si le bus de 19:45 est l'un des 4, il reste 3 × 17 pl + Vito réserve = 58 places pour 55 — à valider avec Simohamed.",
    "origine": "Radisson Blu",
    "destination": "Dar Diaffa (Médina)",
    "level": "critique"
@@ -705,8 +727,8 @@
   {
    "date": "2026-09-09",
    "pax": "~66",
-   "mouvements": "3 arrivées + dîner Diaffa ~62 pax (aucun départ)",
-   "flotte": "4 × 17 pl + 1 Vito (3 courses)"
+   "mouvements": "3 arrivées + dîner Diaffa : 7 pax à 19:45 (bus Eva) + 55 pax à 20:00, retour 62 à 23:00 (aucun départ)",
+   "flotte": "4 × 17 pl + 1 Vito (3 courses) — 1 bus détaché à 19:45 ⚠️"
   },
   {
    "date": "2026-09-10",
