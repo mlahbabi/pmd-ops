@@ -1,6 +1,6 @@
 {
- "version": "V2.22 — 09/09/2026",
- "updatedAt": "2026-09-09T14:10:00+01:00",
+ "version": "V2.23 — 09/09/2026",
+ "updatedAt": "2026-09-09T14:40:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1056,7 +1056,7 @@
    "effectif": "",
    "type": "setup",
    "level": "critique",
-   "details": "Roll-up plan de table à l'entrée + PM MRCO, prismes n° de table ×8 en hauteur, menus-marque-place à chaque place (64 imprimés + Ondias sur carte vierge ; retirer la carte Bedhiafi T5), colonnes son + 2 micros HF (Badr Khyat). Vérifier le plat alternatif de M. Righi (sans agneau).",
+   "details": "⚠️ NOUVEAU PLAN DE TABLE reçu le 09/09 : roll-up et marque-places imprimés sont périmés — réimprimer ou corriger à la main (24 changements, plan à jour dans Lieux → Dar Diaffa). Roll-up plan de table à l'entrée + PM MRCO, prismes n° de table ×8 en hauteur, menus-marque-place à chaque place (64 imprimés + Ondias sur carte vierge ; retirer la carte Bedhiafi T5), colonnes son + 2 micros HF (Badr Khyat). Vérifier le plat alternatif de M. Righi (sans agneau).",
    "checklist": [
     {
      "id": "s0909-setup-c1",
@@ -1224,7 +1224,7 @@
    "effectif": "65",
    "type": "vip",
    "level": "important",
-   "details": "8 tables (9·8·7·8·8·8·8·8 = 64 placés + Ondias ⚠️). Menu : salades marocaines & briouates / épaule d'agneau au four (plat alternatif Righi) / pastilla au lait fleur d'oranger. Forfait Premium (vins marocains & français, eaux, thé). Musique live + spectacle. 5 PRISES DE PAROLE EN DÉBUT DE DÎNER (Clémence 06/09) : Rédouane Bellefqih (Managing Partner Maroc), les 3 invités externes, et David Dupont-Noel (CEO). Service continu pendant les discours, musiciens en pause, micro HF Badr. Un PM MRCO = interlocuteur de Clémence pour chaque prise de parole. 4 convives quittent vers 21:30. PAS D'AFTER (confirmé 06/09). Photographe Fabrice Gino.",
+   "details": "8 tables — PLAN DE TABLE DU 09/09 (nouveau, 24 changements) : 10·8·8·7·8·8·8·8 = 65 placés, table 1 = 10 VIP. Menu : salades marocaines & briouates / épaule d'agneau au four (plat alternatif Righi) / pastilla au lait fleur d'oranger. Forfait Premium (vins marocains & français, eaux, thé). Musique live + spectacle. 5 PRISES DE PAROLE EN DÉBUT DE DÎNER (Clémence 06/09) : Rédouane Bellefqih (Managing Partner Maroc), les 3 invités externes, et David Dupont-Noel (CEO). Service continu pendant les discours, musiciens en pause, micro HF Badr. Un PM MRCO = interlocuteur de Clémence pour chaque prise de parole. 4 convives quittent vers 21:30. PAS D'AFTER (confirmé 06/09). Photographe Fabrice Gino.",
    "checklist": [
     {
      "id": "s0909-diner-c1",

@@ -1,6 +1,6 @@
 {
- "version": "V2.22 — 09/09/2026",
- "updatedAt": "2026-09-09T14:10:00+01:00",
+ "version": "V2.23 — 09/09/2026",
+ "updatedAt": "2026-09-09T14:40:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -65,6 +65,13 @@
    "persons": [
     "tonka"
    ]
+  },
+  {
+   "id": "pd33",
+   "sujet": "Diaffa : NOUVEAU plan de table reçu le 09/09 (24 changements, table 1 = 10 VIP dont Boisselier, Gourd, De Beauvoir, Elmaleh, Bellefqih, Benjelloun Touimi, Fikrat, El Habti ; Bishop → T6, Tonka → T2) — roll-up plan de table et marque-places imprimés sur le plan précédent : à réimprimer ou corriger à la main avant 18:00",
+   "responsable": "Mehdi / Eva",
+   "echeance": "2026-09-09",
+   "level": "alerte"
   },
   {
    "id": "pd32",
