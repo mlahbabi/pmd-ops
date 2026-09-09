@@ -5,7 +5,7 @@ import { contactsFile, signaletique, signaletiqueFile, team, sequenceById, pendi
 import { ddmm, fmtIso } from '../lib/time'
 import { IS_DEV_CODE, revokeAccess } from '../lib/auth'
 import { clearLocalState, refresh } from '../lib/store'
-import { AIRLABS_LS, hasLiveKey, setAirlabsKey, useApiError, ACTIVE_LABEL } from '../lib/flights'
+import { AIRLABS_LS, hasAirlabsKey, setAirlabsKey, useApiError, ACTIVE_LABEL } from '../lib/flights'
 import { Badge, CheckRow, Empty, PageTitle, PersonChip, Section, TelButtons, VipBadge, Warn } from '../components/ui'
 
 const Back = () => { const nav = useNavigate(); return <button type="button" onClick={() => nav('/plus')} className="text-sm text-lavender mb-2">← Plus</button> }
@@ -174,7 +174,7 @@ export function Reglages() {
   const { user, setUser, store } = useApp()
   const nav = useNavigate()
   const [busy, setBusy] = useState(false)
-  const [live, setLive] = useState(hasLiveKey())
+  const [live, setLive] = useState(hasAirlabsKey())
   const [keyInput, setKeyInput] = useState(() => { try { return localStorage.getItem(AIRLABS_LS) || '' } catch { return '' } })
   const apiError = useApiError()
   async function viderCache() {
@@ -203,13 +203,13 @@ export function Reglages() {
       </Section>
       <Section title="Suivi des vols">
         <div className="card p-3 space-y-2 text-sm">
-          <div>Liens Flightradar24 sur chaque vague et chaque fiche (aucune donnée chargée). Statut automatique : <b>{live ? 'activé sur cet appareil' : 'désactivé'}</b> · suivi {ACTIVE_LABEL}, rafraîchi toutes les 20 min, jamais en arrière-plan.</div>
-          {apiError && <div className="text-alert-orange font-semibold">⚠️ Suivi automatique en panne : {apiError}. Nouvelle clé gratuite sur airlabs.co (1 000 requêtes/mois) à coller ci-dessous, ou à envoyer à Mehdi pour tous les téléphones.</div>}
-          <form className="flex gap-2" onSubmit={e => { e.preventDefault(); setAirlabsKey(keyInput); setLive(hasLiveKey()) }}>
-            <input className="input min-h-10 text-sm flex-1" placeholder="Clé AirLabs (facultatif)" value={keyInput} onChange={e => setKeyInput(e.target.value)} />
+          <div>Statut automatique (ETA, retard, annulation) : <b>Flightradar24, sans clé</b> · suivi {ACTIVE_LABEL}, rafraîchi toutes les 5 min, jamais en arrière-plan. Lien Flightradar24 sur chaque vague et chaque fiche.</div>
+          {apiError ? <div className="text-alert-orange font-semibold">⚠️ Suivi automatique en panne : {apiError}. Ouvrir les liens Flightradar24, ou coller ci-dessous une clé AirLabs de secours (gratuite sur airlabs.co).</div> : <div className="text-xs text-warm">Secours AirLabs : {live ? 'clé présente' : 'aucune clé'} — utilisé seulement si Flightradar24 ne répond plus.</div>}
+          <form className="flex gap-2" onSubmit={e => { e.preventDefault(); setAirlabsKey(keyInput); setLive(hasAirlabsKey()) }}>
+            <input className="input min-h-10 text-sm flex-1" placeholder="Clé AirLabs de secours (facultatif)" value={keyInput} onChange={e => setKeyInput(e.target.value)} />
             <button className="btn min-h-10 px-3 text-sm">Enregistrer</button>
           </form>
-          <div className="text-xs text-warm">Clé gratuite sur airlabs.co, stockée uniquement sur ce téléphone. Sans clé, les liens Flightradar24 suffisent.</div>
+          <div className="text-xs text-warm">Clé AirLabs facultative (secours), stockée uniquement sur ce téléphone.</div>
         </div>
       </Section>
       <Section title="Version">

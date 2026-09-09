@@ -4,9 +4,9 @@ import { flightCodes, fr24Url, useFlightStatus, statusLabel, etaOf, deltaMin, is
 import type { Wave } from '../lib/types'
 
 function Line({ code, wave, active }: { code: string; wave: Wave; active: boolean }) {
-  const st = useFlightStatus(code, active)
-  const err = useApiError()
   const type = wave.type === 'depart' ? 'depart' : 'arrivee'
+  const st = useFlightStatus(code, active, wave.date, wave.heure, type)
+  const err = useApiError()
   const eta = st ? etaOf(st, type) : undefined
   const d = st && eta ? deltaMin(eta, wave.heure) : null
   return (
@@ -17,7 +17,7 @@ function Line({ code, wave, active }: { code: string; wave: Wave; active: boolea
           {statusLabel(st)}{type === 'arrivee' ? (st.arrEstimated ? ` · arrivée estimée ${st.arrEstimated}` : '') : (st.depActual ? ` · décollé ${st.depActual}` : st.depEstimated ? ` · décollage estimé ${st.depEstimated}` : '')}
           {d != null ? (d > 4 ? ` (+${d} min)` : d < -4 ? ` (−${-d} min)` : ' (à l\'heure)') : ''}
         </span>
-      ) : active && err ? <span className="text-xs text-alert-orange font-semibold">⚠️ suivi automatique indisponible : {err} — ouvrir Flightradar24</span>
+      ) : active && err ? <span className="text-xs text-alert-orange font-semibold">⚠️ suivi automatique indisponible : {err} — ouvrir le lien Flightradar24</span>
         : active ? <span className="text-xs text-warm">statut en attente…</span> : <span className="text-xs text-warm">suivi actif {ACTIVE_LABEL}</span>}
     </div>
   )

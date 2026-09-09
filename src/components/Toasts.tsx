@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { ckId, useApp } from '../context'
 import { sequencesOfDay, waves } from '../lib/data'
 import { fmtMins, mParts, seqStatus } from '../lib/time'
-import { fetchStatus, flightCodes, hasLiveKey, isActive, statusLabel, useApiError, TTL as TTL_FLIGHT } from '../lib/flights'
+import { fetchStatus, flightCodes, isActive, statusLabel, useApiError, TTL as TTL_FLIGHT } from '../lib/flights'
 
 const TTL = 20_000
 type Toast = { id: string; title: string; body: string; tone: 'red' | 'orange' | 'yellow' | 'lav'; to?: string; at: number }
@@ -45,7 +45,7 @@ export default function Toasts() {
     })
   }, [now, store.checks, simulated]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Panne du suivi automatique (quota AirLabs, clé) : un seul flash par session, l'équipe bascule sur Flightradar24.
+  // Panne du suivi automatique (Flightradar24 et secours AirLabs en échec) : un seul flash par session.
   const apiError = useApiError()
   useEffect(() => {
     if (!apiError || fired.current.has('vol:api')) return
@@ -53,11 +53,10 @@ export default function Toasts() {
     push({ id: 'vol:api', tone: 'orange', title: '✈️ Suivi automatique des vols indisponible', body: `${apiError} — utiliser les liens Flightradar24 sur chaque vague (Transport).`, to: '/transport' })
   }, [apiError]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Vols du jour : statut automatique (si clé configurée), même fenêtre et même cadence que les badges ETA (cache partagé),
+  // Vols du jour : statut automatique (Flightradar24, sans clé), même fenêtre et même cadence que les badges ETA (cache partagé),
   // jamais en arrière-plan.
   const flightBucket = useRef(new Map<string, string>())
   useEffect(() => {
-    if (!hasLiveKey()) return
     const today = mParts(now).date
     const due = waves.filter(w => w.date === today && w.type !== 'programme' && isActive(now, w.date, w.heure))
     let stop = false
@@ -65,7 +64,7 @@ export default function Toasts() {
       if (document.visibilityState === 'hidden') return
       for (const w of due) {
         for (const code of flightCodes(w.vol)) {
-          const st = await fetchStatus(code)
+          const st = await fetchStatus(code, w.date, w.heure, w.type === 'depart' ? 'depart' : 'arrivee')
           if (stop || !st) continue
           const delayed = st.status === 'cancelled' || (st.delay || 0) >= 10
           if (!delayed) continue

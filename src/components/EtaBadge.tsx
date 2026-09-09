@@ -7,7 +7,7 @@ import { Badge } from './ui'
 export default function EtaBadge({ code, date, heure, type }: { code: string; date: string; heure: string; type: 'arrivee' | 'depart' }) {
   const { now } = useApp()
   const active = isActive(now, date, heure)
-  const st = useFlightStatus(code, active)
+  const st = useFlightStatus(code, active, date, heure, type)
   const err = useApiError()
   if (!st) return active && err ? <Badge tone="muted">✈️ {code} · suivi auto indisponible</Badge> : null
   if (st.status === 'cancelled') return <Badge tone="red">✈️ {code} ANNULÉ</Badge>
