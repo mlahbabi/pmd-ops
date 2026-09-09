@@ -1,6 +1,6 @@
 {
- "version": "V2.23 — 09/09/2026",
- "updatedAt": "2026-09-09T14:40:00+01:00",
+ "version": "V2.24 — 09/09/2026",
+ "updatedAt": "2026-09-09T15:05:00+01:00",
  "membres": [
   "Mehdi",
   "Mouad",
@@ -11,8 +11,8 @@
   {
    "sequenceId": "p0909-1945",
    "owner": "Eva",
-   "role": "accompagne le bus du départ anticipé 19:45 (7 pax) Radisson → Dar Diaffa",
-   "note": "Rassemblement lobby 19:35 : Batnini, Boisselier, De Beauvoir, Depouilly, Dupont-Noel, Elmaleh, Pierron"
+   "role": "accompagne le bus du départ anticipé 19:45 (6 pax) Radisson → Dar Diaffa",
+   "note": "Rassemblement lobby 19:35 : Batnini, Boisselier, De Beauvoir, Depouilly, Elmaleh, Pierron (Dupont-Noel rejoint directement le restaurant)"
   },
   {
    "sequenceId": "w0709-1640",
@@ -118,7 +118,7 @@
   },
   {
    "sequenceId": "p0909-1945",
-   "label": "Départ anticipé Dar Diaffa 09/09 19:45 (7 pax)"
+   "label": "Départ anticipé Dar Diaffa 09/09 19:45 (6 pax)"
   }
  ]
 }

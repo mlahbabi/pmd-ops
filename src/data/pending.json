@@ -1,6 +1,6 @@
 {
- "version": "V2.23 — 09/09/2026",
- "updatedAt": "2026-09-09T14:40:00+01:00",
+ "version": "V2.24 — 09/09/2026",
+ "updatedAt": "2026-09-09T15:05:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -85,7 +85,7 @@
   },
   {
    "id": "pd31",
-   "sujet": "Diaffa 09/09 : départ anticipé 19:45 (7 pax, Eva) — prévenir Simohamed : bus dédié à 19:45, puis 3 × 17 pl + Vito réserve à 20:00 pour 55 pax (58 places)",
+   "sujet": "Diaffa 09/09 : départ anticipé 19:45 (6 pax, Eva — Dupont-Noel rejoint directement le restaurant) — prévenir Simohamed : bus dédié à 19:45, puis 3 × 17 pl + Vito réserve à 20:00 pour 53 pax (58 places)",
    "responsable": "Mehdi / Farid",
    "echeance": "2026-09-09",
    "level": "alerte",
@@ -94,9 +94,30 @@
     "boisselier",
     "de-beauvoir",
     "depouilly",
-    "dupont-noel",
     "elmaleh",
     "pierron"
+   ]
+  },
+  {
+   "id": "pd34",
+   "sujet": "Faouzi : rejoint-il aussi directement Dar Diaffa avec Dupont-Noel, Bellefqih et Belemqadem (même véhicule depuis Casa) ? Sinon accueil Radisson + bus 20:00",
+   "responsable": "Mehdi → Clémence",
+   "echeance": "2026-09-09",
+   "level": "alerte",
+   "persons": [
+    "faouzi"
+   ]
+  },
+  {
+   "id": "pd35",
+   "sujet": "Radisson desk : check-in tardif après le dîner (~23:30) pour Dupont-Noel, Bellefqih, Belemqadem — clés préparées, chambres VIP prêtes",
+   "responsable": "Mehdi / Fatima Zahra",
+   "echeance": "2026-09-09",
+   "level": "alerte",
+   "persons": [
+    "dupont-noel",
+    "bellefqih",
+    "belemqadem"
    ]
   },
   {

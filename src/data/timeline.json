@@ -1,6 +1,6 @@
 {
- "version": "V2.23 — 09/09/2026",
- "updatedAt": "2026-09-09T14:40:00+01:00",
+ "version": "V2.24 — 09/09/2026",
+ "updatedAt": "2026-09-09T15:05:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1099,24 +1099,28 @@
    "date": "2026-09-09",
    "start": "18:30",
    "end": null,
-   "title": "Arrivée par la route depuis Casa : Dupont-Noel, Bellefqih, Faouzi, Belemqadem (même véhicule)",
-   "lieu": "Radisson Blu",
-   "effectif": "4",
+   "title": "Par la route depuis Casa : Dupont-Noel, Bellefqih, Belemqadem → DIRECTEMENT À DAR DIAFFA (Faouzi ⚠️)",
+   "lieu": "Dar Diaffa (Médina)",
+   "effectif": "3 (+1 ⚠️)",
    "type": "vip",
-   "level": "important",
-   "details": "Les 4 arrivent ensemble dans le même véhicule (Mehdi, 07/09) : David Dupont-Noel (CEO), Rédouane Bellefqih (Managing Partner Maroc), Adnane Faouzi, Hicham Belemqadem. Départ Casa ~17:30. Accueil à l'hôtel par MRCO, check-in, puis transfert dîner Diaffa de 20:00.",
+   "level": "critique",
+   "details": "CHANGEMENT 09/09 (Mehdi, 15:00) : David Dupont-Noel (CEO), Rédouane Bellefqih (Managing Partner Maroc) et Hicham Belemqadem ne passent PAS par Radisson : ils rejoignent directement le restaurant (départ Casa ~17:30, arrivée Médina à confirmer — dépose rue Jbel Lakhdar puis à pied, comme les bus). Accueil sur place par MRCO (Mehdi au setup dès 18:00). Adnane Faouzi : même véhicule ? ⚠️ à confirmer. Check-in Radisson après le dîner : prévenir le desk (clés prêtes, retour 23:00).",
    "checklist": [
     {
      "id": "s0909-route-c1",
-     "label": "Véhicule arrivé à l'hôtel (4 pax)"
+     "label": "Desk Radisson prévenu : check-in tardif après le dîner (Dupont-Noel, Bellefqih, Belemqadem)"
     },
     {
      "id": "s0909-route-c2",
-     "label": "Check-in des 4 fait"
+     "label": "Faouzi : mode d’arrivée confirmé"
     },
     {
      "id": "s0909-route-c3",
-     "label": "Intégrés au transfert 20:00"
+     "label": "Accueil à Dar Diaffa fait : Dupont-Noel, Bellefqih, Belemqadem"
+    },
+    {
+     "id": "s0909-route-c4",
+     "label": "Pris en charge pour le retour 23:00 (bus ou véhicule perso ?)"
     }
    ],
    "persons": [
@@ -1132,12 +1136,12 @@
    "date": "2026-09-09",
    "start": "19:45",
    "end": null,
-   "title": "Transfert Radisson → Dar Diaffa — DÉPART ANTICIPÉ — 7 pax",
+   "title": "Transfert Radisson → Dar Diaffa — DÉPART ANTICIPÉ — 6 pax",
    "lieu": "Radisson Blu → Dar Diaffa (Médina)",
-   "effectif": "7",
+   "effectif": "6",
    "type": "transport",
    "level": "critique",
-   "details": "Véhicule : 1 × 17 pl. Liste bus du 09/09 (Clémence) : 7 personnes barrées « OK – départ anticipé à 19h45 ». Bus accompagné par EVA. Rassemblement lobby 19:35, dépose rue Jbel Lakhdar puis à pied. Ne pas attendre les autres : le groupe principal part à 20:00.",
+   "details": "Véhicule : 1 × 17 pl. Liste bus du 09/09 (Clémence) : 7 personnes barrées « OK – départ anticipé à 19h45 », moins Dupont-Noel qui rejoint directement le restaurant = 6 pax. Bus accompagné par EVA. Rassemblement lobby 19:35, dépose rue Jbel Lakhdar puis à pied. Ne pas attendre les autres : le groupe principal part à 20:00.",
    "checklist": [
     {
      "id": "p0909-1945-c1",
@@ -1157,7 +1161,6 @@
     "boisselier",
     "de-beauvoir",
     "depouilly",
-    "dupont-noel",
     "elmaleh",
     "pierron"
    ],
@@ -1169,12 +1172,12 @@
    "date": "2026-09-09",
    "start": "20:00",
    "end": null,
-   "title": "Transfert Radisson → Dar Diaffa — 55 pax",
+   "title": "Transfert Radisson → Dar Diaffa — 53 pax",
    "lieu": "Radisson Blu → Dar Diaffa (Médina)",
-   "effectif": "55",
+   "effectif": "53",
    "type": "transport",
    "level": "critique",
-   "details": "Véhicule : 3 × 17 pl + 1 Vito réserve ⚠️ (4e bus parti à 19:45). Dîner — dépose rue Jbel Lakhdar. Groupe principal : 54 hébergés (61 − 7 partis à 19:45) + Ondias (prend le bus) = 55, + 3 invités externes (mode d'arrivée à confirmer). ⚠️ Véhicules : si le bus de 19:45 est l'un des 4, il reste 3 × 17 pl + Vito réserve = 58 places pour 55 — à valider avec Simohamed.",
+   "details": "Véhicule : 3 × 17 pl + 1 Vito réserve ⚠️ (4e bus parti à 19:45). Dîner — dépose rue Jbel Lakhdar. Groupe principal : 52 hébergés (61 − 6 partis à 19:45 − 3 directement au restaurant : Dupont-Noel, Bellefqih, Belemqadem ; Faouzi ⚠️ compté dans le bus) + Ondias (prend le bus) = 53, + 3 invités externes (mode d'arrivée à confirmer). ⚠️ Véhicules : si le bus de 19:45 est l'un des 4, il reste 3 × 17 pl + Vito réserve = 58 places pour 53 — à valider avec Simohamed.",
    "checklist": [
     {
      "id": "p0909-2000-c1",

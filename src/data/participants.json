@@ -1,6 +1,6 @@
 {
- "version": "V2.23 — 09/09/2026",
- "updatedAt": "2026-09-09T14:40:00+01:00",
+ "version": "V2.24 — 09/09/2026",
+ "updatedAt": "2026-09-09T15:05:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -193,7 +193,7 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "belemqadem",
-   "note_app": "Arrive le 09/09 par la route depuis Casablanca (~18:30 à l'hôtel), dans le même véhicule que David Dupont-Noel, avec Bellefqih et Faouzi. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa 20:00.",
+   "note_app": "Arrive le 09/09 par la route depuis Casablanca (~18:30 à l'hôtel), dans le même véhicule que David Dupont-Noel, avec Bellefqih et Faouzi. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa 20:00. CHANGEMENT 09/09 (Mehdi) : rejoint DIRECTEMENT Dar Diaffa, sans passer par Radisson — check-in après le dîner.",
    "pays": "Maroc",
    "arr": {
     "date": "09/09",
@@ -235,7 +235,7 @@
    "statut": "participant",
    "retour_radisson_1430": false,
    "id": "bellefqih",
-   "note_app": "Arrive le 09/09 par la route depuis Casablanca (~18:30 à l'hôtel), dans le même véhicule que David Dupont-Noel, avec Faouzi et Belemqadem. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa 20:00. 1re prise de parole au dîner Diaffa (Managing Partner Maroc).",
+   "note_app": "Arrive le 09/09 par la route depuis Casablanca (~18:30 à l'hôtel), dans le même véhicule que David Dupont-Noel, avec Faouzi et Belemqadem. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa 20:00. CHANGEMENT 09/09 (Mehdi) : rejoint DIRECTEMENT Dar Diaffa, sans passer par Radisson — check-in après le dîner. 1re prise de parole au dîner Diaffa (Managing Partner Maroc).",
    "pays": "Maroc",
    "arr": {
     "date": "09/09",
@@ -784,7 +784,7 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "dupont-noel",
-   "note_app": "CEO. Arrive par la route depuis Casablanca le 09/09 (départ Casa ~17:30, ~18:30 à l'hôtel) dans le même véhicule que Bellefqih, Faouzi et Belemqadem. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa. 5e prise de parole au dîner Diaffa (confirmé par Mehdi le 07/09). Petit mot d'intro au dîner Rôtisserie du 10/09 (sans équipement).",
+   "note_app": "CEO. Arrive par la route depuis Casablanca le 09/09 (départ Casa ~17:30, ~18:30 à l'hôtel) dans le même véhicule que Bellefqih, Faouzi et Belemqadem. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa. CHANGEMENT 09/09 (Mehdi) : rejoint DIRECTEMENT Dar Diaffa avec Bellefqih et Belemqadem, sans passer par Radisson — check-in après le dîner. 5e prise de parole au dîner Diaffa (confirmé par Mehdi le 07/09). Petit mot d'intro au dîner Rôtisserie du 10/09 (sans équipement).",
    "pays": "France, arrivée via Casablanca en voiture",
    "arr": {
     "date": "09/09",
@@ -905,7 +905,7 @@
    "statut": "participant",
    "retour_radisson_1430": false,
    "id": "faouzi",
-   "note_app": "Arrive le 09/09 par la route depuis Casablanca (~18:30 à l'hôtel), dans le même véhicule que David Dupont-Noel, avec Bellefqih et Belemqadem. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa 20:00.",
+   "note_app": "Arrive le 09/09 par la route depuis Casablanca (~18:30 à l'hôtel), dans le même véhicule que David Dupont-Noel, avec Bellefqih et Belemqadem. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa 20:00. ⚠️ CHANGEMENT 09/09 : Dupont-Noel, Bellefqih et Belemqadem rejoignent directement Dar Diaffa — Faouzi aussi ? à confirmer.",
    "pays": "Maroc",
    "arr": {
     "date": "09/09",

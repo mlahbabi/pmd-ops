@@ -1,6 +1,6 @@
 {
- "version": "V2.23 — 09/09/2026",
- "updatedAt": "2026-09-09T14:40:00+01:00",
+ "version": "V2.24 — 09/09/2026",
+ "updatedAt": "2026-09-09T15:05:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -537,13 +537,12 @@
     "boisselier",
     "de-beauvoir",
     "depouilly",
-    "dupont-noel",
     "elmaleh",
     "pierron"
    ],
-   "paxEstime": "7",
+   "paxEstime": "6",
    "vehicule": "1 × 17 pl",
-   "note": "Liste bus du 09/09 (Clémence) : 7 personnes barrées « OK – départ anticipé à 19h45 ». Bus accompagné par EVA. Rassemblement lobby 19:35, dépose rue Jbel Lakhdar puis à pied. Ne pas attendre les autres : le groupe principal part à 20:00.",
+   "note": "Liste bus du 09/09 (Clémence) : 7 personnes barrées « OK – départ anticipé à 19h45 », moins Dupont-Noel qui rejoint directement le restaurant = 6 pax. Bus accompagné par EVA. Rassemblement lobby 19:35, dépose rue Jbel Lakhdar puis à pied. Ne pas attendre les autres : le groupe principal part à 20:00.",
    "origine": "Radisson Blu",
    "destination": "Dar Diaffa (Médina)",
    "level": "critique"
@@ -555,9 +554,9 @@
    "type": "programme",
    "vol": "Radisson → Dar Diaffa",
    "pax": [],
-   "paxEstime": "55",
+   "paxEstime": "53",
    "vehicule": "3 × 17 pl + 1 Vito réserve ⚠️ (4e bus parti à 19:45)",
-   "note": "Dîner — dépose rue Jbel Lakhdar. Groupe principal : 54 hébergés (61 − 7 partis à 19:45) + Ondias (prend le bus) = 55, + 3 invités externes (mode d'arrivée à confirmer). ⚠️ Véhicules : si le bus de 19:45 est l'un des 4, il reste 3 × 17 pl + Vito réserve = 58 places pour 55 — à valider avec Simohamed.",
+   "note": "Dîner — dépose rue Jbel Lakhdar. Groupe principal : 52 hébergés (61 − 6 partis à 19:45 − 3 directement au restaurant : Dupont-Noel, Bellefqih, Belemqadem ; Faouzi ⚠️ compté dans le bus) + Ondias (prend le bus) = 53, + 3 invités externes (mode d'arrivée à confirmer). ⚠️ Véhicules : si le bus de 19:45 est l'un des 4, il reste 3 × 17 pl + Vito réserve = 58 places pour 53 — à valider avec Simohamed.",
    "origine": "Radisson Blu",
    "destination": "Dar Diaffa (Médina)",
    "level": "critique"
@@ -702,7 +701,7 @@
   "Malouche Mohamed-Ali — NOUVEAU : arrive en voiture avec un associé marocain (plus de transfert aller), départ 11/09 navette 13:35.",
   "Kopp Julien — arrivée autonome via Casa ; retour a priori en train le 10/09 au matin (à confirmer).",
   "Ondias Fanny — gère seule hébergement et transferts (vient accompagnée).",
-  "Dupont-Noel, Bellefqih, Faouzi, Belemqadem — ensemble par la route depuis Casa le 09/09, même véhicule (départ ~17:30, ~18:30 à l'hôtel), accueil hôtel MRCO.",
+  "Dupont-Noel, Bellefqih, Faouzi, Belemqadem — ensemble par la route depuis Casa le 09/09, même véhicule (départ ~17:30, ~18:30 à l'hôtel) — CHANGEMENT 09/09 : Dupont-Noel, Bellefqih et Belemqadem rejoignent DIRECTEMENT Dar Diaffa (Faouzi ⚠️ à confirmer), check-in Radisson après le dîner.",
   "Le 08/09, 8 autres arrivées autonomes sans transfert : Alaoui, Jebira (via Casa) ; Bencheqroun, Chaste, Hassouni, Leyrit, Nadem, Tayaa (voiture personnelle depuis Casablanca)."
  ],
  "flotte": [
@@ -727,7 +726,7 @@
   {
    "date": "2026-09-09",
    "pax": "~66",
-   "mouvements": "3 arrivées + dîner Diaffa : 7 pax à 19:45 (bus Eva) + 55 pax à 20:00, retour 62 à 23:00 (aucun départ)",
+   "mouvements": "3 arrivées + dîner Diaffa : 6 pax à 19:45 (bus Eva) + 53 pax à 20:00 (3 VIP directement au restaurant), retour 62 à 23:00 (aucun départ)",
    "flotte": "4 × 17 pl + 1 Vito (3 courses) — 1 bus détaché à 19:45 ⚠️"
   },
   {
