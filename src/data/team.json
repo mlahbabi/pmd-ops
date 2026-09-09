@@ -1,6 +1,6 @@
 {
- "version": "V2.24 — 09/09/2026",
- "updatedAt": "2026-09-09T15:05:00+01:00",
+ "version": "V2.25 — 09/09/2026",
+ "updatedAt": "2026-09-09T17:45:00+01:00",
  "membres": [
   "Mehdi",
   "Mouad",
@@ -13,6 +13,18 @@
    "owner": "Eva",
    "role": "accompagne le bus du départ anticipé 19:45 (6 pax) Radisson → Dar Diaffa",
    "note": "Rassemblement lobby 19:35 : Batnini, Boisselier, De Beauvoir, Depouilly, Elmaleh, Pierron (Dupont-Noel rejoint directement le restaurant)"
+  },
+  {
+   "sequenceId": "p1009-1430",
+   "owner": "Eva",
+   "role": "retour anticipé Grand Bazar → Radisson 14:30 (18 pax, liste nominative)",
+   "note": "Avec Mouad. Pointer les 18 dans l app (Plus → Marrakech Express), ne pas partir incomplet sans validation."
+  },
+  {
+   "sequenceId": "p1009-1430",
+   "owner": "Mouad",
+   "role": "retour anticipé Grand Bazar → Radisson 14:30 (18 pax) — avec Eva",
+   "note": ""
   },
   {
    "sequenceId": "w0709-1640",
