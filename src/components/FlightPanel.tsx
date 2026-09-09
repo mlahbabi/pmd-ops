@@ -1,6 +1,6 @@
 // Bloc « suivi du vol » d'une vague ouverte : détail du statut par vol + lien Flightradar24.
 import { useApp } from '../context'
-import { flightCodes, fr24Url, useFlightStatus, statusLabel, etaOf, deltaOf, schedOf, isActive, isUnknown, useApiError, ACTIVE_LABEL, type FlightType } from '../lib/flights'
+import { flightCodes, fr24Url, useFlightStatus, statusLabel, etaOf, deltaOf, schedOf, isActive, isUnknown, isTransit, useApiError, ACTIVE_LABEL, type FlightType } from '../lib/flights'
 import type { Wave } from '../lib/types'
 
 function Line({ code, wave, active, type }: { code: string; wave: Wave; active: boolean; type: FlightType }) {
@@ -12,7 +12,8 @@ function Line({ code, wave, active, type }: { code: string; wave: Wave; active: 
   return (
     <div className="flex flex-wrap items-center gap-2 text-sm">
       <a href={fr24Url(code)} target="_blank" rel="noreferrer" className="chip text-xs min-h-8 py-1">✈️ {code} · Flightradar24</a>
-      {st && isUnknown(st) ? <span className="text-xs text-alert-yellow font-semibold">⚠️ vol introuvable à cette date sur Flightradar24 — vérifier le billet</span>
+      {st && isTransit(st) ? <span className="text-xs text-warm">correspondance hors Marrakech — suivi non applicable</span>
+        : st && isUnknown(st) ? <span className="text-xs text-alert-yellow font-semibold">⚠️ vol introuvable à cette date sur Flightradar24 — vérifier le billet</span>
         : st ? (
           <span className={st.status === 'cancelled' || (d != null && d >= 30) ? 'text-alert-red font-semibold' : d != null && (d >= 10 || d <= -15) ? 'text-alert-orange font-semibold' : 'text-ok'}>
             {statusLabel(st)}

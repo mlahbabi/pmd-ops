@@ -100,7 +100,8 @@ async function fetchFr24(code: string, ref: Date, type: FlightType): Promise<Fli
   }
   const all: Fr24Item[] = j?.result?.response?.data || []
   const data = all.filter(x => (type === 'arrivee' ? x.airport?.destination?.code?.iata : x.airport?.origin?.code?.iata) === HOME)
-  if (!data.length) return null
+  // Vol connu mais jamais via Marrakech (ex. AF718 CDG → DSS) : correspondance, rien à suivre ici.
+  if (!data.length) return all.length ? { code, status: 'transit', source: 'fr24', fetchedAt: Date.now() } : null
   // Départ : la vague est la prise en charge (≈ H-2), on vise le décollage ~2 h plus tard.
   const refS = ref.getTime() / 1000 + (type === 'depart' ? 2 * 3600 : 0)
   const key = (x: Fr24Item) => (type === 'arrivee' ? x.time?.scheduled?.arrival : x.time?.scheduled?.departure) || 0
@@ -177,4 +178,6 @@ export function useFlightStatus(code: string | null, active: boolean, date?: str
   }, [code, active, date, heure, type])
   return st
 }
-export const statusLabel = (s: FlightStatus) => ({ scheduled: 'prévu', active: 'en vol', landed: 'atterri', cancelled: 'ANNULÉ', diverted: 'dérouté', delayed: 'retardé', unknown: 'introuvable à cette date' } as Record<string, string>)[s.status] || s.status
+/** Vrai si le vol est une correspondance qui ne touche pas Marrakech (rien à suivre ici). */
+export const isTransit = (s: FlightStatus | null) => !!s && s.status === 'transit'
+export const statusLabel = (s: FlightStatus) => ({ scheduled: 'prévu', active: 'en vol', landed: 'atterri', cancelled: 'ANNULÉ', diverted: 'dérouté', delayed: 'retardé', unknown: 'introuvable à cette date', transit: 'correspondance hors Marrakech' } as Record<string, string>)[s.status] || s.status
