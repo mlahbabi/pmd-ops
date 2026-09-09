@@ -1,11 +1,11 @@
 // Bloc « suivi du vol » d'une vague ouverte : détail du statut par vol + lien Flightradar24 (aucune donnée chargée).
 import { useApp } from '../context'
-import { flightCodes, fr24Url, useFlightStatus, statusLabel, etaOf, deltaMin } from '../lib/flights'
-import { mParts, toDate } from '../lib/time'
+import { flightCodes, fr24Url, useFlightStatus, statusLabel, etaOf, deltaMin, isActive, useApiError, ACTIVE_LABEL } from '../lib/flights'
 import type { Wave } from '../lib/types'
 
 function Line({ code, wave, active }: { code: string; wave: Wave; active: boolean }) {
   const st = useFlightStatus(code, active)
+  const err = useApiError()
   const type = wave.type === 'depart' ? 'depart' : 'arrivee'
   const eta = st ? etaOf(st, type) : undefined
   const d = st && eta ? deltaMin(eta, wave.heure) : null
@@ -17,7 +17,8 @@ function Line({ code, wave, active }: { code: string; wave: Wave; active: boolea
           {statusLabel(st)}{type === 'arrivee' ? (st.arrEstimated ? ` · arrivée estimée ${st.arrEstimated}` : '') : (st.depActual ? ` · décollé ${st.depActual}` : st.depEstimated ? ` · décollage estimé ${st.depEstimated}` : '')}
           {d != null ? (d > 4 ? ` (+${d} min)` : d < -4 ? ` (−${-d} min)` : ' (à l\'heure)') : ''}
         </span>
-      ) : active ? <span className="text-xs text-warm">statut en attente…</span> : <span className="text-xs text-warm">suivi actif de 5 h avant à 2 h après l'horaire</span>}
+      ) : active && err ? <span className="text-xs text-alert-orange font-semibold">⚠️ suivi automatique indisponible : {err} — ouvrir Flightradar24</span>
+        : active ? <span className="text-xs text-warm">statut en attente…</span> : <span className="text-xs text-warm">suivi actif {ACTIVE_LABEL}</span>}
     </div>
   )
 }
@@ -26,8 +27,7 @@ export default function FlightPanel({ wave }: { wave: Wave }) {
   const { now } = useApp()
   const codes = flightCodes(wave.vol)
   if (!codes.length) return null
-  const ref = toDate(wave.date, wave.heure).getTime() - now.getTime()
-  const active = mParts(now).date === wave.date && ref < 5 * 3600_000 && ref > -2 * 3600_000
+  const active = isActive(now, wave.date, wave.heure)
   return (
     <div className="rounded-xl border border-line bg-ink-3/60 p-3 space-y-1.5">
       <div className="text-xs uppercase tracking-wider text-warm">Suivi du vol</div>

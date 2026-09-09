@@ -105,3 +105,10 @@ supabase/schema.sql
 ```
 
 Règles absolues respectées dans les données : aucun montant ni tarif, « Partners’ Meeting » et « Marrakech Express » uniquement.
+
+## Suivi automatique des vols (AirLabs)
+
+- Les liens Flightradar24 fonctionnent toujours, sans clé ni quota.
+- Le statut automatique (ETA, retard, annulation) utilise l'API AirLabs : compte gratuit = **1 000 requêtes par mois**. La clé est intégrée au build (`src/lib/flights.ts`), remplaçable sur un téléphone via Plus → Réglages.
+- Fenêtre de suivi : de 2 h 30 avant à 30 min après l'horaire, rafraîchi toutes les 20 min, jamais quand l'app est en arrière-plan (≈ 10 requêtes par vol et par téléphone).
+- Quota dépassé ou clé invalide : un flash orange unique, puis « suivi auto indisponible » sur chaque vague ; l'équipe passe par Flightradar24. Remède : créer un nouveau compte gratuit sur airlabs.co et mettre la clé dans `flights.ts` (ou la coller dans Réglages sur chaque téléphone).

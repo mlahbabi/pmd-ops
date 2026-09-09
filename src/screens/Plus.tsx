@@ -5,7 +5,7 @@ import { contactsFile, signaletique, signaletiqueFile, team, sequenceById, pendi
 import { ddmm, fmtIso } from '../lib/time'
 import { IS_DEV_CODE, revokeAccess } from '../lib/auth'
 import { clearLocalState, refresh } from '../lib/store'
-import { AIRLABS_LS, hasLiveKey, setAirlabsKey } from '../lib/flights'
+import { AIRLABS_LS, hasLiveKey, setAirlabsKey, useApiError, ACTIVE_LABEL } from '../lib/flights'
 import { Badge, CheckRow, Empty, PageTitle, PersonChip, Section, TelButtons, VipBadge, Warn } from '../components/ui'
 
 const Back = () => { const nav = useNavigate(); return <button type="button" onClick={() => nav('/plus')} className="text-sm text-lavender mb-2">← Plus</button> }
@@ -176,6 +176,7 @@ export function Reglages() {
   const [busy, setBusy] = useState(false)
   const [live, setLive] = useState(hasLiveKey())
   const [keyInput, setKeyInput] = useState(() => { try { return localStorage.getItem(AIRLABS_LS) || '' } catch { return '' } })
+  const apiError = useApiError()
   async function viderCache() {
     setBusy(true)
     try {
@@ -202,7 +203,8 @@ export function Reglages() {
       </Section>
       <Section title="Suivi des vols">
         <div className="card p-3 space-y-2 text-sm">
-          <div>Liens Flightradar24 sur chaque vague et chaque fiche (aucune donnée chargée). Statut automatique : <b>{live ? 'activé sur cet appareil' : 'désactivé'}</b>.</div>
+          <div>Liens Flightradar24 sur chaque vague et chaque fiche (aucune donnée chargée). Statut automatique : <b>{live ? 'activé sur cet appareil' : 'désactivé'}</b> · suivi {ACTIVE_LABEL}, rafraîchi toutes les 20 min, jamais en arrière-plan.</div>
+          {apiError && <div className="text-alert-orange font-semibold">⚠️ Suivi automatique en panne : {apiError}. Nouvelle clé gratuite sur airlabs.co (1 000 requêtes/mois) à coller ci-dessous, ou à envoyer à Mehdi pour tous les téléphones.</div>}
           <form className="flex gap-2" onSubmit={e => { e.preventDefault(); setAirlabsKey(keyInput); setLive(hasLiveKey()) }}>
             <input className="input min-h-10 text-sm flex-1" placeholder="Clé AirLabs (facultatif)" value={keyInput} onChange={e => setKeyInput(e.target.value)} />
             <button className="btn min-h-10 px-3 text-sm">Enregistrer</button>

@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ckId, useApp } from '../context'
 import { sequencesOfDay, waves } from '../lib/data'
-import { fmtMins, mParts, seqStatus, toDate } from '../lib/time'
-import { fetchStatus, flightCodes, hasLiveKey, statusLabel } from '../lib/flights'
+import { fmtMins, mParts, seqStatus } from '../lib/time'
+import { fetchStatus, flightCodes, hasLiveKey, isActive, statusLabel, useApiError, TTL as TTL_FLIGHT } from '../lib/flights'
 
 const TTL = 20_000
 type Toast = { id: string; title: string; body: string; tone: 'red' | 'orange' | 'yellow' | 'lav'; to?: string; at: number }
@@ -45,14 +45,24 @@ export default function Toasts() {
     })
   }, [now, store.checks, simulated]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Vols du jour : statut automatique (si clé configurée), toutes les 10 min dans la fenêtre [-3h ; +1h] autour de l'atterrissage / du décollage.
+  // Panne du suivi automatique (quota AirLabs, clé) : un seul flash par session, l'équipe bascule sur Flightradar24.
+  const apiError = useApiError()
+  useEffect(() => {
+    if (!apiError || fired.current.has('vol:api')) return
+    fired.current.add('vol:api'); saveFired(fired.current)
+    push({ id: 'vol:api', tone: 'orange', title: '✈️ Suivi automatique des vols indisponible', body: `${apiError} — utiliser les liens Flightradar24 sur chaque vague (Transport).`, to: '/transport' })
+  }, [apiError]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Vols du jour : statut automatique (si clé configurée), même fenêtre et même cadence que les badges ETA (cache partagé),
+  // jamais en arrière-plan.
   const flightBucket = useRef(new Map<string, string>())
   useEffect(() => {
     if (!hasLiveKey()) return
     const today = mParts(now).date
-    const due = waves.filter(w => w.date === today && w.type !== 'programme').filter(w => { const d = toDate(w.date, w.heure).getTime() - now.getTime(); return d > -60 * 60000 && d < 3 * 3600_000 })
+    const due = waves.filter(w => w.date === today && w.type !== 'programme' && isActive(now, w.date, w.heure))
     let stop = false
     const run = async () => {
+      if (document.visibilityState === 'hidden') return
       for (const w of due) {
         for (const code of flightCodes(w.vol)) {
           const st = await fetchStatus(code)
@@ -67,9 +77,9 @@ export default function Toasts() {
         }
       }
     }
-    void run(); const t = setInterval(() => void run(), 10 * 60_000)
+    void run(); const t = setInterval(() => void run(), TTL_FLIGHT)
     return () => { stop = true; clearInterval(t) }
-  }, [mParts(now).date, Math.floor(now.getTime() / (10 * 60_000))]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [mParts(now).date, Math.floor(now.getTime() / TTL_FLIGHT)]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // Notes des autres (alerte / incident)
   useEffect(() => {

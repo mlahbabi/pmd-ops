@@ -1,15 +1,15 @@
 // ETA d'un vol, visible sans ouvrir la carte : « ETA 16:38 · −2 min » (vert), « +25 min » (orange), « +30 min et plus / annulé » (rouge).
+// Si le suivi automatique est en panne (quota, clé), un badge discret le dit au lieu de ne rien afficher.
 import { useApp } from '../context'
-import { useFlightStatus, etaOf, deltaMin, statusLabel } from '../lib/flights'
-import { mParts, toDate } from '../lib/time'
+import { useFlightStatus, etaOf, deltaMin, statusLabel, isActive, useApiError } from '../lib/flights'
 import { Badge } from './ui'
 
 export default function EtaBadge({ code, date, heure, type }: { code: string; date: string; heure: string; type: 'arrivee' | 'depart' }) {
   const { now } = useApp()
-  const ref = toDate(date, heure).getTime() - now.getTime()
-  const active = mParts(now).date === date && ref < 5 * 3600_000 && ref > -2 * 3600_000
+  const active = isActive(now, date, heure)
   const st = useFlightStatus(code, active)
-  if (!st) return null
+  const err = useApiError()
+  if (!st) return active && err ? <Badge tone="muted">✈️ {code} · suivi auto indisponible</Badge> : null
   if (st.status === 'cancelled') return <Badge tone="red">✈️ {code} ANNULÉ</Badge>
   const eta = etaOf(st, type)
   const d = eta ? deltaMin(eta, heure) : (st.delay ?? null)
