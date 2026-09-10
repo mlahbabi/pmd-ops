@@ -1,6 +1,6 @@
 {
- "version": "V2.26 — 10/09/2026",
- "updatedAt": "2026-09-10T09:00:00+01:00",
+ "version": "V2.27 — 10/09/2026",
+ "updatedAt": "2026-09-10T10:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -106,6 +106,17 @@
    "level": "alerte",
    "persons": [
     "faouzi"
+   ]
+  },
+  {
+   "id": "pd37",
+   "sujet": "Caroline Queron (NOUVEAU 10/09) : Vito 09:40 le 11/09 à caler avec Simohamed (matin de pointe) ; chambre partagée avec Thierry à confirmer à l'hôtel ; départ 13/09 avec lui ? ; à compter au déjeuner Beldi ?",
+   "responsable": "Mehdi / Farid / Fatima Zahra",
+   "echeance": "2026-09-10",
+   "level": "alerte",
+   "persons": [
+    "queron-caroline",
+    "queron"
    ]
   },
   {

@@ -53,7 +53,8 @@ export const dayNum = (ddmm?: string | null) => (ddmm ? Number(ddmm.slice(0, 2))
 /** Vrai si la personne dort à l'hôtel la nuit du <date> (YYYY-MM-DD) au lendemain */
 export function sleepsOn(p: Person, date: string) {
   const d = Number(date.slice(8, 10)); const a = dayNum(p.arrivee); const b = dayNum(p.depart)
-  return !isNaN(a) && !isNaN(b) && a <= d && d < b
+  // nuitees = 0 : accompagnant qui partage une chambre (pas de chambre propre)
+  return p.nuitees !== 0 && !isNaN(a) && !isNaN(b) && a <= d && d < b
 }
 export const REGIMES = people.filter(p => p.regime && p.regime.trim())
 export const vipRank = (p: Person) => (p.vip === 'VIP' ? 0 : p.vip === 'VIP+1' ? 1 : p.vip === 'VIP+2' ? 2 : 9)

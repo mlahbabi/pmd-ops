@@ -1,6 +1,6 @@
 {
- "version": "V2.26 — 10/09/2026",
- "updatedAt": "2026-09-10T09:00:00+01:00",
+ "version": "V2.27 — 10/09/2026",
+ "updatedAt": "2026-09-10T10:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -2288,6 +2288,55 @@
    },
    "transferts": [
     "w1309-1555"
+   ]
+  },
+  {
+   "nom": "QUERON",
+   "prenom": "Caroline",
+   "genre": "F",
+   "statut": "invité externe",
+   "categorie": "",
+   "vip": "",
+   "bureau": "",
+   "metier_tb": "",
+   "fonction": "Épouse de Thierry Queron — invitée",
+   "regime": "",
+   "note_hotel": "Partage a priori la chambre de Thierry Queron (13/09) — à confirmer à l'hôtel ⚠️",
+   "equipe_tb": null,
+   "retour_radisson_1430": false,
+   "diaffa_table": "absent",
+   "diaffa_place": null,
+   "rotisserie_table": "absent",
+   "rotisserie_place": null,
+   "id": "queron-caroline",
+   "arrivee": "11/09",
+   "depart": "13/09",
+   "nuitees": 0,
+   "pays": "France",
+   "arr": {
+    "date": "11/09",
+    "heure": "09:40",
+    "vol": "AF1276",
+    "de": "Paris CDG",
+    "cie": "Air France",
+    "mode": "vol"
+   },
+   "dep": {
+    "date": "13/09",
+    "heure": null,
+    "vol": null,
+    "vers": null,
+    "cie": null,
+    "mode": "non communiqué ⚠️ — avec Thierry Queron le 13/09 (AF1877 18:55) ?"
+   },
+   "note_app": "NOUVEAU (Mehdi, 10/09) : accompagnante de Thierry Queron. Arrive le 11/09 par AF1276 (CDG) à 09:40, Vito MRCO. Départ, chambre et repas à confirmer ⚠️ (à compter au Beldi 11/09 et à la Rôtisserie ? non).",
+   "a_confirmer": [
+    "départ",
+    "chambre (partage avec Thierry ?)",
+    "présence Beldi 11/09"
+   ],
+   "transferts": [
+    "w1109-0940"
    ]
   },
   {

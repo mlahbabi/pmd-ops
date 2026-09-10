@@ -1,6 +1,6 @@
 {
- "version": "V2.26 — 10/09/2026",
- "updatedAt": "2026-09-10T09:00:00+01:00",
+ "version": "V2.27 — 10/09/2026",
+ "updatedAt": "2026-09-10T10:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1850,6 +1850,37 @@
    "checklist": [],
    "persons": [],
    "owner": ""
+  },
+  {
+   "id": "w1109-0940",
+   "date": "2026-09-11",
+   "start": "09:40",
+   "end": null,
+   "title": "Arrivée AF1276 (CDG) — 1 pax",
+   "lieu": "Aéroport RAK → Radisson",
+   "effectif": "1",
+   "type": "transport",
+   "level": "important",
+   "details": "Caroline QUERON. Véhicule : 1 Vito. NOUVEAU (10/09) : Caroline Queron, accompagnante de Thierry Queron. Matin de pointe (Vitos départs 03:45, 07:50, 10:10) — véhicule à confirmer avec Simohamed. À l'hôtel vers 10:30 pendant l'AG ; Beldi 11:45 avec le groupe ?",
+   "checklist": [
+    {
+     "id": "w1109-0940-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1109-0940-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1109-0940-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "queron-caroline"
+   ],
+   "owner": "",
+   "waveId": "w1109-0940"
   },
   {
    "id": "w1109-1010",

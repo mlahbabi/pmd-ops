@@ -1,6 +1,6 @@
 {
- "version": "V2.26 — 10/09/2026",
- "updatedAt": "2026-09-10T09:00:00+01:00",
+ "version": "V2.27 — 10/09/2026",
+ "updatedAt": "2026-09-10T10:00:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -314,6 +314,21 @@
    "origine": "Radisson Blu",
    "destination": "Aéroport RAK",
    "level": "critique"
+  },
+  {
+   "id": "w1109-0940",
+   "date": "2026-09-11",
+   "heure": "09:40",
+   "type": "arrivee",
+   "vol": "AF1276 (CDG)",
+   "pax": [
+    "queron-caroline"
+   ],
+   "vehicule": "1 Vito",
+   "note": "NOUVEAU (10/09) : Caroline Queron, accompagnante de Thierry Queron. Matin de pointe (Vitos départs 03:45, 07:50, 10:10) — véhicule à confirmer avec Simohamed. À l'hôtel vers 10:30 pendant l'AG ; Beldi 11:45 avec le groupe ?",
+   "origine": "Aéroport RAK",
+   "destination": "Radisson Blu",
+   "level": "important"
   },
   {
    "id": "w1109-1010",
@@ -724,7 +739,7 @@
   {
    "date": "2026-09-11",
    "pax": "~57",
-   "mouvements": "POINTE ABSOLUE : 3 vagues matin + Beldi 11:45 + 5 navettes Beldi → RAK",
+   "mouvements": "POINTE ABSOLUE : 3 vagues matin + arrivée C. Queron 09:40 (AF1276) + Beldi 11:45 + 5 navettes Beldi → RAK",
    "flotte": "4 × 17 pl + 3 Vitos (rotations)"
   },
   {
