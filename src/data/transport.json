@@ -1,6 +1,6 @@
 {
- "version": "V2.29 — 10/09/2026",
- "updatedAt": "2026-09-10T11:30:00+01:00",
+ "version": "V2.30 — 10/09/2026",
+ "updatedAt": "2026-09-10T12:00:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -651,15 +651,29 @@
    "level": "normal"
   },
   {
+   "id": "p1109-1530",
+   "date": "2026-09-11",
+   "heure": "15:30",
+   "type": "programme",
+   "vol": "Beldi → Radisson — retour des personnes qui restent",
+   "pax": [],
+   "paxEstime": "~15",
+   "vehicule": "1 × 17 pl (resté au Beldi)",
+   "note": "HORAIRE À CONFIRMER ⚠️ (après le départ du bus de 14:35). 13 hébergés nuit 11→12 (Balesme, Bishop, Koundi, Maatoug, Madre, Mavungu, Mboup, Mejri, Mtimet, Niang, Queron, Sahli, Sall Plantagenet) + Caroline Queron + Ondias ⚠️ = ~15. Un des 17 pl restés au Beldi.",
+   "origine": "Beldi Country Club",
+   "destination": "Radisson Blu",
+   "level": "important"
+  },
+  {
    "id": "p1109-1145",
    "date": "2026-09-11",
    "heure": "11:45",
    "type": "programme",
    "vol": "Radisson → Beldi Country Club — AVEC BAGAGES",
    "pax": [],
-   "paxEstime": "~53",
+   "paxEstime": "~55",
    "vehicule": "4 × 17 pl",
-   "note": "Chargement dès 11:15 (bagagerie hôtel). ~51 hébergés + Tonka + Ondias. Les véhicules restent au Beldi jusqu'aux navettes aéroport.",
+   "note": "Chargement dès 11:15 (bagagerie hôtel) — bagages UNIQUEMENT des 17 qui vont directement Beldi → RAK. Effectif : 54 hébergés présents après les 5 départs du matin (dont C. Queron ⚠️) + Ondias = ~55 ; les 12 qui repartent par la route (Casa) peuvent partir en voiture depuis le Beldi. Les véhicules restent au Beldi jusqu'aux navettes aéroport.",
    "origine": "Radisson Blu",
    "destination": "Beldi Country Club",
    "level": "critique"

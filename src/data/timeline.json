@@ -1,6 +1,6 @@
 {
- "version": "V2.29 — 10/09/2026",
- "updatedAt": "2026-09-10T11:30:00+01:00",
+ "version": "V2.30 — 10/09/2026",
+ "updatedAt": "2026-09-10T12:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1945,12 +1945,12 @@
    "date": "2026-09-11",
    "start": "11:45",
    "end": null,
-   "title": "Transfert Radisson → Beldi Country Club — AVEC BAGAGES — ~53 pax",
+   "title": "Transfert Radisson → Beldi Country Club — AVEC BAGAGES — ~55 pax",
    "lieu": "Radisson Blu → Beldi Country Club",
-   "effectif": "~53",
+   "effectif": "~55",
    "type": "transport",
    "level": "critique",
-   "details": "Véhicule : 4 × 17 pl. Chargement dès 11:15 (bagagerie hôtel). ~51 hébergés + Tonka + Ondias. Les véhicules restent au Beldi jusqu'aux navettes aéroport.",
+   "details": "Véhicule : 4 × 17 pl. Chargement dès 11:15 (bagagerie hôtel) — bagages UNIQUEMENT des 17 qui vont directement Beldi → RAK. Effectif : 54 hébergés présents après les 5 départs du matin (dont C. Queron ⚠️) + Ondias = ~55 ; les 12 qui repartent par la route (Casa) peuvent partir en voiture depuis le Beldi. Les véhicules restent au Beldi jusqu'aux navettes aéroport.",
    "checklist": [
     {
      "id": "p1109-1145-c1",
@@ -2159,6 +2159,35 @@
     "koudou"
    ],
    "owner": ""
+  },
+  {
+   "id": "p1109-1530",
+   "date": "2026-09-11",
+   "start": "15:30",
+   "end": null,
+   "title": "Transfert Beldi → Radisson — retour des personnes qui restent — ~15 pax",
+   "lieu": "Beldi Country Club → Radisson Blu",
+   "effectif": "~15",
+   "type": "transport",
+   "level": "important",
+   "details": "Véhicule : 1 × 17 pl (resté au Beldi). HORAIRE À CONFIRMER ⚠️ (après le départ du bus de 14:35). 13 hébergés nuit 11→12 (Balesme, Bishop, Koundi, Maatoug, Madre, Mavungu, Mboup, Mejri, Mtimet, Niang, Queron, Sahli, Sall Plantagenet) + Caroline Queron + Ondias ⚠️ = ~15. Un des 17 pl restés au Beldi.",
+   "checklist": [
+    {
+     "id": "p1109-1530-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "p1109-1530-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "p1109-1530-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [],
+   "owner": "",
+   "waveId": "p1109-1530"
   },
   {
    "id": "s1109-nuit",

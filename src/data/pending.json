@@ -1,6 +1,6 @@
 {
- "version": "V2.29 — 10/09/2026",
- "updatedAt": "2026-09-10T11:30:00+01:00",
+ "version": "V2.30 — 10/09/2026",
+ "updatedAt": "2026-09-10T12:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -107,6 +107,13 @@
    "persons": [
     "faouzi"
    ]
+  },
+  {
+   "id": "pd40",
+   "sujet": "Beldi 11/09 : retour Beldi → Radisson des ~15 qui restent (13 hébergés nuit 11→12 + C. Queron + Ondias) — horaire à fixer avec Simohamed (proposé 15:30, un 17 pl resté sur place)",
+   "responsable": "Mehdi / Farid",
+   "echeance": "2026-09-10",
+   "level": "alerte"
   },
   {
    "id": "pd38",
