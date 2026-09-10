@@ -1,6 +1,6 @@
 {
- "version": "V2.27 — 10/09/2026",
- "updatedAt": "2026-09-10T10:00:00+01:00",
+ "version": "V2.28 — 10/09/2026",
+ "updatedAt": "2026-09-10T10:45:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -1307,7 +1307,7 @@
    "nuitees": 1,
    "regime": "",
    "note_hotel": "Intervenant — 1 nuit, départ 10/09 au matin",
-   "retour_radisson_1430": true,
+   "retour_radisson_1430": false,
    "genre": "H",
    "categorie": "animateur",
    "vip": "",

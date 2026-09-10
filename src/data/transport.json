@@ -1,6 +1,6 @@
 {
- "version": "V2.27 — 10/09/2026",
- "updatedAt": "2026-09-10T10:00:00+01:00",
+ "version": "V2.28 — 10/09/2026",
+ "updatedAt": "2026-09-10T10:45:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -582,9 +582,9 @@
    "type": "programme",
    "vol": "Radisson → Médina (Grand Bazar)",
    "pax": [],
-   "paxEstime": "60",
+   "paxEstime": "58",
    "vehicule": "4 × 17 pl",
-   "note": "Déjeuner + Marrakech Express. 58 + Tonka + Ondias = 60 (Kopp ⚠️ : partirait le matin).",
+   "note": "Déjeuner + Marrakech Express. EFFECTIF EXACT 10/09 : 58 = 57 hébergés + Ondias. Absents : Boisselier (déjeuner VIP salle Gingembre), Kopp (parti le matin), Frery (vol 13:40), Villeminot (parti seul), Benjelloun Touimi (dîner uniquement).",
    "origine": "Radisson Blu",
    "destination": "Le Grand Bazar (Médina)",
    "level": "critique"
@@ -606,7 +606,6 @@
     "elmaleh",
     "gourd",
     "jacquart",
-    "kopp",
     "lucas",
     "malouche",
     "niang",
@@ -615,9 +614,9 @@
     "sayam",
     "tonka"
    ],
-   "paxEstime": "18",
+   "paxEstime": "17",
    "vehicule": "1 × 17 pl + 1 Vito",
-   "note": "Liste nominative de 18 (fichier du 07/09, Tonka inclus). Kopp ⚠️ : partirait le matin.",
+   "note": "Liste nominative : 17 (fichier du 07/09 moins Kopp, parti le matin ; Tonka inclus ⚠️ aussi en équipe 7).",
    "origine": "Le Grand Bazar (Médina)",
    "destination": "Radisson Blu",
    "level": "critique"
@@ -672,9 +671,9 @@
     "zouari",
     "ondias"
    ],
-   "paxEstime": "~42",
+   "paxEstime": "42",
    "vehicule": "3 × 17 pl",
-   "note": "Retour groupé fin d'activité : les 42 des équipes (Tonka ⚠️ aussi listé navette 14h30).",
+   "note": "Retour groupé fin d'activité : les 42 des équipes (41 si Tonka prend la navette 14:30 ⚠️).",
    "origine": "Riad Dar Essalam (Médina)",
    "destination": "Radisson Blu",
    "level": "normal"
@@ -733,7 +732,7 @@
   {
    "date": "2026-09-10",
    "pax": "~61",
-   "mouvements": "1 départ (Frery 11:15 ; Villeminot parti seul) + Médina : 60 aller / 18 retour 14:30 / ~42 retour 17:30",
+   "mouvements": "1 départ (Frery 11:15 ; Villeminot parti seul) + Médina : 58 aller 12:15 / 17 retour 14:30 / 42 retour 17:30",
    "flotte": "4 × 17 pl + 2 Vitos"
   },
   {

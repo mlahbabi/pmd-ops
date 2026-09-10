@@ -1,6 +1,6 @@
 {
- "version": "V2.27 — 10/09/2026",
- "updatedAt": "2026-09-10T10:00:00+01:00",
+ "version": "V2.28 — 10/09/2026",
+ "updatedAt": "2026-09-10T10:45:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1402,12 +1402,12 @@
    "date": "2026-09-10",
    "start": "12:15",
    "end": null,
-   "title": "Transfert Radisson → Médina (Grand Bazar) — 60 pax",
+   "title": "Transfert Radisson → Médina (Grand Bazar) — 58 pax",
    "lieu": "Radisson Blu → Le Grand Bazar (Médina)",
-   "effectif": "60",
+   "effectif": "58",
    "type": "transport",
    "level": "critique",
-   "details": "Véhicule : 4 × 17 pl. Déjeuner + Marrakech Express. 58 + Tonka + Ondias = 60 (Kopp ⚠️ : partirait le matin).",
+   "details": "Véhicule : 4 × 17 pl. Déjeuner + Marrakech Express. EFFECTIF EXACT 10/09 : 58 = 57 hébergés + Ondias. Absents : Boisselier (déjeuner VIP salle Gingembre), Kopp (parti le matin), Frery (vol 13:40), Villeminot (parti seul), Benjelloun Touimi (dîner uniquement).",
    "checklist": [
     {
      "id": "p1009-1215-c1",
@@ -1433,10 +1433,10 @@
    "end": "14:15",
    "title": "Déjeuner Le Grand Bazar",
    "lieu": "Le Grand Bazar (Médina)",
-   "effectif": "60",
+   "effectif": "58",
    "type": "restauration",
    "level": "normal",
-   "details": "Légumes grillés / tajine de poulet / mhalabia — softs. 58 + Tonka + Ondias (Kopp ⚠️).",
+   "details": "Légumes grillés / tajine de poulet / mhalabia — softs. EFFECTIF EXACT (10/09 matin) : 58 couverts = 57 hébergés + Ondias. Pas là : Boisselier (déjeuner VIP Gingembre 12:00), Kopp (train ce matin), Frery (vol 13:40), Villeminot (parti), Benjelloun Touimi. Contrôle : 42 équipes + 17 navette 14:30 − Tonka compté deux fois = 58.",
    "checklist": [
     {
      "id": "s1009-dej-c1",
@@ -1444,7 +1444,7 @@
     },
     {
      "id": "s1009-dej-c2",
-     "label": "Effectif 60 confirmé à Fabien"
+     "label": "Effectif 58 confirmé à Fabien"
     }
    ],
    "persons": [],
@@ -1498,12 +1498,12 @@
    "date": "2026-09-10",
    "start": "14:30",
    "end": null,
-   "title": "Transfert Médina → Radisson — retour anticipé — 18 pax",
+   "title": "Transfert Médina → Radisson — retour anticipé — 17 pax",
    "lieu": "Le Grand Bazar (Médina) → Radisson Blu",
-   "effectif": "18",
+   "effectif": "17",
    "type": "transport",
    "level": "critique",
-   "details": "Véhicule : 1 × 17 pl + 1 Vito. Liste nominative de 18 (fichier du 07/09, Tonka inclus). Kopp ⚠️ : partirait le matin.",
+   "details": "Véhicule : 1 × 17 pl + 1 Vito. Liste nominative : 17 (fichier du 07/09 moins Kopp, parti le matin ; Tonka inclus ⚠️ aussi en équipe 7).",
    "checklist": [
     {
      "id": "p1009-1430-c1",
@@ -1529,7 +1529,6 @@
     "elmaleh",
     "gourd",
     "jacquart",
-    "kopp",
     "lucas",
     "malouche",
     "niang",
@@ -1590,12 +1589,12 @@
    "date": "2026-09-10",
    "start": "17:30",
    "end": null,
-   "title": "Transfert Médina → Radisson — fin Marrakech Express — ~42 pax",
+   "title": "Transfert Médina → Radisson — fin Marrakech Express — 42 pax",
    "lieu": "Riad Dar Essalam (Médina) → Radisson Blu",
-   "effectif": "~42",
+   "effectif": "42",
    "type": "transport",
    "level": "normal",
-   "details": "Véhicule : 3 × 17 pl. Retour groupé fin d'activité : les 42 des équipes (Tonka ⚠️ aussi listé navette 14h30).",
+   "details": "Véhicule : 3 × 17 pl. Retour groupé fin d'activité : les 42 des équipes (41 si Tonka prend la navette 14:30 ⚠️).",
    "checklist": [
     {
      "id": "p1009-1730-c1",
