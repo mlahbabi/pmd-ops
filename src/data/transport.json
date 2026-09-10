@@ -1,6 +1,6 @@
 {
- "version": "V2.28 — 10/09/2026",
- "updatedAt": "2026-09-10T10:45:00+01:00",
+ "version": "V2.29 — 10/09/2026",
+ "updatedAt": "2026-09-10T11:30:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -391,54 +391,26 @@
    "level": "critique"
   },
   {
-   "id": "w1109-1500",
+   "id": "w1109-1435",
    "date": "2026-09-11",
-   "heure": "15:00",
+   "heure": "14:35",
    "type": "depart",
-   "vol": "TO3017 17:50 / AT412 18:20",
+   "vol": "TO3017 17:50 / AT412 18:20 / AT640 18:30 / AF1877 18:55 ×8",
    "pax": [
     "dupont-noel",
-    "akpatigbe"
-   ],
-   "vehicule": "1 Vito",
-   "note": "",
-   "origine": "Beldi Country Club",
-   "destination": "Aéroport RAK",
-   "level": "critique"
-  },
-  {
-   "id": "w1109-1555",
-   "date": "2026-09-11",
-   "heure": "15:55",
-   "type": "depart",
-   "vol": "AT640 — décollage 18:25 (Orly)",
-   "pax": [
-    "bourtourault"
-   ],
-   "vehicule": "1 Vito dédié",
-   "note": "Nouveau vol retour confirmé par Mehdi le 10/09 : AT640 18:25 → Orly. Prise en charge Beldi 15:55 (H-2:30).",
-   "origine": "Beldi Country Club",
-   "destination": "Aéroport RAK",
-   "level": "critique"
-  },
-  {
-   "id": "w1109-1625",
-   "date": "2026-09-11",
-   "heure": "16:25",
-   "type": "depart",
-   "vol": "AF1877 — décollage 18:55",
-   "pax": [
+    "akpatigbe",
+    "bourtourault",
+    "tonka",
     "batnini",
-    "depouilly",
-    "foundoux",
-    "ibraima",
-    "koudou",
     "pierron",
+    "depouilly",
     "righi",
-    "tonka"
+    "ibraima",
+    "foundoux",
+    "koudou"
    ],
-   "vehicule": "1 × 17 pl",
-   "note": "8 pax : Tonka ajouté (repart le 11/09 au lieu du 10/09)",
+   "vehicule": "1 × 17 pl DÉDIÉ (Beldi → Radisson → RAK)",
+   "note": "PLAN DU 10/09 (Mehdi) : ce groupe finit le déjeuner Beldi vers 14:30, repasse par Radisson, puis aéroport — un seul bus. TIMING : 14:30 fin du déjeuner · 14:35 départ Beldi · ~15:05 Radisson (bagages à la bagagerie, check-out) · 15:30 départ Radisson · ~15:50 dépose RAK = H-2 pour TO3017 17:50 ; les autres attendent (AT412 18:20, AT640 18:30, AF1877 18:55 : ~3 h avant, assumé). Bagages de ces 11 : laissés à la bagagerie le matin, PAS dans les bus du Beldi. Dupont-Noel ⚠️ : TO3017 introuvable sur Flightradar24 (pd32) et Mehdi parle de 10 personnes — à confirmer.",
    "origine": "Beldi Country Club",
    "destination": "Aéroport RAK",
    "level": "critique"
@@ -738,8 +710,8 @@
   {
    "date": "2026-09-11",
    "pax": "~57",
-   "mouvements": "POINTE ABSOLUE : 3 vagues matin + arrivée C. Queron 09:40 (AF1276) + Beldi 11:45 + 5 navettes Beldi → RAK",
-   "flotte": "4 × 17 pl + 3 Vitos (rotations)"
+   "mouvements": "POINTE ABSOLUE : 3 vagues matin + arrivée C. Queron 09:40 (AF1276) + Beldi 11:45 + 3 navettes vers RAK : 13:35 (17 pl + Vito bagages), 14:00 (Vito), 14:35 (17 pl dédié pour 11 pax via Radisson, dépose RAK 15:50)",
+   "flotte": "4 × 17 pl + 2 Vitos"
   },
   {
    "date": "2026-09-12",

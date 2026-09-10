@@ -49,8 +49,8 @@ export function deltaOf(s: FlightStatus, type: FlightType, fallbackHeure?: strin
 // Rafraîchi toutes les 5 min, jamais en arrière-plan.
 export const ACTIVE_BEFORE_MS = 5 * 3600_000
 export const ACTIVE_AFTER_MS = 1 * 3600_000
-export const ACTIVE_AFTER_DEP_MS = 3 * 3600_000
-export const ACTIVE_LABEL = 'de 5 h avant à 1 h après l\'horaire (départs : jusqu\'à 3 h après la prise en charge)'
+export const ACTIVE_AFTER_DEP_MS = 5 * 3600_000
+export const ACTIVE_LABEL = 'de 5 h avant à 1 h après l\'horaire (départs : jusqu\'à 5 h après la prise en charge)'
 export const isActive = (now: Date, date: string, heure: string, type: FlightType = 'arrivee') => {
   const ref = toDate(date, heure).getTime() - now.getTime()
   return mParts(now).date === date && ref < ACTIVE_BEFORE_MS && ref > -(type === 'depart' ? ACTIVE_AFTER_DEP_MS : ACTIVE_AFTER_MS)

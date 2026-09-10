@@ -1,6 +1,6 @@
 {
- "version": "V2.28 — 10/09/2026",
- "updatedAt": "2026-09-10T10:45:00+01:00",
+ "version": "V2.29 — 10/09/2026",
+ "updatedAt": "2026-09-10T11:30:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1922,7 +1922,7 @@
    "effectif": "~53",
    "type": "setup",
    "level": "critique",
-   "details": "TOUS les partants du jour voyagent avec bagages dès ce transfert ; les véhicules restent au Beldi.",
+   "details": "Bagages dans les bus UNIQUEMENT pour les 17 qui vont directement Beldi → RAK (13:35 AF1077/AF718, 14:00 AT740). Les 11 du bus de 14:35 (TO3017, AT412, AT640, AF1877) laissent leurs bagages à la bagagerie : ils repassent par Radisson à 15:05.",
    "checklist": [
     {
      "id": "s1109-bagages-c1",
@@ -1930,7 +1930,11 @@
     },
     {
      "id": "s1109-bagages-c2",
-     "label": "Bagages chargés (compter)"
+     "label": "Bagages chargés : 17 (compter)"
+    },
+    {
+     "id": "s1109-bagages-c3",
+     "label": "Bagages des 11 identifiés à la bagagerie"
     }
    ],
    "persons": [],
@@ -2072,105 +2076,89 @@
    "waveId": "w1109-1400"
   },
   {
-   "id": "w1109-1500",
+   "id": "w1109-1435",
    "date": "2026-09-11",
-   "start": "15:00",
+   "start": "14:35",
    "end": null,
-   "title": "Départ TO3017 17:50 / AT412 18:20 — 2 pax",
+   "title": "Départ TO3017 17:50 / AT412 18:20 / AT640 18:30 / AF1877 18:55 ×8 — 11 pax",
    "lieu": "Beldi Country Club → Aéroport RAK",
-   "effectif": "2",
+   "effectif": "11",
    "type": "transport",
    "level": "critique",
-   "details": "David DUPONT-NOEL, Kodjo AKPATIGBE. Véhicule : 1 Vito.",
+   "details": "David DUPONT-NOEL, Kodjo AKPATIGBE, Olivier BOURTOURAULT, Tshiamala TONKA, Hajer BATNINI, Clémence PIERRON, Ambroise DEPOUILLY, Jonathan RIGHI, Sylvain Olivier IBRAIMA, Joe-Pépin FOUNDOUX, Roméo KOUDOU. Véhicule : 1 × 17 pl DÉDIÉ (Beldi → Radisson → RAK). PLAN DU 10/09 (Mehdi) : ce groupe finit le déjeuner Beldi vers 14:30, repasse par Radisson, puis aéroport — un seul bus. TIMING : 14:30 fin du déjeuner · 14:35 départ Beldi · ~15:05 Radisson (bagages à la bagagerie, check-out) · 15:30 départ Radisson · ~15:50 dépose RAK = H-2 pour TO3017 17:50 ; les autres attendent (AT412 18:20, AT640 18:30, AF1877 18:55 : ~3 h avant, assumé). Bagages de ces 11 : laissés à la bagagerie le matin, PAS dans les bus du Beldi. Dupont-Noel ⚠️ : TO3017 introuvable sur Flightradar24 (pd32) et Mehdi parle de 10 personnes — à confirmer.",
    "checklist": [
     {
-     "id": "w1109-1500-c1",
+     "id": "w1109-1435-c1",
      "label": "Chauffeur en place"
     },
     {
-     "id": "w1109-1500-c2",
+     "id": "w1109-1435-c2",
      "label": "Passagers complets"
     },
     {
-     "id": "w1109-1500-c3",
+     "id": "w1109-1435-c3",
      "label": "Parti"
     }
    ],
    "persons": [
     "dupont-noel",
-    "akpatigbe"
-   ],
-   "owner": "",
-   "waveId": "w1109-1500"
-  },
-  {
-   "id": "w1109-1555",
-   "date": "2026-09-11",
-   "start": "15:55",
-   "end": null,
-   "title": "Départ AT640 — décollage 18:25 (Orly) — 1 pax",
-   "lieu": "Beldi Country Club → Aéroport RAK",
-   "effectif": "1",
-   "type": "transport",
-   "level": "critique",
-   "details": "Olivier BOURTOURAULT. Véhicule : 1 Vito dédié. Nouveau vol retour confirmé par Mehdi le 10/09 : AT640 18:25 → Orly. Prise en charge Beldi 15:55 (H-2:30).",
-   "checklist": [
-    {
-     "id": "w1109-1555-c1",
-     "label": "Chauffeur en place"
-    },
-    {
-     "id": "w1109-1555-c2",
-     "label": "Passagers complets"
-    },
-    {
-     "id": "w1109-1555-c3",
-     "label": "Parti"
-    }
-   ],
-   "persons": [
-    "bourtourault"
-   ],
-   "owner": "",
-   "waveId": "w1109-1555"
-  },
-  {
-   "id": "w1109-1625",
-   "date": "2026-09-11",
-   "start": "16:25",
-   "end": null,
-   "title": "Départ AF1877 — décollage 18:55 — 8 pax",
-   "lieu": "Beldi Country Club → Aéroport RAK",
-   "effectif": "8",
-   "type": "transport",
-   "level": "critique",
-   "details": "Hajer BATNINI, Ambroise DEPOUILLY, Joe-Pépin FOUNDOUX, Sylvain Olivier IBRAIMA, Roméo KOUDOU, Clémence PIERRON, Jonathan RIGHI, Tshiamala TONKA. Véhicule : 1 × 17 pl. 8 pax : Tonka ajouté (repart le 11/09 au lieu du 10/09)",
-   "checklist": [
-    {
-     "id": "w1109-1625-c1",
-     "label": "Chauffeur en place"
-    },
-    {
-     "id": "w1109-1625-c2",
-     "label": "Passagers complets"
-    },
-    {
-     "id": "w1109-1625-c3",
-     "label": "Parti"
-    }
-   ],
-   "persons": [
+    "akpatigbe",
+    "bourtourault",
+    "tonka",
     "batnini",
-    "depouilly",
-    "foundoux",
-    "ibraima",
-    "koudou",
     "pierron",
+    "depouilly",
     "righi",
-    "tonka"
+    "ibraima",
+    "foundoux",
+    "koudou"
    ],
    "owner": "",
-   "waveId": "w1109-1625"
+   "waveId": "w1109-1435"
+  },
+  {
+   "id": "s1109-escale",
+   "date": "2026-09-11",
+   "start": "15:05",
+   "end": "15:30",
+   "title": "Escale Radisson des 11 partants de 15:30 — bagages + check-out",
+   "lieu": "Radisson Blu — bagagerie",
+   "effectif": "11",
+   "type": "transport",
+   "level": "critique",
+   "details": "Bus 17 pl dédié arrivé du Beldi (~15:05). Récupérer les bagages à la bagagerie, check-out si pas fait le matin, rembarquer. Départ 15:30 impératif (TO3017 17:50 = H-2 à 15:50). Groupe : Dupont-Noel ⚠️, Akpatigbe, Bourtourault, Tonka, Batnini, Pierron, Depouilly, Righi, Ibraima, Foundoux, Koudou.",
+   "checklist": [
+    {
+     "id": "s1109-escale-c1",
+     "label": "Bus arrivé à Radisson"
+    },
+    {
+     "id": "s1109-escale-c2",
+     "label": "Bagages récupérés (11)"
+    },
+    {
+     "id": "s1109-escale-c3",
+     "label": "Check-out des 11 réglés"
+    },
+    {
+     "id": "s1109-escale-c4",
+     "label": "Reparti à 15:30 avec les 11"
+    }
+   ],
+   "persons": [
+    "dupont-noel",
+    "akpatigbe",
+    "bourtourault",
+    "tonka",
+    "batnini",
+    "pierron",
+    "depouilly",
+    "righi",
+    "ibraima",
+    "foundoux",
+    "koudou"
+   ],
+   "owner": ""
   },
   {
    "id": "s1109-nuit",
