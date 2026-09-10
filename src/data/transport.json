@@ -1,6 +1,6 @@
 {
- "version": "V2.25 — 09/09/2026",
- "updatedAt": "2026-09-09T17:45:00+01:00",
+ "version": "V2.26 — 10/09/2026",
+ "updatedAt": "2026-09-10T09:00:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -269,21 +269,6 @@
    "level": "normal"
   },
   {
-   "id": "w1009-0710",
-   "date": "2026-09-10",
-   "heure": "07:10",
-   "type": "depart",
-   "vol": "U24664 — décollage 09:35",
-   "pax": [
-    "villeminot"
-   ],
-   "vehicule": "1 Vito",
-   "note": "",
-   "origine": "Radisson Blu",
-   "destination": "Aéroport RAK",
-   "level": "critique"
-  },
-  {
    "id": "w1009-1115",
    "date": "2026-09-10",
    "heure": "11:15",
@@ -411,12 +396,12 @@
    "date": "2026-09-11",
    "heure": "15:55",
    "type": "depart",
-   "vol": "AT640 — décollage 18:30",
+   "vol": "AT640 — décollage 18:25 (Orly)",
    "pax": [
     "bourtourault"
    ],
    "vehicule": "1 Vito dédié",
-   "note": "Nouveau vol",
+   "note": "Nouveau vol retour confirmé par Mehdi le 10/09 : AT640 18:25 → Orly. Prise en charge Beldi 15:55 (H-2:30).",
    "origine": "Beldi Country Club",
    "destination": "Aéroport RAK",
    "level": "critique"
@@ -702,6 +687,7 @@
   "Kopp Julien — arrivée autonome via Casa ; retour a priori en train le 10/09 au matin (à confirmer).",
   "Ondias Fanny — gère seule hébergement et transferts (vient accompagnée).",
   "Dupont-Noel, Bellefqih, Faouzi, Belemqadem — ensemble par la route depuis Casa le 09/09, même véhicule (départ ~17:30, ~18:30 à l'hôtel) — CHANGEMENT 09/09 : Dupont-Noel, Bellefqih et Belemqadem rejoignent DIRECTEMENT Dar Diaffa (Faouzi ⚠️ à confirmer), check-in Radisson après le dîner.",
+  "Villeminot Julien — départ 10/09 par ses propres moyens (n'a pas pris le Vito de 07:10, U24664).",
   "Le 08/09, 8 autres arrivées autonomes sans transfert : Alaoui, Jebira (via Casa) ; Bencheqroun, Chaste, Hassouni, Leyrit, Nadem, Tayaa (voiture personnelle depuis Casablanca)."
  ],
  "flotte": [
@@ -731,8 +717,8 @@
   },
   {
    "date": "2026-09-10",
-   "pax": "~62",
-   "mouvements": "2 départs + Médina : 60 aller / 18 retour 14:30 / ~42 retour 17:30",
+   "pax": "~61",
+   "mouvements": "1 départ (Frery 11:15 ; Villeminot parti seul) + Médina : 60 aller / 18 retour 14:30 / ~42 retour 17:30",
    "flotte": "4 × 17 pl + 2 Vitos"
   },
   {

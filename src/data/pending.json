@@ -1,6 +1,6 @@
 {
- "version": "V2.25 — 09/09/2026",
- "updatedAt": "2026-09-09T17:45:00+01:00",
+ "version": "V2.26 — 10/09/2026",
+ "updatedAt": "2026-09-10T09:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -106,6 +106,17 @@
    "level": "alerte",
    "persons": [
     "faouzi"
+   ]
+  },
+  {
+   "id": "pd36",
+   "sujet": "Simohamed : Vito de 07:10 du 10/09 non utilisé (Villeminot parti seul) — informer ; Bourtourault confirmé AT640 18:25 le 11/09 (Vito Beldi 15:55)",
+   "responsable": "Mehdi / Farid",
+   "echeance": "2026-09-10",
+   "level": "normal",
+   "persons": [
+    "villeminot",
+    "bourtourault"
    ]
   },
   {

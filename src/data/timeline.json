@@ -1,6 +1,6 @@
 {
- "version": "V2.25 — 09/09/2026",
- "updatedAt": "2026-09-09T17:45:00+01:00",
+ "version": "V2.26 — 10/09/2026",
+ "updatedAt": "2026-09-10T09:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -1295,37 +1295,6 @@
    "waveId": "p0909-2300"
   },
   {
-   "id": "w1009-0710",
-   "date": "2026-09-10",
-   "start": "07:10",
-   "end": null,
-   "title": "Départ U24664 — décollage 09:35 — 1 pax",
-   "lieu": "Radisson Blu → Aéroport RAK",
-   "effectif": "1",
-   "type": "transport",
-   "level": "critique",
-   "details": "Julien VILLEMINOT. Véhicule : 1 Vito.",
-   "checklist": [
-    {
-     "id": "w1009-0710-c1",
-     "label": "Chauffeur en place"
-    },
-    {
-     "id": "w1009-0710-c2",
-     "label": "Passagers complets"
-    },
-    {
-     "id": "w1009-0710-c3",
-     "label": "Parti"
-    }
-   ],
-   "persons": [
-    "villeminot"
-   ],
-   "owner": "",
-   "waveId": "w1009-0710"
-  },
-  {
    "id": "s1009-kopp",
    "date": "2026-09-10",
    "start": "08:00",
@@ -2109,12 +2078,12 @@
    "date": "2026-09-11",
    "start": "15:55",
    "end": null,
-   "title": "Départ AT640 — décollage 18:30 — 1 pax",
+   "title": "Départ AT640 — décollage 18:25 (Orly) — 1 pax",
    "lieu": "Beldi Country Club → Aéroport RAK",
    "effectif": "1",
    "type": "transport",
    "level": "critique",
-   "details": "Olivier BOURTOURAULT. Véhicule : 1 Vito dédié. Nouveau vol",
+   "details": "Olivier BOURTOURAULT. Véhicule : 1 Vito dédié. Nouveau vol retour confirmé par Mehdi le 10/09 : AT640 18:25 → Orly. Prise en charge Beldi 15:55 (H-2:30).",
    "checklist": [
     {
      "id": "w1109-1555-c1",

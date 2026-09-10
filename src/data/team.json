@@ -1,6 +1,6 @@
 {
- "version": "V2.25 — 09/09/2026",
- "updatedAt": "2026-09-09T17:45:00+01:00",
+ "version": "V2.26 — 10/09/2026",
+ "updatedAt": "2026-09-10T09:00:00+01:00",
  "membres": [
   "Mehdi",
   "Mouad",
@@ -75,10 +75,6 @@
   {
    "sequenceId": "p0909-2300",
    "label": "Retour Diaffa 23:00"
-  },
-  {
-   "sequenceId": "w1009-0710",
-   "label": "Départs 10/09 matin"
   },
   {
    "sequenceId": "p1009-1215",
