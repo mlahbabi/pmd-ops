@@ -1,6 +1,6 @@
 {
- "version": "V2.31 — 11/09/2026",
- "updatedAt": "2026-09-11T09:00:00+01:00",
+ "version": "V2.32 — 11/09/2026",
+ "updatedAt": "2026-09-11T10:15:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -395,9 +395,8 @@
    "date": "2026-09-11",
    "heure": "14:35",
    "type": "depart",
-   "vol": "TO3017 17:50 / AT412 18:20 / AT640 18:30 / AF1877 18:55 ×8",
+   "vol": "AT412 18:20 / AT640 18:30 / AF1877 18:55 ×8",
    "pax": [
-    "dupont-noel",
     "akpatigbe",
     "bourtourault",
     "tonka",
@@ -410,7 +409,7 @@
     "koudou"
    ],
    "vehicule": "1 × 17 pl DÉDIÉ (Beldi → Radisson → RAK)",
-   "note": "PLAN DU 10/09 (Mehdi) : ce groupe finit le déjeuner Beldi vers 14:30, repasse par Radisson, puis aéroport — un seul bus. TIMING : 14:30 fin du déjeuner · 14:35 départ Beldi · ~15:05 Radisson (bagages à la bagagerie, check-out) · 15:30 départ Radisson · ~15:50 dépose RAK = H-2 pour TO3017 17:50 ; les autres attendent (AT412 18:20, AT640 18:30, AF1877 18:55 : ~3 h avant, assumé). Bagages de ces 11 : laissés à la bagagerie le matin, PAS dans les bus du Beldi. Dupont-Noel ⚠️ : TO3017 introuvable sur Flightradar24 (pd32) et Mehdi parle de 10 personnes — à confirmer.",
+   "note": "PLAN DU 10/09 (Mehdi) : ce groupe finit le déjeuner Beldi vers 14:30, repasse par Radisson, puis aéroport — un seul bus. TIMING : 14:30 fin du déjeuner · 14:35 départ Beldi · ~15:05 Radisson (bagages à la bagagerie, check-out) · 15:30 départ Radisson · ~15:50 dépose RAK (AT412 18:20 = H-2:30 ; AT640 18:30 et AF1877 18:55 : ~3 h avant, assumé). Bagages de ces 10 : laissés à la bagagerie le matin, PAS dans les bus du Beldi. Dupont-Noel retiré le 11/09 (prolonge son séjour par ses propres moyens) : 10 pax, comme annoncé par Mehdi.",
    "origine": "Beldi Country Club",
    "destination": "Aéroport RAK",
    "level": "critique"
@@ -701,6 +700,7 @@
   "Kopp Julien — arrivée autonome via Casa ; retour a priori en train le 10/09 au matin (à confirmer).",
   "Ondias Fanny — gère seule hébergement et transferts (vient accompagnée).",
   "Dupont-Noel, Bellefqih, Faouzi, Belemqadem — ensemble par la route depuis Casa le 09/09, même véhicule (départ ~17:30, ~18:30 à l'hôtel) — CHANGEMENT 09/09 : Dupont-Noel, Bellefqih et Belemqadem rejoignent DIRECTEMENT Dar Diaffa (Faouzi ⚠️ à confirmer), check-in Radisson après le dîner.",
+  "Dupont-Noel David — TRANSFERT RETOUR ANNULÉ le 11/09 : prolonge son séjour à Marrakech par ses propres moyens (retiré du bus de 14:35).",
   "Villeminot Julien — départ 10/09 par ses propres moyens (n'a pas pris le Vito de 07:10, U24664).",
   "Le 08/09, 8 autres arrivées autonomes sans transfert : Alaoui, Jebira (via Casa) ; Bencheqroun, Chaste, Hassouni, Leyrit, Nadem, Tayaa (voiture personnelle depuis Casablanca)."
  ],
@@ -738,7 +738,7 @@
   {
    "date": "2026-09-11",
    "pax": "~57",
-   "mouvements": "POINTE ABSOLUE : 3 vagues matin + arrivée C. Queron 09:40 (AF1276) + Beldi 11:45 + 3 navettes vers RAK : 13:35 (17 pl + Vito bagages), 14:00 (Vito), 14:35 (17 pl dédié pour 11 pax via Radisson, dépose RAK 15:50)",
+   "mouvements": "POINTE ABSOLUE : 3 vagues matin + arrivée C. Queron 09:40 (AF1276) + Beldi 11:45 + 3 navettes vers RAK : 13:35 (17 pl + Vito bagages), 14:00 (Vito), 14:35 (17 pl dédié pour 10 pax via Radisson, dépose RAK 15:50)",
    "flotte": "4 × 17 pl + 2 Vitos"
   },
   {

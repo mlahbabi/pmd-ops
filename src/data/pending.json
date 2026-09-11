@@ -1,6 +1,6 @@
 {
- "version": "V2.31 — 11/09/2026",
- "updatedAt": "2026-09-11T09:00:00+01:00",
+ "version": "V2.32 — 11/09/2026",
+ "updatedAt": "2026-09-11T10:15:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -74,16 +74,6 @@
    "level": "alerte"
   },
   {
-   "id": "pd32",
-   "sujet": "Dupont-Noel : TO3017 du 11/09 17:50 (Marrakech → Orly) introuvable sur Flightradar24 à J-2 (AT412 18:20 de la même vague est bien programmé) — faire confirmer le billet par Clémence",
-   "responsable": "Mehdi → Clémence",
-   "echeance": "2026-09-10",
-   "level": "alerte",
-   "persons": [
-    "dupont-noel"
-   ]
-  },
-  {
    "id": "pd31",
    "sujet": "Diaffa 09/09 : départ anticipé 19:45 (6 pax, Eva — Dupont-Noel rejoint directement le restaurant) — prévenir Simohamed : bus dédié à 19:45, puis 3 × 17 pl + Vito réserve à 20:00 pour 53 pax (58 places)",
    "responsable": "Mehdi / Farid",
@@ -117,20 +107,10 @@
   },
   {
    "id": "pd38",
-   "sujet": "Simohamed — 11/09 après-midi : UN SEUL 17 pl dédié pour 11 pax, Beldi 14:35 → Radisson 15:05 (attente 25 min) → RAK 15:50 ; les Vitos 15:00 et 15:55 et le bus 16:25 sont annulés",
+   "sujet": "Simohamed — 11/09 après-midi : UN SEUL 17 pl dédié pour 10 pax (Dupont-Noel annulé), Beldi 14:35 → Radisson 15:05 (attente 25 min) → RAK 15:50 ; les Vitos 15:00 et 15:55 et le bus 16:25 sont annulés",
    "responsable": "Mehdi / Farid",
    "echeance": "2026-09-10",
    "level": "alerte"
-  },
-  {
-   "id": "pd39",
-   "sujet": "Dupont-Noel 11/09 : Mehdi compte 10 personnes dans le bus de 14:35, le fichier client en liste 11 avec lui (TO3017 17:50, vol introuvable sur Flightradar24) — est-il dans le bus ?",
-   "responsable": "Mehdi → Clémence",
-   "echeance": "2026-09-10",
-   "level": "alerte",
-   "persons": [
-    "dupont-noel"
-   ]
   },
   {
    "id": "pd37",

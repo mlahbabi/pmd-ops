@@ -1,6 +1,6 @@
 {
- "version": "V2.31 — 11/09/2026",
- "updatedAt": "2026-09-11T09:00:00+01:00",
+ "version": "V2.32 — 11/09/2026",
+ "updatedAt": "2026-09-11T10:15:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -784,7 +784,7 @@
    "statut": "participant",
    "equipe_tb": null,
    "id": "dupont-noel",
-   "note_app": "CEO. Arrive par la route depuis Casablanca le 09/09 (départ Casa ~17:30, ~18:30 à l'hôtel) dans le même véhicule que Bellefqih, Faouzi et Belemqadem. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa. CHANGEMENT 09/09 (Mehdi) : rejoint DIRECTEMENT Dar Diaffa avec Bellefqih et Belemqadem, sans passer par Radisson — check-in après le dîner. 5e prise de parole au dîner Diaffa (confirmé par Mehdi le 07/09). Petit mot d'intro au dîner Rôtisserie du 10/09 (sans équipement).",
+   "note_app": "CEO. Arrive par la route depuis Casablanca le 09/09 (départ Casa ~17:30, ~18:30 à l'hôtel) dans le même véhicule que Bellefqih, Faouzi et Belemqadem. Accueil à l'hôtel par MRCO puis transfert dîner Diaffa. CHANGEMENT 09/09 (Mehdi) : rejoint DIRECTEMENT Dar Diaffa avec Bellefqih et Belemqadem, sans passer par Radisson — check-in après le dîner. TRANSFERT RETOUR ANNULÉ (Mehdi, 11/09) : prolonge son séjour à Marrakech par ses propres moyens (hôtel et transport hors MRCO), MRCO n'avait pas été prévenue — retiré du bus de 14:35 (TO3017). 5e prise de parole au dîner Diaffa (confirmé par Mehdi le 07/09). Petit mot d'intro au dîner Rôtisserie du 10/09 (sans équipement).",
    "pays": "France, arrivée via Casablanca en voiture",
    "arr": {
     "date": "09/09",
@@ -796,15 +796,13 @@
    },
    "dep": {
     "date": "11/09",
-    "heure": "17:50",
-    "vol": "TO3017",
-    "vers": "Paris Orly",
-    "cie": "Transavia",
-    "mode": "vol"
+    "heure": null,
+    "vol": null,
+    "vers": null,
+    "cie": null,
+    "mode": "séjour prolongé à Marrakech par ses propres moyens — aucun transfert MRCO"
    },
-   "transferts": [
-    "w1109-1435"
-   ]
+   "transferts": []
   },
   {
    "nom": "EL HABTI",
