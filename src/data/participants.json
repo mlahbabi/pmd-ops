@@ -1,6 +1,6 @@
 {
- "version": "V2.30 — 10/09/2026",
- "updatedAt": "2026-09-10T12:00:00+01:00",
+ "version": "V2.31 — 11/09/2026",
+ "updatedAt": "2026-09-11T09:00:00+01:00",
  "items": [
   {
    "nom": "AKPATIGBE",
@@ -1677,16 +1677,16 @@
    },
    "dep": {
     "date": "13/09",
-    "heure": "18:20",
-    "vol": "AT412R ",
-    "vers": "Kinshasa",
-    "cie": "Royal Air Maroc",
+    "heure": "10:40",
+    "vol": "AF1277",
+    "vers": "Paris CDG",
+    "cie": "Air France",
     "mode": "vol"
    },
-   "note_app": "Changement du 07/09 : arrive aujourd'hui à 16:40 par AT639 depuis Paris au lieu de AT413M 18:10 (vols depuis Kinshasa annulés). Retour du 13/09 (AT412R) va changer : il attend une place.",
+   "note_app": "Changement du 07/09 : arrive aujourd'hui à 16:40 par AT639 depuis Paris au lieu de AT413M 18:10 (vols depuis Kinshasa annulés). NOUVEAU VOL RETOUR (Mehdi, 11/09) : dimanche 13/09 AF1277 10:40 → Paris CDG 14:05, au lieu de AT412 18:20 — vérifié sur Flightradar24. Vito Radisson 08:15 (dépose aéroport 08:40 = H-2).",
    "transferts": [
     "w0709-1640",
-    "w1309-1555"
+    "w1309-0815"
    ]
   },
   {

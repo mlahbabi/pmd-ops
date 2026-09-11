@@ -1,6 +1,6 @@
 {
- "version": "V2.30 — 10/09/2026",
- "updatedAt": "2026-09-10T12:00:00+01:00",
+ "version": "V2.31 — 11/09/2026",
+ "updatedAt": "2026-09-11T09:00:00+01:00",
  "regles": [
   "Départs : dépose à l'aéroport RAK au minimum 2h00 avant le décollage. Trajets : Radisson → RAK ~20 min ; Beldi → RAK ~25 min.",
   "Arrivées : accueil en zone arrivées avec pancarte « Partners’ Meeting », chauffeur en place à l'heure d'atterrissage, sortie passagers +30 à 40 min. Suivi des vols en temps réel (retards fréquents sur correspondances Casa).",
@@ -483,17 +483,31 @@
    "level": "critique"
   },
   {
+   "id": "w1309-0815",
+   "date": "2026-09-13",
+   "heure": "08:15",
+   "type": "depart",
+   "vol": "AF1277 — décollage 10:40 (CDG)",
+   "pax": [
+    "mavungu"
+   ],
+   "vehicule": "1 Vito",
+   "note": "NOUVEAU (11/09) : vol retour changé, AF1277 10:40 au lieu de AT412 18:20. Dépose aéroport 08:40 (H-2).",
+   "origine": "Radisson Blu",
+   "destination": "Aéroport RAK",
+   "level": "critique"
+  },
+  {
    "id": "w1309-1555",
    "date": "2026-09-13",
    "heure": "15:55",
    "type": "depart",
-   "vol": "AT412R 18:20 / AF1877 18:55",
+   "vol": "AF1877 — décollage 18:55 (CDG)",
    "pax": [
-    "mavungu",
     "queron"
    ],
-   "vehicule": "1 Vito combiné",
-   "note": "",
+   "vehicule": "1 Vito",
+   "note": "Mavungu retiré (repart le matin par AF1277). Caroline Queron ⚠️ : départ non communiqué, a priori avec Thierry.",
    "origine": "Radisson Blu",
    "destination": "Aéroport RAK",
    "level": "critique"
@@ -735,9 +749,9 @@
   },
   {
    "date": "2026-09-13",
-   "pax": "2",
-   "mouvements": "1 course combinée",
-   "flotte": "1 Vito"
+   "pax": "2 (+1 ⚠️)",
+   "mouvements": "2 courses : 08:15 Mavungu (AF1277 10:40) ; 15:55 Queron (AF1877 18:55, + Caroline ⚠️)",
+   "flotte": "1 Vito (2 courses)"
   }
  ]
 }

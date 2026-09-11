@@ -1,6 +1,6 @@
 {
- "version": "V2.30 — 10/09/2026",
- "updatedAt": "2026-09-10T12:00:00+01:00",
+ "version": "V2.31 — 11/09/2026",
+ "updatedAt": "2026-09-11T09:00:00+01:00",
  "items": [
   {
    "id": "pd01",
@@ -184,13 +184,14 @@
    ]
   },
   {
-   "id": "pd27",
-   "sujet": "Mavungu : nouveau vol retour attendu (il attend une place, AT412R du 13/09 va changer) — course à recaler",
-   "responsable": "Clémence → Mehdi",
-   "echeance": "2026-09-10",
-   "level": "normal",
+   "id": "pd41",
+   "sujet": "Simohamed — 13/09 : 2 courses Vito au lieu d'une combinée : 08:15 Radisson → RAK Mavungu (AF1277 10:40, vérifié) ; 15:55 Radisson → RAK Queron (AF1877 18:55, + Caroline ⚠️)",
+   "responsable": "Mehdi / Farid",
+   "echeance": "2026-09-11",
+   "level": "alerte",
    "persons": [
-    "mavungu"
+    "mavungu",
+    "queron"
    ]
   },
   {

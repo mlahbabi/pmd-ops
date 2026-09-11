@@ -1,6 +1,6 @@
 {
- "version": "V2.30 — 10/09/2026",
- "updatedAt": "2026-09-10T12:00:00+01:00",
+ "version": "V2.31 — 11/09/2026",
+ "updatedAt": "2026-09-11T09:00:00+01:00",
  "sequences": [
   {
    "id": "w0309-1750",
@@ -2369,16 +2369,47 @@
    "aConfirmer": true
   },
   {
+   "id": "w1309-0815",
+   "date": "2026-09-13",
+   "start": "08:15",
+   "end": null,
+   "title": "Départ AF1277 — décollage 10:40 (CDG) — 1 pax",
+   "lieu": "Radisson Blu → Aéroport RAK",
+   "effectif": "1",
+   "type": "transport",
+   "level": "critique",
+   "details": "Gervais MAVUNGU. Véhicule : 1 Vito. NOUVEAU (11/09) : vol retour changé, AF1277 10:40 au lieu de AT412 18:20. Dépose aéroport 08:40 (H-2).",
+   "checklist": [
+    {
+     "id": "w1309-0815-c1",
+     "label": "Chauffeur en place"
+    },
+    {
+     "id": "w1309-0815-c2",
+     "label": "Passagers complets"
+    },
+    {
+     "id": "w1309-0815-c3",
+     "label": "Parti"
+    }
+   ],
+   "persons": [
+    "mavungu"
+   ],
+   "owner": "",
+   "waveId": "w1309-0815"
+  },
+  {
    "id": "w1309-1555",
    "date": "2026-09-13",
    "start": "15:55",
    "end": null,
-   "title": "Départ AT412R 18:20 / AF1877 18:55 — 2 pax",
+   "title": "Départ AF1877 — décollage 18:55 (CDG) — 1 pax",
    "lieu": "Radisson Blu → Aéroport RAK",
-   "effectif": "2",
+   "effectif": "1",
    "type": "transport",
    "level": "critique",
-   "details": "Gervais MAVUNGU, Thierry QUERON. Véhicule : 1 Vito combiné.",
+   "details": "Thierry QUERON. Véhicule : 1 Vito. Mavungu retiré (repart le matin par AF1277). Caroline Queron ⚠️ : départ non communiqué, a priori avec Thierry.",
    "checklist": [
     {
      "id": "w1309-1555-c1",
@@ -2394,7 +2425,6 @@
     }
    ],
    "persons": [
-    "mavungu",
     "queron"
    ],
    "owner": "",
